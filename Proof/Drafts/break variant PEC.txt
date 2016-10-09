@@ -1,0 +1,110 @@
+
+
+Invariant I: 
+{* 0≤i≤N ⋀ (found = (∃k: 0≤k<i : a[k]=x)) ⋀ sorted a N *}
+
+Statement S is a sequence S1;S2:
+S1: found := found ⋁ (a[i]=x);
+S2: i := i + 1;
+
+Guard g:
+{* i < N ⋀ ¬found ⋀ a[i]≤x *}
+
+Postcondition Q:
+{* 0≤i≤N ⋀ (found = (∃k : 0≤k<N : a[k]=x) *}
+
+Proof PEC:
+⊨ I ⋀ ¬g ⟹ Q
+
+Proof PIC:
+{* I ⋀ g *} S {* I *}
+
+
+
+
+PROOF PEC
+A1: (found = (∃k: 0≤k<i : a[k]=x))    // from Invariant I
+A2: 0 ≤ i ≤ N                       // from Invariant I
+A3: i ≥ N ⋁ found ⋁ a[i] > x        // from Guard ¬g
+A4: (∀i: 0≤i<N : (∀j : i≤j<N : a[i]≤a[j])) // from Invariant I
+G : 0≤i≤N ⋀ (found = (∃k : 0≤k<N : a[k]=x))  // prove Q
+BEGIN ------------------------------------------
+
+1. { see subproof breakWithCounter }
+    i≥N ⟹ 0≤i≤N ⋀ (found = (∃k : 0≤k<N : a[k]=x))
+
+    PROOF breakWithCounter
+    A1: found = (∃k : 0≤k<i : a[k]=x)
+    A2: i ≥ N                           
+    A3: 0 ≤ i ≤ N   
+    G : 0≤i≤N ⋀ (found = (∃k : 0≤k<N : a[k]=x))
+    BEGIN --------------------------------------
+    1. { combine A2 and A3 }
+        i = N
+    2. { replace in A1, i with N }
+        found = (∃k : 0≤k<N : a[k]=x)
+    3. { combine A3 and 2 }
+        0≤i≤N ⋀ (found = (∃k: 0≤k<N : a[k]=x))
+    END ----------------------------------------
+
+2. { see subproof breeakWithFound }
+    found ⟹ 0≤i≤N ⋀ (found = (∃k : 0≤k<N : a[k]=x))
+
+    PROOF breakWithFound
+    A1: found = (∃k : 0≤k<i : a[k]=x)
+    A2: found                           
+    A3: 0 ≤ i ≤ N   
+    G : 0≤i≤N ⋀ (found = (∃k : 0≤k<N : a[k]=x))
+    BEGIN --------------------------------------
+    1. { substitute found in A1 with A2 }
+        (∃k : 0≤k<i : a[k]=x)
+    2. { domain expanding }
+        (∃k : 0≤k<i ⋁ i≤k<N : a[k]=x)
+    3. { domain combine }
+        (∃k : 0≤k<N : a[k]=x)
+    4. { equality of 3 and A2 }
+        (found = (∃k : 0≤k<N : a[k]=x))
+    5. { combine with A3 }
+        0≤i≤N ⋀ (found = (∃k : 0≤k<N : a[k]=x))
+    END ----------------------------------------
+
+3. { see subproof breakWithValue }
+    a[i]>x ⟹ 0≤i≤N ⋀ (found = (∃k : 0≤k<N : a[k]=x))    
+
+    PROOF breakWithValue
+    A1: found = (∃k : 0≤k<i : a[k]=x)
+    A2: a[i]>x                          
+    A3: 0 ≤ i ≤ N   
+    A4: (∀i: 0≤i<N : (∀j: i≤j<N : a[i]≤a[j]))
+    G : 0≤i≤N ⋀ (found = (∃k : 0≤k<N : a[k]=x))
+    BEGIN --------------------------------------
+    1. { kwantor elimintation in A4 } [ANY i]
+        0≤i<N ⟹ (∀j: i≤j<N : a[i]≤a[j])
+    2. { from A3 and 1 }
+        (∀j: i≤j<N : a[i]≤a[j])
+    3. { from 2 and A2 }
+        ¬(∃j: i≤j<N : a[j]=x) 
+    4. { flip domain of 3 }
+        (∃j: j<i ⋁ j≥N : a[j]=x)
+    5. { split kwantor from 4 }
+        (∃j: j<i : a[j]=x) ⋁ (∃j: j≥N : a[j]=x)
+    6. { remove part second part from 5 }
+        (∃j: j<i : a[j]=x)
+    7. { by equality of 6 with A1 }
+        (found = (∃k : 0≤k<i : a[k]=x))
+    8. { combine 7 and A3 }
+        0≤i≤N ⋀ (found = (∃k : 0≤k<N : a[k]=x))
+    END ----------------------------------------
+
+
+4. { A3 with 1,2 and 3 will prove G }
+    0≤i≤N ⋀ (found = (∃k : 0≤k<N : a[k]=x))    
+
+
+
+
+
+
+
+
+

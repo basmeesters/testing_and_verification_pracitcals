@@ -1,0 +1,328 @@
+\documentclass[fontsize=9p]{article}
+
+\usepackage{a4}
+\usepackage{latexsym}
+\usepackage{pncproofmacros}
+\usepackage{color}
+\usepackage{amssymb}
+
+\setlength{\textheight}{225mm}	   
+\setlength{\topmargin}{-12mm}	  
+
+
+\title{Software Testing \& Verification Proof Assignment}
+\author{Jarno Le Cont\'{e} \hspace{2mm} 3725154 \\ \noindent Bas Meesters \hspace{2mm} 3700569}
+
+% Program without breaks
+\begin{document}
+\maketitle
+\section* {Task 1}
+\textbf {Simple variant:}
+\vspace {2mm} \\
+\{$*N \ge 0 \wedge sorted \: a \: N *$\} \\ \\
+found := false; \\
+ i := 0; \\
+while i $<$ N do \{ found := found $\vee$ (a[i]=x) ; i:= i+1\} \\ \\
+ {\color{blue} \{*return=(i=N $\wedge$ found =  ($\exists i : 0 \le i < N : a[i] = x))*$\}}
+
+% Program with breaks
+\vspace{5 mm}
+\noindent \textbf {Variant with breaks:} \\
+\vspace {2 mm}
+\{*$N \ge 0 \wedge sorted \: a \: N $*\} \\ \\
+ found := false; \\
+i := 0;\\
+while $i < N \wedge \neg found \wedge a[i] \le x \:do \: \{$\\
+\indent found := found $\vee (a[i]=x);$\\
+\indent  i := i + 1\\
+ \}\\ \\
+{\color{blue} \{*return=($0 \le i \le N \wedge $ found =  ($\exists i : 0 \le i < N : a[i] = x))*$\}} 
+\vspace{5 mm}
+
+\noindent \textbf {Extra note:} \\
+Because no write-operations are made on the arrays, it is assumed they never change their order and therefore remain sorted
+\section* {Task 2}
+%Too prove: \\
+%\indent INIT: \hspace{3mm} $ \models P \Rightarrow I$ \\
+%\indent PIC: \hspace{3mm}  $\{* I \wedge  g *\} \: S \: \{*I*\}$ \\
+%\indent PEC: \hspace{3mm} $ \models I \wedge \neg g \Rightarrow Q$ \\  
+
+\noindent Invariant (I): \\
+$\{* 0 \le i \le N \wedge (found = (\exists k : 0\le k < i : a[k] = x)) \wedge sorted \:a \:N *\}$ \\ \\
+
+\noindent Statement S is a sequence S1;S2 \\
+S1: found := found $\vee$ (a[i] = x); \\
+S2: i := i + 1;  \\\\
+
+\noindent Guard g:\\
+\{ * i $<$ N * \} \\
+
+\noindent \begin{PROOF}{ PEC} \\
+ \ASSUME {A1} {found = (\exists k : 0 \le k < i : a[k]=x)} \\
+\ASSUME {A2} {0 \le i \le N} \\
+\ASSUME {A3} {i \ge N} \\
+\GOAL {G} {(i = N) \wedge (found = (\exists k : 0 \le k < N : a[k] =x) } \\
+\begin{BODY}
+\item[1.] \HINT {combine A2 and A3} \\
+\EXPR {i = N}
+\item[2.] \HINT {from 1 replace i with N in A1} \\
+\EXPR {(found = (\exists k : 0 \le k < N : a[k] =x))}
+\item[3.] \HINT {combine 1 and 2} \\
+\EXPR {(i = N) \wedge (found = (\exists k : 0 \le k < N : a[k] = x))}
+\end{BODY}
+\end{PROOF}
+\vspace{5mm}
+
+\noindent \begin{PROOF}{PIC}  \\
+PIC: $\{* I \wedge  g *\} \: S \: \{*I*\}$ \\ 
+\noindent\ASSUME{A1}{found = (\exists k : 0\le k < i : a[k] = x) } \\
+\ASSUME{A2} {0 \le i < N } \\
+\GOAL{G1}{wp \: S \: I} %// note: check if this is the weakest-precondition
+
+\begin{BODY}
+
+\item[1.] \HINT{see calculate wp} 
+	
+	\EXPR{wp \:S \: I = 0 \le i + 1 \le N \wedge ((found \vee a[i]=x) = (\exists k : 0 \le k < i + 1: a[k] =x))} \\
+
+\begin{PROOF}{ calculate wp}\\
+\begin{BODY}
+\item[] \EXPR {wp (found := found \vee a[i] =x; i := i + 1) (0 \le i \le N \wedge (found = (\exists k : 0\le k < i : a[k] = x)))}
+\item[1.] \HINT { wp of statements sequence} \\
+	\EXPR { wp (found := found \vee a[i] =x) (wp (i := i + 1) (0 \le i \le N \wedge (found = (\exists k : 0\le k < i : a[k] = x))) }
+\item[2.] \HINT {wp of assignment} \\
+\EXPR{wp (found := found \vee a[i]=x) (0 \le i + 1 \le N \wedge (found = (\exists k : 0\le k < i + 1 : a[k] = x)))}
+\item[3.] \HINT {wp of assignment} \\
+\EXPR {0 \le i + 1 \le N \wedge ((found \vee a[i] =x) =  (\exists k : 0\le k < i + 1 : a[k] = x)) }
+\end{BODY}
+\end{PROOF}
+
+\item[2] \HINT{see subproof equality} \\
+	\EXPR{\exists k: 0 \le k < i : a[k] =x) \vee (a[i] =x) =  (\exists k : 0\le k < i +1: a[k] = x)} 
+\vspace{4mm} \\
+\begin{PROOF} {equality}
+\item[] \EXPR {[some \: i]} 
+\item[] \EXPR {[some \: x]} \\
+\ASSUME {A1} {(\exists k : 0\le k < i: a[k] = x) \vee (a[i] = x)} \\
+\GOAL {G} {(\exists k : 0\le k < i: a[k] = x) \vee (a[i] = x) = (\exists k : 0\le k < i +1: a[k] = x) } \\
+\begin{BODY}
+\item[] \EXPR {(\exists k : 0\le k < i: a[k] = x) \vee (a[i] = x)} 
+\item [1.] \HINT {introduce  $\exists$ -quantor } \\
+\EXPR {(\exists k : 0\le k < i: a[k] = x) = (\exists k : k =i : a[k] = x)}
+\item[2.] \HINT {combine domains} \\
+\EXPR {(\exists k : 0 \le k < i + 1: a[k] = x)}
+\item[3.] \HINT {we have proven equality} \\
+\EXPR  {(\exists k : 0\le k < i: a[k] = x) \vee (a[i] = x) = (\exists k : 0\le k < i +1: a[k] = x) }
+
+\end{BODY}
+\end{PROOF}
+
+\item[3.] \HINT{ reversed substitution of A1 in 2} \\
+	\EXPR{((found \vee a[i] = x) =  (\exists k : 0\le k < i +1: a[k] = x))}
+
+\item[4.] \HINT{rewrite A2} \\
+	\EXPR{ 0 \le i + 1 \le N}
+
+\item[5.] \HINT{combine 3 and 4} \\
+	\EXPR{ 0 \le i + 1 \le N \wedge ((found \vee a[i] = x) =  (\exists k : 0\le k < i +1: a[k] = x) }
+
+\item[6.] \HINT {by equility on 1 and 5 we have proven wp} \\
+\EXPR {wp \:S \:I =  0 \le i + 1 \le N \wedge(( found \vee a[i] = x) =  (\exists k : 0\le k < i +1: a[k] = x)) } \\
+\end{BODY}
+\end{PROOF} 
+\vspace {5mm}
+
+\noindent \begin{PROOF} {PTC1} \\
+Termination metric is N - i \\
+\ASSUME {A1} {i \le N} \\
+\GOAL {G} { N - i \ge 0} \\
+\begin{BODY}
+\item \HINT {follows from A1} \\
+\EXPR { N - i \ge 0}
+\end{BODY}
+\end{PROOF} 
+\vspace{5mm}
+
+\noindent \begin{PROOF} {PTC2} \\
+\ASSUME {A1} { found = (\exists i : 0 \le i < N : a[i] = x)} \\
+\ASSUME {A2} {i \le N } \\
+\ASSUME {D1} {Q = wp(C:= m) \: body \:(N - i < C) \: i := 0} \\
+\GOAL {G} { Q}
+\begin{BODY}
+\item[1.] \HINT {calculating wp} \\
+\EXPR {N - i  < C}
+\item[2.] \HINT {i := i + 1; C := N - i} \\
+\EXPR {N - (i+ i)  <  N - i}
+\item[3.] \HINT { rewrite} \\
+\EXPR { N - i - 1 < N - i}
+\item[4.] \HINT {follows from 1,2 and 3} \\
+\EXPR {Q}
+\end{BODY}
+\end{PROOF}
+\vspace{5mm}
+
+\noindent \begin{PROOF} {Init} \\
+\ASSUME {A1} {N \ge 0} \\
+\ASSUME {A2} {sorted \:a \:N} \\
+\GOAL {G} {wp = (found := false;  i := 0 ) \: I} \\
+\begin{BODY}
+\item \HINT {calculate wp} \\
+\EXPR { found = (\exists i : 0 \le i < N : a[i] = x)}
+\item \HINT {follows from intialisation} \\
+\EXPR { found := false; i := 0}
+\item \HINT {follows from 1 and 2} \\
+\EXPR {wp}
+\end{BODY}
+\end{PROOF} 
+\vspace{5mm}
+
+\section*{Task 3}
+\noindent Invariant (I): \\
+$\{* 0 \le i \le N \wedge (found = (\exists k : 0\le k < i : a[k] = x)) \wedge sorted \:a \:N *\}$ \\ \\
+
+\noindent Statement S is a sequence S1;S2 \\
+S1: found := found $\vee$ (a[i] = x); \\
+S2: i := i + 1;  \\\\
+
+\noindent Guard g:\\
+\{ * i $<$ N $\wedge \neg$ found $\wedge$ a[i] $\le$ x * \} \\
+
+\noindent \begin{PROOF} {PEC} \\
+\ASSUME {A1} {(found = ( \exists k : 0 \le k < i : a[k] = x))} \\
+\ASSUME {A2} {0 \le i \le N} \\
+\ASSUME{A3} {i \ge N \vee found \vee  a[i] > x} \\
+\ASSUME{A4} {(\forall i : 0 \le i < N : ( \forall j : i \le j < N : a[i] \le a[j]))} \\
+\GOAL {G} {0 \le i \le N \wedge (found = (\exists k : 0 \le k < N : a[k] = x))} \\
+\begin{BODY}
+\item[1.] \HINT {see subproof breakWithCounter} \\
+\EXPR {i \ge N \Rightarrow 0 \le i \le N \wedge (found = (\exists k : 0 \le k < N : a[k] = x))} \\ \\
+\begin{PROOF}{breakWithCounter} \\
+\ASSUME{A1} { found = (\exists k : 0 \le k < i : a[k] = x)} \\
+\ASSUME{A2} {i \ge N} \\
+\ASSUME{A3} {0 \le i \le N} \\
+\GOAL {G} { 0 \le i \le N \wedge (found = (\exists k : 0 \le k < N : a[k] = x))} \\
+\begin{BODY}
+\item[1.] \HINT {combine A2 and A3} \\
+\EXPR {i = N}
+\item[2.] \HINT {replace in A1 with N} \\
+\EXPR {found = (\exists k : 0 \le k < N : a[k] = x)}
+\item[3.] \HINT{combine A3 and 2} \\
+\EXPR {0 \le i \le N \wedge (found = (\exists k : 0 \le k < N : a[k] = x))} \\
+\end{BODY}
+\end{PROOF} 
+\vspace {3mm}
+
+\item[2.] \HINT {see subproof breakWithFound} \\
+\EXPR {found \Rightarrow 0 \le i \le N \wedge (found = (\exists k : 0 \le k < i : a[k] = x))} \
+\vspace{3mm}
+\begin{PROOF} {breakWithFound} \\
+\ASSUME{A1} {found = (\exists k : 0 \le k < N : a[k] = x)} \\
+\ASSUME{A2} {found} \\
+\ASSUME{A3} {0 \le i \le N} \\
+\GOAL{G} {0 \le i \le N \wedge (found = (\exists k : 0 \le k < N : a[k] = x))} \\
+\begin{BODY}
+\item[1.] \HINT {substitute found in A1 with A2} \\
+\EXPR {(\exists k : 0 \le k < i : a[k] = x)}
+\item[2.] \HINT {domain expanding} \\
+\EXPR {(\exists k : 0 \le k < i \vee i \le k < N : a[k] = x)}
+\item[3.] \HINT{domain combine} \\
+\EXPR { (\exists k : 0 \le k < N : a[k] = x)}
+\item[4.] \HINT {equality of 3 and A2} \\
+\EXPR {found = (\exists k : 0 \le k < N : a[k] = x))}
+\item[5.] \HINT {combine with A3} \\
+\EXPR {0 \le i \le N \wedge (found = (\exists k : 0 \le k < N : a[k] = x))} \\
+\end{BODY}
+\item[3.] \HINT {see subproof breakWithValue} \\
+\EXPR {a[i] > x \Rightarrow 0 \le i \le N \wedge (found = (\exists k : 0 \le k < N : a[k] = x))} 
+\vspace{3 mm}
+
+\begin{PROOF} {breakWithValue} \\
+\ASSUME {A1} {found = (\exists k : 0 \le k < i : a[k] = x)} \\
+\ASSUME{A2} {a[i] > x} \\
+\ASSUME{A3} {0 \le i \le N} \\
+\ASSUME{A4} {(\forall i : 0 \le i < N : (\forall j : i \le j < N : a[i] \le a[j]))} \\
+\GOAL{G} {0 \le i \le N \wedge (found = (\exists k : 0 \le k < N : a[k] = x))} \\
+\begin{BODY} 
+\item[1.] \HINT {kwantor elimination in A4} [ANY i]\\
+\EXPR {0 \le i < N \Rightarrow (\forall j : i \le j < N : a[i] \le a[j])}
+\item[2.] \HINT {follows from A3 and 1} \\
+\EXPR {(\forall j : i \le j < N : a[i] \le a[j])}
+\item[3.] \HINT {follows from 2 and A2} \\
+\EXPR{\neg (\exists j : i \le j < N : a[j] = x)}
+\item[4.] \HINT {flip domain of 3} \\
+\EXPR{(\exists j : j < i \vee j \ge N : a[j] = x)}
+\item[5.] \HINT {split kwantor from 4} \\
+\EXPR {(\exists j : j < i \vee :a[j] = x) \vee (\exists j : j \ge N : a[j] = x)}
+\item[6.] \HINT {remove second part from 5} \\
+\EXPR { (\exists j :j < i  : a[j] = x)}
+\item[7.] \HINT {follows from equality of 6 and A1} \\
+\EXPR { (found = (\exists k : 0 \le k < i : a[k] = x))}
+\item[8.] \HINT {combine with 7 and A3} \\
+\EXPR {0 \le i \le N \wedge (found = (\exists k : 0 \le k < N : a[k] = x))}
+\end{BODY}
+\end{PROOF}
+\item[4.] \HINT {A3 with 1,2 and 3 will prove G} \\
+\EXPR {0 \le i \le N \wedge (found = (\exists k : 0 \le k < N : a[k] = x))}
+\end{PROOF}
+\end{BODY}
+\end{PROOF}
+\vspace {5mm}
+\noindent \begin{PROOF}{PIC}  \\
+PIC: $\{* I \wedge  g *\} \: S \: \{*I*\}$ \\ 
+\noindent\ASSUME{A1}{found = (\exists k : 0\le k < i : a[k] = x) } \\
+\ASSUME{A2} {0 \le i < N } \\
+\GOAL{G1}{wp \: S \: I} %// note: check if this is the weakest-precondition
+
+\begin{BODY}
+
+\item[1.] \HINT{see calculate wp} 
+	
+	\EXPR{wp \:S \: I = 0 \le i + 1 \le N \wedge ((found \vee a[i]=x) = (\exists k : 0 \le k < i + 1: a[k] =x))} \\
+
+\begin{PROOF}{ calculate wp}\\
+\begin{BODY}
+\item[] \EXPR {wp (found := found \vee a[i] =x; i := i + 1) (0 \le i \le N \wedge (found = (\exists k : 0\le k < i : a[k] = x)))}
+\item[1.] \HINT { wp of statements sequence} \\
+	\EXPR { wp (found := found \vee a[i] =x) (wp (i := i + 1) (0 \le i \le N \wedge (found = (\exists k : 0\le k < i : a[k] = x))) }
+\item[2.] \HINT {wp of assignment} \\
+\EXPR{wp (found := found \vee a[i]=x) (0 \le i + 1 \le N \wedge (found = (\exists k : 0\le k < i + 1 : a[k] = x)))}
+\item[3.] \HINT {wp of assignment} \\
+\EXPR {0 \le i + 1 \le N \wedge ((found \vee a[i] =x) =  (\exists k : 0\le k < i + 1 : a[k] = x)) }
+\end{BODY}
+\end{PROOF}
+
+\item[2] \HINT{see subproof equality} \\
+	\EXPR{\exists k: 0 \le k < i : a[k] =x) \vee (a[i] =x) =  (\exists k : 0\le k \le i +1: a[k] = x)} 
+\vspace{4mm} \\
+\begin{PROOF} {equality}
+\item[] \EXPR {[some \: i]} 
+\item[] \EXPR {[some \: x]} \\
+\ASSUME {A1} {(\exists k : 0\le k < i: a[k] = x) \vee (a[i] = x)} \\
+\GOAL {G} {\exists k : 0\le k < i: a[k] = x) \vee (a[i] = x) = (\exists k : 0\le k < i +1: a[k] = x) } \\
+\begin{BODY}
+\item[] \EXPR {\exists k : 0\le k < i: a[k] = x) \vee (a[i] = x)} 
+\item [1.] \HINT {introduce  $\exists$ -quantor } \\
+\EXPR {(\exists k : 0\le k < i: a[k] = x) = (\exists k : k =i : a[k] = x)}
+\item[2.] \HINT {combine domains} \\
+\EXPR {(\exists k : 0 \le k < i + 1: a[k] = x)}
+\item[3.] \HINT {we have proven equality} \\
+\EXPR  {(\exists k : 0\le k < i: a[k] = x) \vee (a[i] = x) = (\exists k : 0\le k < i +1: a[k] = x) }
+
+\end{BODY}
+\end{PROOF}
+
+\item[3.] \HINT{ reversed substitution of A1 in 2} \\
+	\EXPR{((found \vee a[i] = x) =  (\exists k : 0\le k < i +1: a[k] = x))}
+
+\item[4.] \HINT{rewrite A2} \\
+	\EXPR{ 0 \le i + 1 \le N}
+
+\item[5.] \HINT{combine 3 and 4} \\
+	\EXPR{ 0 \le i + 1 \le N \wedge ((found \vee a[i] = x) =  (\exists k : 0\le k < i +1: a[k] = x) }
+
+\item[6.] \HINT {by equility on 1 and 5 we have proven wp} \\
+\EXPR {wp \:S \:I =  0 \le i + 1 \le N \wedge(( found \vee a[i] = x) =  (\exists k : 0\le k < i +1: a[k] = x)) } \\
+\end{BODY}
+\end{PROOF} 
+
+\end{document}

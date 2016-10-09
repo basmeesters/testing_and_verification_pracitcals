@@ -1,0 +1,16 @@
+
+PROOF simple variant PEC
+A1: (found = (∃k: 0≤k<i : a[k]=x))  // note: from invariant I
+A2: 0 ≤ i ≤ N                       // note: from invariant I
+A3: i ≥ N                           // note: from condition ¬g
+G : (i = N) ⋀ (found = (∃k : 0≤k<N : a[k]=x))
+BEGIN ------------------------------------------
+
+1. { combine A2 and A3 }
+    i = N
+
+2. { from 1 replace i with N in A1 }
+    (found = (∃k: 0≤k<N : a[k]=x))
+
+3. { combine 1 and 2 }    
+    (i = N) ⋀ (found = (∃k: 0≤k<N : a[k]=x))

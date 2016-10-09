@@ -1,0 +1,42 @@
+
+
+
+Mijn naam boven het document zou als volgt geschreven mogen worden:
+Jarno Le Conté 
+(2x hoofdletter in achternaam en streepje op é, als dat lukt)
+
+-----------------------
+
+Beide PIC's:
+
+6. { we have proved wp by equality on 1 and 5 }
+    wp S I = 0≤i+1≤N ⋀ ((found ⋁ a[i]=x) = (∃k: 0≤k<i+1 : a[k]=x))
+
+vervangen met:
+
+6. { by equality on 1 and 5 we have proven wp }
+	wp S I
+
+
+
+-------------------------
+
+In beide PIC's:
+
+In stap 2 heb ik een fout gemaakt in stap 1 van de subproof (introducing E-kwantor).
+Namelijk in de tweede existentiële kwantor daar moet a[i] vervangen worden door a[k].
+Op de overige plekken staat het wel juist!
+
+
+--------------------------
+
+Ik denk dat het nog steeds netjes is om iets over die gesorteerde array te zeggen.
+Ik weet alleen niet hoe we dat moeten formuleren. 't komt er op neer dat:
+
+We nemen aan dat de array gesorteerd is en ongewijzigd blijft 
+bij het uitvoeren van dit programma omdat er geen write-operaties in voorkomen. 
+We laten dit daarom ook buiten het bewijs.
+
+---------------------------
+
+

@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d882431b-9a63-411b-b527-8407b657ca59" name="Bas@BAS-PC 2013-06-27 11:44:36" runUser="Bas-PC\Bas" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="2aa66af6-b3b9-40d6-82a8-b5cc062499d2">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment runDeploymentRoot="Bas_BAS-PC 2013-06-27 11_44_36">
+      <DeploymentItem filename="C:\Users\Bas\Desktop\Softwaretesting\Adresboek\Adresboek\bin\Debug\Adresboek.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+        <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+          <Browser name="Internet Explorer 7.0">
+            <Headers>
+              <Header name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
+              <Header name="Accept" value="*/*" />
+              <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+              <Header name="Accept-Encoding" value="GZIP" />
+            </Headers>
+          </Browser>
+        </WebTestRunConfiguration>
+      </TestTypeSpecific>
+      <AgentRule name="LocalMachineDefaultRole">
+        <DataCollectors>
+          <DataCollector uri="datacollector://microsoft/CodeCoverage/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.CodeCoverage.CoveragePlugIn, Microsoft.VisualStudio.QualityTools.Plugins.CodeCoverage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Code Coverage">
+            <Configuration>
+              <CodeCoverage xmlns="">
+                <Regular>
+                  <CodeCoverageItem binaryFile="C:\Users\Bas\Desktop\Softwaretesting\Adresboek\Adresboek\bin\Debug\Adresboek.exe" pdbFile="C:\Users\Bas\Desktop\Softwaretesting\Adresboek\Adresboek\bin\Debug\Adresboek.instr.pdb" instrumentInPlace="true" />
+                </Regular>
+              </CodeCoverage>
+            </Configuration>
+          </DataCollector>
+        </DataCollectors>
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-27T11:44:36.0322282+02:00" queuing="2013-06-27T11:44:36.9262793+02:00" start="2013-06-27T11:44:37.1172902+02:00" finish="2013-06-27T11:44:59.8735918+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="6" executed="2" error="0" failed="1" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="4" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <ResultFiles>
+      <ResultFile path="BAS-PC\data.coverage" />
+    </ResultFiles>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestSwitchingViews" storage="c:\users\bas\desktop\softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="b0e3743f-f45f-f807-d44f-c69c7a0f26fc">
+      <Execution id="f7a40650-22ee-4a8b-897b-339c545634e8" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestSwitchingViews" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestAddAdressbook" storage="c:\users\bas\desktop\softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="04cdc5c6-7caa-c214-3fde-ec3b17b314d1">
+      <Execution id="9bb05f1f-a88c-44b4-a941-5d47c1fbbcf9" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestAddAdressbook" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestAdressbook" storage="c:\users\bas\desktop\softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="01e9d56f-ff67-457b-95c6-4b556a70f386">
+      <Execution id="ebd4f8b3-b0db-40f2-83d5-d433abca154c" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestAdressbook" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestEmail" storage="c:\users\bas\desktop\softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="ecf14cdf-a816-c9c9-b486-338ae3a984be">
+      <Execution id="174bd2df-edfb-44db-9857-d680a9e6f189" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestEmail" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestRemove" storage="c:\users\bas\desktop\softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="19945944-a8d7-5865-9d24-bb159a9f92f7">
+      <Execution id="5d22912a-5136-434b-9e7c-a3e0241af07c" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestRemove" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestName" storage="c:\users\bas\desktop\softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="ff1d36de-df47-0a9f-9f67-ff714225cbd5">
+      <Execution id="bab37d4c-318f-4c10-b480-96643df1b71f" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestName" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="01e9d56f-ff67-457b-95c6-4b556a70f386" executionId="ebd4f8b3-b0db-40f2-83d5-d433abca154c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="04cdc5c6-7caa-c214-3fde-ec3b17b314d1" executionId="9bb05f1f-a88c-44b4-a941-5d47c1fbbcf9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="19945944-a8d7-5865-9d24-bb159a9f92f7" executionId="5d22912a-5136-434b-9e7c-a3e0241af07c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0e3743f-f45f-f807-d44f-c69c7a0f26fc" executionId="f7a40650-22ee-4a8b-897b-339c545634e8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ecf14cdf-a816-c9c9-b486-338ae3a984be" executionId="174bd2df-edfb-44db-9857-d680a9e6f189" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ff1d36de-df47-0a9f-9f67-ff714225cbd5" executionId="bab37d4c-318f-4c10-b480-96643df1b71f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ebd4f8b3-b0db-40f2-83d5-d433abca154c" testId="01e9d56f-ff67-457b-95c6-4b556a70f386" testName="TestAdressbook" computerName="BAS-PC" duration="00:00:12.5485918" startTime="2013-06-27T11:44:38.7253822+02:00" endTime="2013-06-27T11:44:51.8621336+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ebd4f8b3-b0db-40f2-83d5-d433abca154c">
+      <Output>
+        <DebugTrace>W, 7008, 15, 2013/06/27, 11:44:40.915, 65398655011, QTAgent32.exe, PERF WARNING: CacheQueryId: took 122 ms. Expected it to take maximum 100 ms.
+W, 7008, 15, 2013/06/27, 11:44:41.732, 65399690126, QTAgent32.exe, &lt;a class=success&gt;Playback - {1} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='View'"
+\0&lt;/a&gt;
+W, 7008, 15, 2013/06/27, 11:44:41.999, 65400028407, QTAgent32.exe, Value in en-US resource 'Maximaliseren' does not match the defaultvalue 'Maximize'
+W, 7008, 15, 2013/06/27, 11:44:42.000, 65400029144, QTAgent32.exe, Value in en-US resource 'Vorig formaat' does not match the defaultvalue 'Restore'
+E, 7008, 15, 2013/06/27, 11:44:42.114, 65400174082, QTAgent32.exe, LoadIEStrings() - Could not find ie resource assembly in nl-NL or nl-NL
+E, 7008, 15, 2013/06/27, 11:44:42.118, 65400178547, QTAgent32.exe, LoadLibrary() : Unable to find the resource 803 from assembly C:\Windows\system32\nl-NL\user32.dll.mui: Error1814
+W, 7008, 15, 2013/06/27, 11:44:42.169, 65400243185, QTAgent32.exe, Value in en-US resource 'Windows-beveiliging' does not match the defaultvalue 'Windows Security'
+W, 7008, 15, 2013/06/27, 11:44:43.041, 65401347895, QTAgent32.exe, &lt;a class=success&gt;Playback - {2} [SUCCESS] SetValueAsEditBox "Bas" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7008, 15, 2013/06/27, 11:44:43.554, 65401997614, QTAgent32.exe, &lt;a class=success&gt;Playback - {3} [SUCCESS] SendKeys "{Tab}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7008, 15, 2013/06/27, 11:44:44.683, 65403426941, QTAgent32.exe, &lt;a class=success&gt;Playback - {4} [SUCCESS] SetValueAsEditBox "bas@bas.nl" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7008, 15, 2013/06/27, 11:44:45.792, 65404831168, QTAgent32.exe, &lt;a class=success&gt;Playback - {5} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7008, 15, 2013/06/27, 11:44:46.627, 65405889037, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 697 ms. Expected it to take maximum 500 ms.
+W, 7008, 15, 2013/06/27, 11:44:47.030, 65406399618, QTAgent32.exe, &lt;a class=success&gt;Playback - {6} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Delete Contact'"
+\0&lt;/a&gt;
+W, 7008, 15, 2013/06/27, 11:44:48.440, 65408185050, QTAgent32.exe, &lt;a class=success&gt;Playback - {7} [SUCCESS] SetValueAsEditBox "bas" - "[MSAA, VisibleOnly]ControlType='Edit' &amp;&amp; Name='Adressbook Name: sample'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7008, 15, 2013/06/27, 11:44:49.787, 65409889946, QTAgent32.exe, Playback - [WARNING] Internal warning: Thread state based WFR - Requested element has invalid HWND
+\0
+W, 7008, 15, 2013/06/27, 11:44:49.787, 65409890166, QTAgent32.exe, Playback - [WARNING] Internal warning: process performance counters based WFR - Requested element has invalid HWND
+\0
+W, 7008, 15, 2013/06/27, 11:44:49.787, 65409890339, QTAgent32.exe, Playback - [WARNING] Internal warning: The window that the search started from became invalid
+\0
+W, 7008, 15, 2013/06/27, 11:44:50.287, 65410523157, QTAgent32.exe, Playback - [WARNING] Internal warning: Thread state based WFR - Requested element has invalid HWND
+\0
+W, 7008, 15, 2013/06/27, 11:44:50.287, 65410523389, QTAgent32.exe, Playback - [WARNING] Internal warning: process performance counters based WFR - Requested element has invalid HWND
+\0
+W, 7008, 15, 2013/06/27, 11:44:50.287, 65410523567, QTAgent32.exe, Playback - [WARNING] Internal warning: The window that the search started from became invalid
+\0
+W, 7008, 15, 2013/06/27, 11:44:50.787, 65411156418, QTAgent32.exe, Playback - [WARNING] Internal warning: Thread state based WFR - Requested element has invalid HWND
+\0
+W, 7008, 15, 2013/06/27, 11:44:50.787, 65411156643, QTAgent32.exe, Playback - [WARNING] Internal warning: process performance counters based WFR - Requested element has invalid HWND
+\0
+W, 7008, 15, 2013/06/27, 11:44:50.787, 65411156816, QTAgent32.exe, Playback - [WARNING] Internal warning: The window that the search started from became invalid
+\0
+W, 7008, 15, 2013/06/27, 11:44:51.287, 65411789643, QTAgent32.exe, Playback - [WARNING] Internal warning: Thread state based WFR - Requested element has invalid HWND
+\0
+W, 7008, 15, 2013/06/27, 11:44:51.287, 65411789882, QTAgent32.exe, Playback - [WARNING] Internal warning: process performance counters based WFR - Requested element has invalid HWND
+\0
+W, 7008, 15, 2013/06/27, 11:44:51.287, 65411790055, QTAgent32.exe, Playback - [WARNING] Internal warning:Search failure: [MSAA, VisibleOnly]ControlType='Client' &amp;&amp; Name='Adressbook manager' | Performed (4) search retries, UI element not found
+\0
+E, 7008, 15, 2013/06/27, 11:44:51.288, 65411790394, QTAgent32.exe, &lt;a class=failure&gt;Playback - {8} [FAILED] Function ElementFetcher::FindScreenElement failed to locate UI element (Searching: ;[MSAA, VisibleOnly]ControlType='Client' &amp;&amp; Name='Adressbook manager';[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Search') (Het opgegeven object is niet gevonden.)
+\0&lt;/a&gt;
+E, 7008, 15, 2013/06/27, 11:44:51.441, 65411985075, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPF63F0.png
+\0
+W, 7008, 15, 2013/06/27, 11:44:51.442, 65411985479, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't find descendants that match QueryId
+\0
+W, 7008, 15, 2013/06/27, 11:44:51.442, 65411985985, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 2869 ms. Expected it to take maximum 500 ms.
+E, 7008, 15, 2013/06/27, 11:44:51.654, 65412254641, QTAgent32.exe, AL: Playback Error: Microsoft.VisualStudio.TestTools.UITest.Extension.UITestControlNotFoundException: The playback failed to find the control with the given search properties. Additional Details: 
+TechnologyName:  'MSAA'
+ControlType:  'Button'
+Name:  'Search'
+ ---&gt; System.Runtime.InteropServices.COMException: Error HRESULT E_FAIL has been returned from a call to a COM component.
+   at Microsoft.VisualStudio.TestTools.UITest.Playback.Engine.IScreenElement.FindAllDescendants(String bstrQueryId, Object&amp; pvarResKeys, Int32 cResKeys, Int32 nMaxDepth)
+   at Microsoft.VisualStudio.TestTools.UITest.Playback.ScreenElement.FindAllScreenElement(String queryId, Int32 depth, Boolean singleQueryId, Boolean throwException)
+   at Microsoft.VisualStudio.TestTools.UITest.Playback.ScreenElement.FindScreenElement(String queryId, Int32 depth)
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FindFirstDescendant(String queryId, Int32 maxDepth, Int32&amp; timeLeft)
+   --- End of inner exception stack trace ---
+   at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapControlNotFoundException(COMException ex, IPlaybackContext context)
+   at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapAndThrowComException(COMException innerException, IPlaybackContext context)
+   at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapAndThrowException(SystemException exception, IPlaybackContext context)
+   at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapAndThrowException(SystemException exception, String queryId)
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FindFirstDescendant(String queryId, Int32 maxDepth, Int32&amp; timeLeft)
+   at Microsoft.VisualStudio.TestTools.UITesting.SearchHelper.GetElement(Boolean useCache, ISearchArgument searchArg)
+   at Microsoft.VisualStudio.TestTools.UITesting.SearchHelper.Search(ISearchArgument searchArg)
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FindInternal()
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FindControlIfNecessary()
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Click(MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinates)
+   at Microsoft.VisualStudio.TestTools.UITesting.Mouse.ClickImplementation(UITestControl control, MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinate)
+   at Microsoft.VisualStudio.TestTools.UITesting.Mouse.ClickImplementationWrapper(UITestControl control, MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinate)
+W, 7008, 15, 2013/06/27, 11:44:51.830, 65412477615, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 7008, 15, 2013/06/27, 11:44:51.830, 65412477839, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method AdresboekTest.RecordAndReplay.TestAdressbook threw exception: 
+Microsoft.VisualStudio.TestTools.UITest.Extension.UITestControlNotFoundException: The playback failed to find the control with the given search properties. Additional Details: 
+TechnologyName:  'MSAA'
+ControlType:  'Button'
+Name:  'Search'
+ ---&gt; System.Runtime.InteropServices.COMException: Error HRESULT E_FAIL has been returned from a call to a COM component.</Message>
+          <StackTrace>    at Microsoft.VisualStudio.TestTools.UITest.Playback.Engine.IScreenElement.FindAllDescendants(String bstrQueryId, Object&amp; pvarResKeys, Int32 cResKeys, Int32 nMaxDepth)
+   at Microsoft.VisualStudio.TestTools.UITest.Playback.ScreenElement.FindAllScreenElement(String queryId, Int32 depth, Boolean singleQueryId, Boolean throwException)
+   at Microsoft.VisualStudio.TestTools.UITest.Playback.ScreenElement.FindScreenElement(String queryId, Int32 depth)
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FindFirstDescendant(String queryId, Int32 maxDepth, Int32&amp; timeLeft)
+ --- End of inner exception stack trace ---
+    at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapControlNotFoundException(COMException ex, IPlaybackContext context)
+   at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapAndThrowComException(COMException innerException, IPlaybackContext context)
+   at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapAndThrowException(SystemException exception, IPlaybackContext context)
+   at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapAndThrowException(SystemException exception, String queryId)
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FindFirstDescendant(String queryId, Int32 maxDepth, Int32&amp; timeLeft)
+   at Microsoft.VisualStudio.TestTools.UITesting.SearchHelper.GetElement(Boolean useCache, ISearchArgument searchArg)
+   at Microsoft.VisualStudio.TestTools.UITesting.SearchHelper.Search(ISearchArgument searchArg)
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FindInternal()
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FindControlIfNecessary()
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Click(MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinates)
+   at Microsoft.VisualStudio.TestTools.UITesting.Mouse.ClickImplementation(UITestControl control, MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinate)
+   at Microsoft.VisualStudio.TestTools.UITesting.Mouse.ClickImplementationWrapper(UITestControl control, MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinate)
+   at Microsoft.VisualStudio.TestTools.UITesting.Mouse.Click(UITestControl control, Point relativeCoordinate)
+   at AdresboekTest.UIMap.SearchClear() in C:\Users\Bas\Desktop\Softwaretesting\Adresboek\AdresboekTest\UIMap.Designer.cs:line 315
+   at AdresboekTest.RecordAndReplay.TestAdressbook() in C:\Users\Bas\Desktop\Softwaretesting\Adresboek\AdresboekTest\RecordAndReplay.cs:line 98
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="BAS-PC\TestAdressbook.png" />
+      </ResultFiles>
+      <ExtensionResult>Exception has been thrown by the target of an invocation.</ExtensionResult>
+    </UnitTestResult>
+    <UnitTestResult executionId="9bb05f1f-a88c-44b4-a941-5d47c1fbbcf9" testId="04cdc5c6-7caa-c214-3fde-ec3b17b314d1" testName="TestAddAdressbook" computerName="BAS-PC" duration="00:00:05.8823364" startTime="2013-06-27T11:44:51.8981357+02:00" endTime="2013-06-27T11:44:57.7804721+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9bb05f1f-a88c-44b4-a941-5d47c1fbbcf9">
+      <Output>
+        <DebugTrace>W, 7008, 24, 2013/06/27, 11:44:52.540, 65413376803, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+W, 7008, 24, 2013/06/27, 11:44:53.629, 65414755260, QTAgent32.exe, Playback - [WARNING] Internal warning:Search failure: [MSAA, VisibleOnly]ControlType='MenuBar' | [MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks' | Performed (2) search retries, UI element not found
+\0
+E, 7008, 24, 2013/06/27, 11:44:53.629, 65414755728, QTAgent32.exe, &lt;a class=failure&gt;Playback - {1} [FAILED] Function ElementFetcher::FindScreenElement failed to locate UI element (Searching: ;[MSAA, VisibleOnly]ControlType='MenuBar';[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks';[MSAA]ControlType='MenuItem' &amp;&amp; Name='Add Adressbook') (Het opgegeven object is niet gevonden.)
+\0&lt;/a&gt;
+E, 7008, 24, 2013/06/27, 11:44:53.776, 65414942306, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPF6D15.png
+\0
+W, 7008, 24, 2013/06/27, 11:44:53.777, 65414942604, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't find descendants that match QueryId
+\0
+W, 7008, 24, 2013/06/27, 11:44:53.777, 65414943006, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 1205 ms. Expected it to take maximum 500 ms.
+W, 7008, 24, 2013/06/27, 11:44:53.777, 65414943311, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+E, 7008, 24, 2013/06/27, 11:44:53.809, 65414984004, QTAgent32.exe, GetClassName for handle 3212808 failed
+E, 7008, 24, 2013/06/27, 11:44:53.811, 65414985809, QTAgent32.exe, GetClassName for handle 3212808 failed
+W, 7008, 24, 2013/06/27, 11:44:53.837, 65415018771, QTAgent32.exe, Msaa:WindowHandleGetter: Using WindowFromPoint since WindowFromAccessibleObject returned invalid handle [3212808]
+E, 7008, 24, 2013/06/27, 11:44:53.844, 65415027577, QTAgent32.exe, Exception: System.Runtime.InteropServices.COMException
+	Message: De RPC-server is niet beschikbaar. (Exception from HRESULT: 0x800706BA)
+	Stack Trace:    at Accessibility.IAccessible.accLocation(Int32&amp; pxLeft, Int32&amp; pyTop, Int32&amp; pcxWidth, Int32&amp; pcyHeight, Object varChild)
+   at Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.AccWrapper.GetBoundingRectangle()
+	BaseExceptionMessage: De RPC-server is niet beschikbaar. (Exception from HRESULT: 0x800706BA)
+
+E, 7008, 24, 2013/06/27, 11:44:53.845, 65415028769, QTAgent32.exe, Msaa:WindowHandleGetter: Got invalid window handle [0] even after using WindowFromPoint
+E, 7008, 24, 2013/06/27, 11:44:53.845, 65415029702, QTAgent32.exe, Exception: System.Runtime.InteropServices.COMException
+	Message: De RPC-server is niet beschikbaar. (Exception from HRESULT: 0x800706BA)
+	Stack Trace:    at Accessibility.IAccessible.get_accRole(Object varChild)
+   at Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.AccWrapper.get_RoleInt()
+	BaseExceptionMessage: De RPC-server is niet beschikbaar. (Exception from HRESULT: 0x800706BA)
+
+W, 7008, 24, 2013/06/27, 11:44:53.847, 65415031339, QTAgent32.exe, Msaa.GetProcessID: Window handle is IntPtr.Zero. Process ID will be 0
+W, 7008, 24, 2013/06/27, 11:44:53.849, 65415033938, QTAgent32.exe, Playback - [WARNING] Internal warning: Thread state based WFR - Requested element has invalid HWND
+\0
+W, 7008, 24, 2013/06/27, 11:44:53.849, 65415034140, QTAgent32.exe, Playback - [WARNING] Internal warning: process performance counters based WFR - Requested element has invalid HWND
+\0
+W, 7008, 24, 2013/06/27, 11:44:54.349, 65415667756, QTAgent32.exe, Playback - [WARNING] Internal warning: Target element "[MSAA, VisibleOnly]ControlType='MenuBar'" was not found, so all intermediate elements were ignored. An incorrect element that matches target element Id can be found as the result.  Verify that all intermediate elements in QueryId have valid and unique Ids
+\0
+W, 7008, 24, 2013/06/27, 11:44:54.849, 65416300649, QTAgent32.exe, Playback - [WARNING] Internal warning: Thread state based WFR - Requested element has invalid HWND
+\0
+W, 7008, 24, 2013/06/27, 11:44:54.849, 65416300872, QTAgent32.exe, Playback - [WARNING] Internal warning: process performance counters based WFR - Requested element has invalid HWND
+\0
+W, 7008, 24, 2013/06/27, 11:44:55.850, 65417568461, QTAgent32.exe, Playback - [WARNING] Internal warning: Thread state based WFR - Requested element has invalid HWND
+\0
+W, 7008, 24, 2013/06/27, 11:44:55.850, 65417568710, QTAgent32.exe, Playback - [WARNING] Internal warning: process performance counters based WFR - Requested element has invalid HWND
+\0
+W, 7008, 24, 2013/06/27, 11:44:55.850, 65417569045, QTAgent32.exe, Playback - [WARNING] Internal warning:Search failure: [MSAA, VisibleOnly]ControlType='MenuBar' | Performed (2) search retries, UI element not found
+\0
+E, 7008, 24, 2013/06/27, 11:44:55.851, 65417569368, QTAgent32.exe, &lt;a class=failure&gt;Playback - {2} [FAILED] Function ElementFetcher::FindScreenElement failed to locate UI element (Searching: ;[MSAA, VisibleOnly]ControlType='MenuBar') (Het opgegeven object is niet gevonden.)
+\0&lt;/a&gt;
+E, 7008, 24, 2013/06/27, 11:44:55.986, 65417740301, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPF75CD.png
+\0
+W, 7008, 24, 2013/06/27, 11:44:55.986, 65417740602, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't find descendants that match QueryId
+\0
+W, 7008, 24, 2013/06/27, 11:44:55.986, 65417741050, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 2138 ms. Expected it to take maximum 500 ms.
+W, 7008, 24, 2013/06/27, 11:44:55.987, 65417742571, QTAgent32.exe, Msaa:WindowHandleGetter: Using WindowFromPoint since WindowFromAccessibleObject returned invalid handle [3212808]
+E, 7008, 24, 2013/06/27, 11:44:55.988, 65417743326, QTAgent32.exe, Exception: System.Runtime.InteropServices.COMException
+	Message: De RPC-server is niet beschikbaar. (Exception from HRESULT: 0x800706BA)
+	Stack Trace:    at Accessibility.IAccessible.accLocation(Int32&amp; pxLeft, Int32&amp; pyTop, Int32&amp; pcxWidth, Int32&amp; pcyHeight, Object varChild)
+   at Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.AccWrapper.GetBoundingRectangle()
+	BaseExceptionMessage: De RPC-server is niet beschikbaar. (Exception from HRESULT: 0x800706BA)
+
+E, 7008, 24, 2013/06/27, 11:44:55.988, 65417743544, QTAgent32.exe, Msaa:WindowHandleGetter: Got invalid window handle [0] even after using WindowFromPoint
+E, 7008, 24, 2013/06/27, 11:44:55.989, 65417744171, QTAgent32.exe, Exception: System.Runtime.InteropServices.COMException
+	Message: De RPC-server is niet beschikbaar. (Exception from HRESULT: 0x800706BA)
+	Stack Trace:    at Accessibility.IAccessible.get_accRole(Object varChild)
+   at Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.AccWrapper.get_RoleInt()
+	BaseExceptionMessage: De RPC-server is niet beschikbaar. (Exception from HRESULT: 0x800706BA)
+
+W, 7008, 24, 2013/06/27, 11:44:55.989, 65417744325, QTAgent32.exe, Msaa.GetProcessID: Window handle is IntPtr.Zero. Process ID will be 0
+W, 7008, 24, 2013/06/27, 11:44:55.990, 65417746397, QTAgent32.exe, Msaa:WindowHandleGetter: Using WindowFromPoint since WindowFromAccessibleObject returned invalid handle [3212808]
+E, 7008, 24, 2013/06/27, 11:44:55.991, 65417747039, QTAgent32.exe, Exception: System.Runtime.InteropServices.COMException
+	Message: De RPC-server is niet beschikbaar. (Exception from HRESULT: 0x800706BA)
+	Stack Trace:    at Accessibility.IAccessible.accLocation(Int32&amp; pxLeft, Int32&amp; pyTop, Int32&amp; pcxWidth, Int32&amp; pcyHeight, Object varChild)
+   at Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.AccWrapper.GetBoundingRectangle()
+	BaseExceptionMessage: De RPC-server is niet beschikbaar. (Exception from HRESULT: 0x800706BA)
+
+E, 7008, 24, 2013/06/27, 11:44:55.991, 65417747250, QTAgent32.exe, Msaa:WindowHandleGetter: Got invalid window handle [0] even after using WindowFromPoint
+E, 7008, 24, 2013/06/27, 11:44:55.992, 65417747848, QTAgent32.exe, Exception: System.Runtime.InteropServices.COMException
+	Message: De RPC-server is niet beschikbaar. (Exception from HRESULT: 0x800706BA)
+	Stack Trace:    at Accessibility.IAccessible.get_accRole(Object varChild)
+   at Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.AccWrapper.get_RoleInt()
+	BaseExceptionMessage: De RPC-server is niet beschikbaar. (Exception from HRESULT: 0x800706BA)
+
+W, 7008, 24, 2013/06/27, 11:44:55.992, 65417747992, QTAgent32.exe, Msaa.GetProcessID: Window handle is IntPtr.Zero. Process ID will be 0
+W, 7008, 24, 2013/06/27, 11:44:55.993, 65417749963, QTAgent32.exe, Playback - [WARNING] Internal warning: Thread state based WFR - Requested element has invalid HWND
+\0
+W, 7008, 24, 2013/06/27, 11:44:55.993, 65417750136, QTAgent32.exe, Playback - [WARNING] Internal warning: process performance counters based WFR - Requested element has invalid HWND
+\0
+W, 7008, 24, 2013/06/27, 11:44:57.494, 65419651027, QTAgent32.exe, Playback - [WARNING] Internal warning: Element "[MSAA, VisibleOnly]ControlType='MenuBar'" was not found, so all intermediate elements were ignored. To improve performance replace this element Id with another Id or exclude it from QueryId. If this element is the target element, replace or remove intermediate elements
+\0
+</DebugTrace>
+        <ErrorInfo>
+          <Message>User aborted test run.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="BAS-PC\TestAddAdressbook.png" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="5d22912a-5136-434b-9e7c-a3e0241af07c" testId="19945944-a8d7-5865-9d24-bb159a9f92f7" testName="TestRemove" computerName="BAS-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5d22912a-5136-434b-9e7c-a3e0241af07c">
+    </UnitTestResult>
+    <UnitTestResult executionId="f7a40650-22ee-4a8b-897b-339c545634e8" testId="b0e3743f-f45f-f807-d44f-c69c7a0f26fc" testName="TestSwitchingViews" computerName="BAS-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7a40650-22ee-4a8b-897b-339c545634e8">
+    </UnitTestResult>
+    <UnitTestResult executionId="174bd2df-edfb-44db-9857-d680a9e6f189" testId="ecf14cdf-a816-c9c9-b486-338ae3a984be" testName="TestEmail" computerName="BAS-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="174bd2df-edfb-44db-9857-d680a9e6f189">
+    </UnitTestResult>
+    <UnitTestResult executionId="bab37d4c-318f-4c10-b480-96643df1b71f" testId="ff1d36de-df47-0a9f-9f67-ff714225cbd5" testName="TestName" computerName="BAS-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bab37d4c-318f-4c10-b480-96643df1b71f">
+    </UnitTestResult>
+  </Results>
+</TestRun>

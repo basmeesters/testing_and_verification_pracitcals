@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="788ed6a0-117e-4d2d-8948-6458c4e60d7f" name="Bas@BAS-PC 2013-06-27 11:41:16" runUser="Bas-PC\Bas" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="2aa66af6-b3b9-40d6-82a8-b5cc062499d2">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment runDeploymentRoot="Bas_BAS-PC 2013-06-27 11_41_16">
+      <DeploymentItem filename="C:\Users\Bas\Desktop\Softwaretesting\Adresboek\Adresboek\bin\Debug\Adresboek.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+        <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+          <Browser name="Internet Explorer 7.0">
+            <Headers>
+              <Header name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
+              <Header name="Accept" value="*/*" />
+              <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+              <Header name="Accept-Encoding" value="GZIP" />
+            </Headers>
+          </Browser>
+        </WebTestRunConfiguration>
+      </TestTypeSpecific>
+      <AgentRule name="LocalMachineDefaultRole">
+        <DataCollectors>
+          <DataCollector uri="datacollector://microsoft/CodeCoverage/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.CodeCoverage.CoveragePlugIn, Microsoft.VisualStudio.QualityTools.Plugins.CodeCoverage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Code Coverage">
+            <Configuration>
+              <CodeCoverage xmlns="">
+                <Regular>
+                  <CodeCoverageItem binaryFile="C:\Users\Bas\Desktop\Softwaretesting\Adresboek\Adresboek\bin\Debug\Adresboek.exe" pdbFile="C:\Users\Bas\Desktop\Softwaretesting\Adresboek\Adresboek\bin\Debug\Adresboek.instr.pdb" instrumentInPlace="true" />
+                </Regular>
+              </CodeCoverage>
+            </Configuration>
+          </DataCollector>
+        </DataCollectors>
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-27T11:41:16.4148107+02:00" queuing="2013-06-27T11:41:24.4412698+02:00" start="2013-06-27T11:41:24.8262918+02:00" finish="2013-06-27T11:42:11.2199454+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="6" executed="2" error="0" failed="1" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="4" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <ResultFiles>
+      <ResultFile path="BAS-PC\data.coverage" />
+    </ResultFiles>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestSwitchingViews" storage="c:\users\bas\desktop\softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="b0e3743f-f45f-f807-d44f-c69c7a0f26fc">
+      <Execution id="d7b2d80e-02a2-45a0-b301-651baf4441ae" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestSwitchingViews" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestAddAdressbook" storage="c:\users\bas\desktop\softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="04cdc5c6-7caa-c214-3fde-ec3b17b314d1">
+      <Execution id="5f5f3590-5ec3-4868-b7f5-74960fdd059d" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestAddAdressbook" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestAdressbook" storage="c:\users\bas\desktop\softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="01e9d56f-ff67-457b-95c6-4b556a70f386">
+      <Execution id="a76341c2-cbda-48ae-8d68-a7f3e3959c1a" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestAdressbook" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestEmail" storage="c:\users\bas\desktop\softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="ecf14cdf-a816-c9c9-b486-338ae3a984be">
+      <Execution id="66f0b908-9aa3-4de1-9958-26ebb02d8e56" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestEmail" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestRemove" storage="c:\users\bas\desktop\softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="19945944-a8d7-5865-9d24-bb159a9f92f7">
+      <Execution id="3b67fc80-9054-45fa-848a-c2ed5f35b0ae" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestRemove" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestName" storage="c:\users\bas\desktop\softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="ff1d36de-df47-0a9f-9f67-ff714225cbd5">
+      <Execution id="98595c73-195c-4798-bee9-f46f64d6bc20" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestName" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="01e9d56f-ff67-457b-95c6-4b556a70f386" executionId="a76341c2-cbda-48ae-8d68-a7f3e3959c1a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="04cdc5c6-7caa-c214-3fde-ec3b17b314d1" executionId="5f5f3590-5ec3-4868-b7f5-74960fdd059d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="19945944-a8d7-5865-9d24-bb159a9f92f7" executionId="3b67fc80-9054-45fa-848a-c2ed5f35b0ae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0e3743f-f45f-f807-d44f-c69c7a0f26fc" executionId="d7b2d80e-02a2-45a0-b301-651baf4441ae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ecf14cdf-a816-c9c9-b486-338ae3a984be" executionId="66f0b908-9aa3-4de1-9958-26ebb02d8e56" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ff1d36de-df47-0a9f-9f67-ff714225cbd5" executionId="98595c73-195c-4798-bee9-f46f64d6bc20" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a76341c2-cbda-48ae-8d68-a7f3e3959c1a" testId="01e9d56f-ff67-457b-95c6-4b556a70f386" testName="TestAdressbook" computerName="BAS-PC" duration="00:00:27.9775787" startTime="2013-06-27T11:41:28.7755177+02:00" endTime="2013-06-27T11:41:57.9021837+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a76341c2-cbda-48ae-8d68-a7f3e3959c1a">
+      <Output>
+        <DebugTrace>W, 6228, 15, 2013/06/27, 11:41:32.888, 65160540635, QTAgent32.exe, Playback - [WARNING] Internal warning: Window Not Found: [VisibleOnly]ControlType='Window' &amp;&amp; Name='Adressbook manager' &amp;&amp; ClassName=&gt;'WindowsForms10.Window'
+\0
+E, 6228, 15, 2013/06/27, 11:41:32.949, 65160618394, QTAgent32.exe, &lt;a class=failure&gt;Playback - {1} [FAILED] Function ElementFetcher::FindScreenElement failed to locate UI element (Searching: ;[VisibleOnly]ControlType='Window' &amp;&amp; Name='Adressbook manager' &amp;&amp; ClassName=&gt;'WindowsForms10.Window') (Het opgegeven object is niet gevonden.)
+\0&lt;/a&gt;
+E, 6228, 15, 2013/06/27, 11:41:33.162, 65160887929, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPF5D3C.png
+\0
+W, 6228, 15, 2013/06/27, 11:41:33.162, 65160888284, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't find descendants that match QueryId
+\0
+W, 6228, 15, 2013/06/27, 11:41:33.172, 65160900540, QTAgent32.exe, PERF WARNING: FindTopLevelWindowHelper::FindAllDescendents: took 1282 ms. Expected it to take maximum 500 ms.
+W, 6228, 15, 2013/06/27, 11:41:51.240, 65183782039, QTAgent32.exe, Playback - [WARNING] Internal warning: Window Not Found: [VisibleOnly]ControlType='Window' &amp;&amp; Name='Adressbook manager' &amp;&amp; ClassName=&gt;'WindowsForms10.Window'
+\0
+E, 6228, 15, 2013/06/27, 11:41:51.241, 65183782997, QTAgent32.exe, &lt;a class=failure&gt;Playback - {2} [FAILED] Function ElementFetcher::FindScreenElement failed to locate UI element (Searching: ;[VisibleOnly]ControlType='Window' &amp;&amp; Name='Adressbook manager' &amp;&amp; ClassName=&gt;'WindowsForms10.Window') (Het opgegeven object is niet gevonden.)
+\0&lt;/a&gt;
+E, 6228, 15, 2013/06/27, 11:41:51.372, 65183949219, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPFA4A8.png
+\0
+W, 6228, 15, 2013/06/27, 11:41:51.373, 65183949548, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't find descendants that match QueryId
+\0
+W, 6228, 15, 2013/06/27, 11:41:51.373, 65183950084, QTAgent32.exe, PERF WARNING: FindTopLevelWindowHelper::FindAllDescendents: took 18185 ms. Expected it to take maximum 500 ms.
+W, 6228, 15, 2013/06/27, 11:41:52.074, 65184838100, QTAgent32.exe, Playback - [WARNING] Internal warning: Smart Match failed
+\0
+W, 6228, 15, 2013/06/27, 11:41:52.759, 65185704712, QTAgent32.exe, Playback - [WARNING] Internal warning: Smart Match failed
+\0
+W, 6228, 15, 2013/06/27, 11:41:53.291, 65186379256, QTAgent32.exe, Playback - [WARNING] Internal warning: Smart Match failed
+\0
+W, 6228, 15, 2013/06/27, 11:41:53.827, 65187058396, QTAgent32.exe, Playback - [WARNING] Internal warning: Smart Match failed
+\0
+W, 6228, 15, 2013/06/27, 11:41:54.350, 65187720371, QTAgent32.exe, Playback - [WARNING] Internal warning: Smart Match failed
+\0
+W, 6228, 15, 2013/06/27, 11:41:54.748, 65188223234, QTAgent32.exe, Playback - [WARNING] Internal warning: Window Not Found: [VisibleOnly]ControlType='Window' &amp;&amp; Name='Adressbook manager' &amp;&amp; ClassName=&gt;'WindowsForms10.Window'
+\0
+E, 6228, 15, 2013/06/27, 11:41:54.748, 65188223653, QTAgent32.exe, &lt;a class=failure&gt;Playback - {3} [FAILED] Function ElementFetcher::FindScreenElement failed to locate UI element (Searching: ;[VisibleOnly]ControlType='Window' &amp;&amp; Name='Adressbook manager' &amp;&amp; ClassName=&gt;'WindowsForms10.Window') (Het opgegeven object is niet gevonden.)
+\0&lt;/a&gt;
+E, 6228, 15, 2013/06/27, 11:41:54.874, 65188382001, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPFB25F.png
+\0
+W, 6228, 15, 2013/06/27, 11:41:54.874, 65188382351, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't find descendants that match QueryId
+\0
+W, 6228, 15, 2013/06/27, 11:41:54.874, 65188382785, QTAgent32.exe, PERF WARNING: FindTopLevelWindowHelper::FindAllDescendents: took 3499 ms. Expected it to take maximum 500 ms.
+E, 6228, 15, 2013/06/27, 11:41:54.876, 65188385400, QTAgent32.exe, Exception: System.Runtime.InteropServices.COMException
+	Message: Error HRESULT E_FAIL has been returned from a call to a COM component.
+	Stack Trace:    at Microsoft.VisualStudio.TestTools.UITest.Playback.Engine.IRPFPlayback.FindAllScreenElements(IScreenElement pScreenElementStart, String bstrQueryId, Object&amp; pvarResKeys, Int32 cResKeys, Int32 nMaxDepth, Object[]&amp; foundDescendants)
+   at Microsoft.VisualStudio.TestTools.UITest.Playback.ScreenElement.FindTopLevelWindowHelper(String queryId)
+	BaseExceptionMessage: Error HRESULT E_FAIL has been returned from a call to a COM component.
+
+E, 6228, 15, 2013/06/27, 11:41:55.452, 65189114271, QTAgent32.exe, AL: Playback Error: Microsoft.VisualStudio.TestTools.UITest.Extension.UITestControlNotFoundException: The playback failed to find the control with the given search properties. Additional Details: 
+TechnologyName:  'MSAA'
+ControlType:  'Window'
+Name:  'Adressbook manager'
+ClassName:  'WindowsForms10.Window'
+ ---&gt; System.Runtime.InteropServices.COMException: Error HRESULT E_FAIL has been returned from a call to a COM component.
+   at Microsoft.VisualStudio.TestTools.UITest.Playback.Engine.IRPFPlayback.FindAllScreenElements(IScreenElement pScreenElementStart, String bstrQueryId, Object&amp; pvarResKeys, Int32 cResKeys, Int32 nMaxDepth, Object[]&amp; foundDescendants)
+   at Microsoft.VisualStudio.TestTools.UITest.Playback.ScreenElement.FindTopLevelWindowHelper(String queryId)
+   at Microsoft.VisualStudio.TestTools.UITest.Playback.ScreenElement.FindFromPartialQueryId(String queryId)
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl..ctor(String queryId)
+   --- End of inner exception stack trace ---
+   at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapControlNotFoundException(COMException ex, IPlaybackContext context)
+   at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapAndThrowComException(COMException innerException, IPlaybackContext context)
+   at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapAndThrowException(SystemException exception, IPlaybackContext context)
+   at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapAndThrowException(SystemException exception, String queryId)
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl..ctor(String queryId)
+   at Microsoft.VisualStudio.TestTools.UITesting.SearchHelper.SearchTopLevelWindow(ISearchArgument topLevelSearchArg, String topLevelElementQueryId)
+   at Microsoft.VisualStudio.TestTools.UITesting.SearchHelper.GetTitleUpdatedTopLevelWindow(ISearchArgument topLevelSearchArg, String queryId, IList`1 windowTitles)
+   at Microsoft.VisualStudio.TestTools.UITesting.SearchHelper.GetTopLevelElement(Boolean useCache, Boolean useCacheOnly, ISearchArgument searchArg, IList`1 windowTitles, Int32&amp; timeLeft)
+   at Microsoft.VisualStudio.TestTools.UITesting.SearchHelper.GetElement(Boolean useCache, ISearchArgument searchArg)
+   at Microsoft.VisualStudio.TestTools.UITesting.SearchHelper.Search(ISearchArgument searchArg)
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FindInternal()
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FindControlIfNecessary()
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Click(MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinates)
+   at Microsoft.VisualStudio.TestTools.UITesting.Mouse.ClickImplementation(UITestControl control, MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinate)
+   at Microsoft.VisualStudio.TestTools.UITesting.Mouse.ClickImplementationWrapper(UITestControl control, MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinate)
+W, 6228, 15, 2013/06/27, 11:41:57.828, 65192123476, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 6228, 15, 2013/06/27, 11:41:57.828, 65192123716, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method AdresboekTest.RecordAndReplay.TestAdressbook threw exception: 
+Microsoft.VisualStudio.TestTools.UITest.Extension.UITestControlNotFoundException: The playback failed to find the control with the given search properties. Additional Details: 
+TechnologyName:  'MSAA'
+ControlType:  'Window'
+Name:  'Adressbook manager'
+ClassName:  'WindowsForms10.Window'
+ ---&gt; System.Runtime.InteropServices.COMException: Error HRESULT E_FAIL has been returned from a call to a COM component.</Message>
+          <StackTrace>    at Microsoft.VisualStudio.TestTools.UITest.Playback.Engine.IRPFPlayback.FindAllScreenElements(IScreenElement pScreenElementStart, String bstrQueryId, Object&amp; pvarResKeys, Int32 cResKeys, Int32 nMaxDepth, Object[]&amp; foundDescendants)
+   at Microsoft.VisualStudio.TestTools.UITest.Playback.ScreenElement.FindTopLevelWindowHelper(String queryId)
+   at Microsoft.VisualStudio.TestTools.UITest.Playback.ScreenElement.FindFromPartialQueryId(String queryId)
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl..ctor(String queryId)
+ --- End of inner exception stack trace ---
+    at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapControlNotFoundException(COMException ex, IPlaybackContext context)
+   at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapAndThrowComException(COMException innerException, IPlaybackContext context)
+   at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapAndThrowException(SystemException exception, IPlaybackContext context)
+   at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapAndThrowException(SystemException exception, String queryId)
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl..ctor(String queryId)
+   at Microsoft.VisualStudio.TestTools.UITesting.SearchHelper.SearchTopLevelWindow(ISearchArgument topLevelSearchArg, String topLevelElementQueryId)
+   at Microsoft.VisualStudio.TestTools.UITesting.SearchHelper.GetTitleUpdatedTopLevelWindow(ISearchArgument topLevelSearchArg, String queryId, IList`1 windowTitles)
+   at Microsoft.VisualStudio.TestTools.UITesting.SearchHelper.GetTopLevelElement(Boolean useCache, Boolean useCacheOnly, ISearchArgument searchArg, IList`1 windowTitles, Int32&amp; timeLeft)
+   at Microsoft.VisualStudio.TestTools.UITesting.SearchHelper.GetElement(Boolean useCache, ISearchArgument searchArg)
+   at Microsoft.VisualStudio.TestTools.UITesting.SearchHelper.Search(ISearchArgument searchArg)
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FindInternal()
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FindControlIfNecessary()
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Click(MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinates)
+   at Microsoft.VisualStudio.TestTools.UITesting.Mouse.ClickImplementation(UITestControl control, MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinate)
+   at Microsoft.VisualStudio.TestTools.UITesting.Mouse.ClickImplementationWrapper(UITestControl control, MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinate)
+   at Microsoft.VisualStudio.TestTools.UITesting.Mouse.Click(UITestControl control, Point relativeCoordinate)
+   at AdresboekTest.UIMap.ViewAdressbook1() in C:\Users\Bas\Desktop\Softwaretesting\Adresboek\AdresboekTest\UIMap.Designer.cs:line 42
+   at AdresboekTest.RecordAndReplay.TestAdressbook() in C:\Users\Bas\Desktop\Softwaretesting\Adresboek\AdresboekTest\RecordAndReplay.cs:line 91
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="BAS-PC\TestAdressbook.png" />
+      </ResultFiles>
+      <ExtensionResult>Exception has been thrown by the target of an invocation.</ExtensionResult>
+    </UnitTestResult>
+    <UnitTestResult executionId="5f5f3590-5ec3-4868-b7f5-74960fdd059d" testId="04cdc5c6-7caa-c214-3fde-ec3b17b314d1" testName="TestAddAdressbook" computerName="BAS-PC" duration="00:00:08.6754962" startTime="2013-06-27T11:41:57.9111842+02:00" endTime="2013-06-27T11:42:06.5866804+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f5f3590-5ec3-4868-b7f5-74960fdd059d">
+      <Output>
+        <DebugTrace>W, 6228, 24, 2013/06/27, 11:41:58.936, 65193527390, QTAgent32.exe, Playback - [WARNING] Internal warning: Window Not Found: [VisibleOnly]ControlType='Window' &amp;&amp; Name='Adressbook manager' &amp;&amp; ClassName=&gt;'WindowsForms10.Window'
+\0
+E, 6228, 24, 2013/06/27, 11:41:58.937, 65193527857, QTAgent32.exe, &lt;a class=failure&gt;Playback - {1} [FAILED] Function ElementFetcher::FindScreenElement failed to locate UI element (Searching: ;[VisibleOnly]ControlType='Window' &amp;&amp; Name='Adressbook manager' &amp;&amp; ClassName=&gt;'WindowsForms10.Window') (Het opgegeven object is niet gevonden.)
+\0&lt;/a&gt;
+E, 6228, 24, 2013/06/27, 11:41:59.053, 65193674761, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPFC2B5.png
+\0
+W, 6228, 24, 2013/06/27, 11:41:59.053, 65193675058, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't find descendants that match QueryId
+\0
+W, 6228, 24, 2013/06/27, 11:41:59.053, 65193675488, QTAgent32.exe, PERF WARNING: FindTopLevelWindowHelper::FindAllDescendents: took 1114 ms. Expected it to take maximum 500 ms.
+</DebugTrace>
+        <ErrorInfo>
+          <Message>User aborted test run.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="BAS-PC\TestAddAdressbook.png" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="3b67fc80-9054-45fa-848a-c2ed5f35b0ae" testId="19945944-a8d7-5865-9d24-bb159a9f92f7" testName="TestRemove" computerName="BAS-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3b67fc80-9054-45fa-848a-c2ed5f35b0ae">
+    </UnitTestResult>
+    <UnitTestResult executionId="d7b2d80e-02a2-45a0-b301-651baf4441ae" testId="b0e3743f-f45f-f807-d44f-c69c7a0f26fc" testName="TestSwitchingViews" computerName="BAS-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d7b2d80e-02a2-45a0-b301-651baf4441ae">
+    </UnitTestResult>
+    <UnitTestResult executionId="66f0b908-9aa3-4de1-9958-26ebb02d8e56" testId="ecf14cdf-a816-c9c9-b486-338ae3a984be" testName="TestEmail" computerName="BAS-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="66f0b908-9aa3-4de1-9958-26ebb02d8e56">
+    </UnitTestResult>
+    <UnitTestResult executionId="98595c73-195c-4798-bee9-f46f64d6bc20" testId="ff1d36de-df47-0a9f-9f67-ff714225cbd5" testName="TestName" computerName="BAS-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="98595c73-195c-4798-bee9-f46f64d6bc20">
+    </UnitTestResult>
+  </Results>
+</TestRun>

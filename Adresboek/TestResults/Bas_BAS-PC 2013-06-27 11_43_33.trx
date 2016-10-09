@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="abed0df0-8738-4120-aeb5-37ebaaf1a2d2" name="Bas@BAS-PC 2013-06-27 11:43:33" runUser="Bas-PC\Bas" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="2aa66af6-b3b9-40d6-82a8-b5cc062499d2">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment runDeploymentRoot="Bas_BAS-PC 2013-06-27 11_43_33">
+      <DeploymentItem filename="C:\Users\Bas\Desktop\Softwaretesting\Adresboek\Adresboek\bin\Debug\Adresboek.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+        <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+          <Browser name="Internet Explorer 7.0">
+            <Headers>
+              <Header name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
+              <Header name="Accept" value="*/*" />
+              <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+              <Header name="Accept-Encoding" value="GZIP" />
+            </Headers>
+          </Browser>
+        </WebTestRunConfiguration>
+      </TestTypeSpecific>
+      <AgentRule name="LocalMachineDefaultRole">
+        <DataCollectors>
+          <DataCollector uri="datacollector://microsoft/CodeCoverage/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.CodeCoverage.CoveragePlugIn, Microsoft.VisualStudio.QualityTools.Plugins.CodeCoverage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Code Coverage">
+            <Configuration>
+              <CodeCoverage xmlns="">
+                <Regular>
+                  <CodeCoverageItem binaryFile="C:\Users\Bas\Desktop\Softwaretesting\Adresboek\Adresboek\bin\Debug\Adresboek.exe" pdbFile="C:\Users\Bas\Desktop\Softwaretesting\Adresboek\Adresboek\bin\Debug\Adresboek.instr.pdb" instrumentInPlace="true" />
+                </Regular>
+              </CodeCoverage>
+            </Configuration>
+          </DataCollector>
+        </DataCollectors>
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-27T11:43:33.6186583+02:00" queuing="2013-06-27T11:43:34.5367108+02:00" start="2013-06-27T11:43:34.6577178+02:00" finish="2013-06-27T11:43:39.6380026+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="6" executed="6" error="0" failed="6" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <ResultFiles>
+      <ResultFile path="BAS-PC\data.coverage" />
+    </ResultFiles>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestSwitchingViews" storage="c:\users\bas\desktop\softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="b0e3743f-f45f-f807-d44f-c69c7a0f26fc">
+      <Execution id="fbb7959f-68c2-4bfc-a216-681d647ae57b" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestSwitchingViews" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestAddAdressbook" storage="c:\users\bas\desktop\softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="04cdc5c6-7caa-c214-3fde-ec3b17b314d1">
+      <Execution id="5acc13cf-2fb1-46da-9eba-2485d289a59f" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestAddAdressbook" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestAdressbook" storage="c:\users\bas\desktop\softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="01e9d56f-ff67-457b-95c6-4b556a70f386">
+      <Execution id="524213f9-5f3e-4226-88e2-aa3631c31cb0" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestAdressbook" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestEmail" storage="c:\users\bas\desktop\softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="ecf14cdf-a816-c9c9-b486-338ae3a984be">
+      <Execution id="cc9a54ee-8b62-44ff-b84f-ed1cd98bdd05" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestEmail" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestRemove" storage="c:\users\bas\desktop\softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="19945944-a8d7-5865-9d24-bb159a9f92f7">
+      <Execution id="394167d4-4a56-4256-a544-c1cb270cb1ec" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestRemove" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestName" storage="c:\users\bas\desktop\softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="ff1d36de-df47-0a9f-9f67-ff714225cbd5">
+      <Execution id="2922b273-2fa9-471a-968c-e3c38e110387" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestName" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="01e9d56f-ff67-457b-95c6-4b556a70f386" executionId="524213f9-5f3e-4226-88e2-aa3631c31cb0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="04cdc5c6-7caa-c214-3fde-ec3b17b314d1" executionId="5acc13cf-2fb1-46da-9eba-2485d289a59f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="19945944-a8d7-5865-9d24-bb159a9f92f7" executionId="394167d4-4a56-4256-a544-c1cb270cb1ec" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0e3743f-f45f-f807-d44f-c69c7a0f26fc" executionId="fbb7959f-68c2-4bfc-a216-681d647ae57b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ecf14cdf-a816-c9c9-b486-338ae3a984be" executionId="cc9a54ee-8b62-44ff-b84f-ed1cd98bdd05" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ff1d36de-df47-0a9f-9f67-ff714225cbd5" executionId="2922b273-2fa9-471a-968c-e3c38e110387" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="524213f9-5f3e-4226-88e2-aa3631c31cb0" testId="01e9d56f-ff67-457b-95c6-4b556a70f386" testName="TestAdressbook" computerName="BAS-PC" duration="00:00:00.7828560" startTime="2013-06-27T11:43:36.2808106+02:00" endTime="2013-06-27T11:43:37.6818907+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="524213f9-5f3e-4226-88e2-aa3631c31cb0">
+      <Output>
+        <DebugTrace>W, 5628, 15, 2013/06/27, 11:43:37.618, 65318497375, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 5628, 15, 2013/06/27, 11:43:37.620, 65318499343, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Initialization method AdresboekTest.RecordAndReplay.MyTestInitialize threw exception. Microsoft.VisualStudio.TestTools.UITest.Extension.FailedToLaunchApplicationException: Microsoft.VisualStudio.TestTools.UITest.Extension.FailedToLaunchApplicationException: "The application cannot be started because it cannot be found in the specified location, or the user does not have sufficient permissions to start the application." File: C:\Users\Bas\Desktop\Softwaretesting\Adresboek\Adresboek\bin\Debug..</Message>
+          <StackTrace>    at Microsoft.VisualStudio.TestTools.UITesting.ApplicationUnderTest.GetActualFilename()
+   at Microsoft.VisualStudio.TestTools.UITesting.ApplicationUnderTest..ctor(String fileName, String alternateFileName, String arguments)
+   at Microsoft.VisualStudio.TestTools.UITesting.ApplicationUnderTest.Launch(String fileName)
+   at AdresboekTest.RecordAndReplay.MyTestInitialize() in C:\Users\Bas\Desktop\Softwaretesting\Adresboek\AdresboekTest\RecordAndReplay.cs:line 45
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5acc13cf-2fb1-46da-9eba-2485d289a59f" testId="04cdc5c6-7caa-c214-3fde-ec3b17b314d1" testName="TestAddAdressbook" computerName="BAS-PC" duration="00:00:00.0272539" startTime="2013-06-27T11:43:37.6878911+02:00" endTime="2013-06-27T11:43:37.7398940+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5acc13cf-2fb1-46da-9eba-2485d289a59f">
+      <Output>
+        <DebugTrace>W, 5628, 24, 2013/06/27, 11:43:37.733, 65318643554, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 5628, 24, 2013/06/27, 11:43:37.734, 65318643770, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Initialization method AdresboekTest.RecordAndReplay.MyTestInitialize threw exception. Microsoft.VisualStudio.TestTools.UITest.Extension.FailedToLaunchApplicationException: Microsoft.VisualStudio.TestTools.UITest.Extension.FailedToLaunchApplicationException: "The application cannot be started because it cannot be found in the specified location, or the user does not have sufficient permissions to start the application." File: C:\Users\Bas\Desktop\Softwaretesting\Adresboek\Adresboek\bin\Debug..</Message>
+          <StackTrace>    at Microsoft.VisualStudio.TestTools.UITesting.ApplicationUnderTest.GetActualFilename()
+   at Microsoft.VisualStudio.TestTools.UITesting.ApplicationUnderTest..ctor(String fileName, String alternateFileName, String arguments)
+   at Microsoft.VisualStudio.TestTools.UITesting.ApplicationUnderTest.Launch(String fileName)
+   at AdresboekTest.RecordAndReplay.MyTestInitialize() in C:\Users\Bas\Desktop\Softwaretesting\Adresboek\AdresboekTest\RecordAndReplay.cs:line 45
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="394167d4-4a56-4256-a544-c1cb270cb1ec" testId="19945944-a8d7-5865-9d24-bb159a9f92f7" testName="TestRemove" computerName="BAS-PC" duration="00:00:00.0263355" startTime="2013-06-27T11:43:37.7668956+02:00" endTime="2013-06-27T11:43:37.7998975+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="394167d4-4a56-4256-a544-c1cb270cb1ec">
+      <Output>
+        <DebugTrace>W, 5628, 26, 2013/06/27, 11:43:37.794, 65318720684, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 5628, 26, 2013/06/27, 11:43:37.795, 65318720951, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Initialization method AdresboekTest.RecordAndReplay.MyTestInitialize threw exception. Microsoft.VisualStudio.TestTools.UITest.Extension.FailedToLaunchApplicationException: Microsoft.VisualStudio.TestTools.UITest.Extension.FailedToLaunchApplicationException: "The application cannot be started because it cannot be found in the specified location, or the user does not have sufficient permissions to start the application." File: C:\Users\Bas\Desktop\Softwaretesting\Adresboek\Adresboek\bin\Debug..</Message>
+          <StackTrace>    at Microsoft.VisualStudio.TestTools.UITesting.ApplicationUnderTest.GetActualFilename()
+   at Microsoft.VisualStudio.TestTools.UITesting.ApplicationUnderTest..ctor(String fileName, String alternateFileName, String arguments)
+   at Microsoft.VisualStudio.TestTools.UITesting.ApplicationUnderTest.Launch(String fileName)
+   at AdresboekTest.RecordAndReplay.MyTestInitialize() in C:\Users\Bas\Desktop\Softwaretesting\Adresboek\AdresboekTest\RecordAndReplay.cs:line 45
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fbb7959f-68c2-4bfc-a216-681d647ae57b" testId="b0e3743f-f45f-f807-d44f-c69c7a0f26fc" testName="TestSwitchingViews" computerName="BAS-PC" duration="00:00:00.0280585" startTime="2013-06-27T11:43:37.8048978+02:00" endTime="2013-06-27T11:43:37.8549006+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fbb7959f-68c2-4bfc-a216-681d647ae57b">
+      <Output>
+        <DebugTrace>W, 5628, 32, 2013/06/27, 11:43:37.849, 65318789444, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 5628, 32, 2013/06/27, 11:43:37.849, 65318789671, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Initialization method AdresboekTest.RecordAndReplay.MyTestInitialize threw exception. Microsoft.VisualStudio.TestTools.UITest.Extension.FailedToLaunchApplicationException: Microsoft.VisualStudio.TestTools.UITest.Extension.FailedToLaunchApplicationException: "The application cannot be started because it cannot be found in the specified location, or the user does not have sufficient permissions to start the application." File: C:\Users\Bas\Desktop\Softwaretesting\Adresboek\Adresboek\bin\Debug..</Message>
+          <StackTrace>    at Microsoft.VisualStudio.TestTools.UITesting.ApplicationUnderTest.GetActualFilename()
+   at Microsoft.VisualStudio.TestTools.UITesting.ApplicationUnderTest..ctor(String fileName, String alternateFileName, String arguments)
+   at Microsoft.VisualStudio.TestTools.UITesting.ApplicationUnderTest.Launch(String fileName)
+   at AdresboekTest.RecordAndReplay.MyTestInitialize() in C:\Users\Bas\Desktop\Softwaretesting\Adresboek\AdresboekTest\RecordAndReplay.cs:line 45
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cc9a54ee-8b62-44ff-b84f-ed1cd98bdd05" testId="ecf14cdf-a816-c9c9-b486-338ae3a984be" testName="TestEmail" computerName="BAS-PC" duration="00:00:00.0442700" startTime="2013-06-27T11:43:37.8629011+02:00" endTime="2013-06-27T11:43:37.9199043+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc9a54ee-8b62-44ff-b84f-ed1cd98bdd05">
+      <Output>
+        <DebugTrace>W, 5628, 38, 2013/06/27, 11:43:37.913, 65318870700, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 5628, 38, 2013/06/27, 11:43:37.913, 65318871041, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Initialization method AdresboekTest.RecordAndReplay.MyTestInitialize threw exception. Microsoft.VisualStudio.TestTools.UITest.Extension.FailedToLaunchApplicationException: Microsoft.VisualStudio.TestTools.UITest.Extension.FailedToLaunchApplicationException: "The application cannot be started because it cannot be found in the specified location, or the user does not have sufficient permissions to start the application." File: C:\Users\Bas\Desktop\Softwaretesting\Adresboek\Adresboek\bin\Debug..</Message>
+          <StackTrace>    at Microsoft.VisualStudio.TestTools.UITesting.ApplicationUnderTest.GetActualFilename()
+   at Microsoft.VisualStudio.TestTools.UITesting.ApplicationUnderTest..ctor(String fileName, String alternateFileName, String arguments)
+   at Microsoft.VisualStudio.TestTools.UITesting.ApplicationUnderTest.Launch(String fileName)
+   at AdresboekTest.RecordAndReplay.MyTestInitialize() in C:\Users\Bas\Desktop\Softwaretesting\Adresboek\AdresboekTest\RecordAndReplay.cs:line 45
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2922b273-2fa9-471a-968c-e3c38e110387" testId="ff1d36de-df47-0a9f-9f67-ff714225cbd5" testName="TestName" computerName="BAS-PC" duration="00:00:00.1126797" startTime="2013-06-27T11:43:37.9229045+02:00" endTime="2013-06-27T11:43:38.0789134+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2922b273-2fa9-471a-968c-e3c38e110387">
+      <Output>
+        <DebugTrace>W, 5628, 44, 2013/06/27, 11:43:38.072, 65319072584, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 5628, 44, 2013/06/27, 11:43:38.072, 65319072822, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Initialization method AdresboekTest.RecordAndReplay.MyTestInitialize threw exception. Microsoft.VisualStudio.TestTools.UITest.Extension.FailedToLaunchApplicationException: Microsoft.VisualStudio.TestTools.UITest.Extension.FailedToLaunchApplicationException: "The application cannot be started because it cannot be found in the specified location, or the user does not have sufficient permissions to start the application." File: C:\Users\Bas\Desktop\Softwaretesting\Adresboek\Adresboek\bin\Debug..</Message>
+          <StackTrace>    at Microsoft.VisualStudio.TestTools.UITesting.ApplicationUnderTest.GetActualFilename()
+   at Microsoft.VisualStudio.TestTools.UITesting.ApplicationUnderTest..ctor(String fileName, String alternateFileName, String arguments)
+   at Microsoft.VisualStudio.TestTools.UITesting.ApplicationUnderTest.Launch(String fileName)
+   at AdresboekTest.RecordAndReplay.MyTestInitialize() in C:\Users\Bas\Desktop\Softwaretesting\Adresboek\AdresboekTest\RecordAndReplay.cs:line 45
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

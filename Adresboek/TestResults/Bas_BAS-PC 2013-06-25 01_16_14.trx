@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d68c9c1e-9153-49ce-a663-5620da0c7713" name="Bas@BAS-PC 2013-06-25 01:16:14" runUser="Bas-PC\Bas" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="2aa66af6-b3b9-40d6-82a8-b5cc062499d2">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment runDeploymentRoot="Bas_BAS-PC 2013-06-25 01_16_14">
+      <DeploymentItem filename="C:\Users\Bas\Desktop\Softwaretesting\edu.3725154.SoftwareTesting\Adresboek\Adresboek\bin\Debug\Adresboek.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+        <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+          <Browser name="Internet Explorer 7.0">
+            <Headers>
+              <Header name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
+              <Header name="Accept" value="*/*" />
+              <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+              <Header name="Accept-Encoding" value="GZIP" />
+            </Headers>
+          </Browser>
+        </WebTestRunConfiguration>
+      </TestTypeSpecific>
+      <AgentRule name="LocalMachineDefaultRole">
+        <DataCollectors>
+          <DataCollector uri="datacollector://microsoft/CodeCoverage/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.CodeCoverage.CoveragePlugIn, Microsoft.VisualStudio.QualityTools.Plugins.CodeCoverage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Code Coverage">
+            <Configuration>
+              <CodeCoverage xmlns="">
+                <Regular>
+                  <CodeCoverageItem binaryFile="C:\Users\Bas\Desktop\Softwaretesting\edu.3725154.SoftwareTesting\Adresboek\Adresboek\bin\Debug\Adresboek.exe" pdbFile="C:\Users\Bas\Desktop\Softwaretesting\edu.3725154.SoftwareTesting\Adresboek\Adresboek\bin\Debug\Adresboek.instr.pdb" instrumentInPlace="true" />
+                </Regular>
+              </CodeCoverage>
+            </Configuration>
+          </DataCollector>
+        </DataCollectors>
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-25T01:16:14.1265570+02:00" queuing="2013-06-25T01:16:14.9786057+02:00" start="2013-06-25T01:16:15.0296086+02:00" finish="2013-06-25T01:16:22.0500102+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="BAS-PC" outcome="Warning" timestamp="2013-06-25T01:16:22.1500159+02:00">
+        <Text>Code coverage in-place instrumentation: Cannot restore binary C:\Users\Bas\Desktop\Softwaretesting\edu.3725154.SoftwareTesting\Adresboek\Adresboek\bin\Debug\Adresboek.exe. Exception was thrown: Access to the path 'C:\Users\Bas\Desktop\Softwaretesting\edu.3725154.SoftwareTesting\Adresboek\Adresboek\bin\Debug\Adresboek.exe' is denied.</Text>
+      </RunInfo>
+      <RunInfo computerName="BAS-PC" outcome="Warning" timestamp="2013-06-25T01:16:22.1500159+02:00">
+        <Text>Code coverage in-place instrumentation: One or more binaries in 'C:\Users\Bas\Desktop\Softwaretesting\edu.3725154.SoftwareTesting\Adresboek\Adresboek\bin\Debug' were not restored.
+They can be restored manually by running the file 'eqtrestore_d68c9c1e-9153-49ce-a663-5620da0c7713.bat' in this directory.</Text>
+      </RunInfo>
+    </RunInfos>
+    <ResultFiles>
+      <ResultFile path="BAS-PC\data.coverage" />
+    </ResultFiles>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CodedUITestMethod1" storage="c:\users\bas\desktop\softwaretesting\edu.3725154.softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="9e45fa99-f7e8-43cd-28ed-ddad3abd6b97">
+      <Execution id="5961c33b-31ea-46e0-84e4-0e4b236921c0" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/edu.3725154.SoftwareTesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.CodedUITest1, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CodedUITestMethod1" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="9e45fa99-f7e8-43cd-28ed-ddad3abd6b97" executionId="5961c33b-31ea-46e0-84e4-0e4b236921c0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5961c33b-31ea-46e0-84e4-0e4b236921c0" testId="9e45fa99-f7e8-43cd-28ed-ddad3abd6b97" testName="CodedUITestMethod1" computerName="BAS-PC" duration="00:00:04.1074233" startTime="2013-06-25T01:16:15.6686452+02:00" endTime="2013-06-25T01:16:20.1639023+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5961c33b-31ea-46e0-84e4-0e4b236921c0">
+      <Output>
+        <DebugTrace>W, 9388, 15, 2013/06/25, 01:16:17.190, 50741190075, QTAgent32.exe, &lt;a class=success&gt;Playback - {1} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='View'"
+\0&lt;/a&gt;
+W, 9388, 15, 2013/06/25, 01:16:17.358, 50741682484, QTAgent32.exe, Value in en-US resource 'Maximaliseren' does not match the defaultvalue 'Maximize'
+W, 9388, 15, 2013/06/25, 01:16:17.358, 50741683401, QTAgent32.exe, Value in en-US resource 'Vorig formaat' does not match the defaultvalue 'Restore'
+W, 9388, 15, 2013/06/25, 01:16:17.369, 50741714507, QTAgent32.exe, Value in en-US resource 'Vorige' does not match the defaultvalue 'Back'
+W, 9388, 15, 2013/06/25, 01:16:17.369, 50741715016, QTAgent32.exe, Value in en-US resource 'Volgende' does not match the defaultvalue 'Forward'
+W, 9388, 15, 2013/06/25, 01:16:17.369, 50741715399, QTAgent32.exe, Value in en-US resource 'Vernieuwen (F5)' does not match the defaultvalue 'Refresh (F5)'
+W, 9388, 15, 2013/06/25, 01:16:17.369, 50741715775, QTAgent32.exe, Value in en-US resource 'Stoppen (Esc)' does not match the defaultvalue 'Stop (Esc)'
+W, 9388, 15, 2013/06/25, 01:16:17.370, 50741716501, QTAgent32.exe, Value in en-US resource 'Adresbalk met automatisch aanvullen weergeven' does not match the defaultvalue 'Show Address Bar Autocomplete'
+W, 9388, 15, 2013/06/25, 01:16:17.370, 50741717105, QTAgent32.exe, Value in en-US resource 'Adres en zoeken met %s' does not match the defaultvalue 'Address'
+W, 9388, 15, 2013/06/25, 01:16:17.370, 50741717233, QTAgent32.exe, Value in en-US resource 'Bestand selecteren voor uploaden' does not match the defaultvalue 'Choose file'
+W, 9388, 15, 2013/06/25, 01:16:17.370, 50741717592, QTAgent32.exe, Value in en-US resource 'Melding' does not match the defaultvalue 'Notification Bar'
+W, 9388, 15, 2013/06/25, 01:16:17.374, 50741727819, QTAgent32.exe, Value in en-US resource 'Microsoft SmartScreen-filter' does not match the defaultvalue 'Microsoft Phishing Filter'
+W, 9388, 15, 2013/06/25, 01:16:17.374, 50741728408, QTAgent32.exe, Value in en-US resource 'Automatisch aanvullen' does not match the defaultvalue 'AutoComplete'
+W, 9388, 15, 2013/06/25, 01:16:17.374, 50741728858, QTAgent32.exe, Value in en-US resource 'Wachtwoorden automatisch aanvullen' does not match the defaultvalue 'AutoComplete Passwords'
+E, 9388, 15, 2013/06/25, 01:16:17.374, 50741729712, QTAgent32.exe, LoadLibrary() : Unable to find the resource 37382 from assembly C:\Windows\system32\nl-NL\ieframe.dll.mui: Error1814
+E, 9388, 15, 2013/06/25, 01:16:17.374, 50741730593, QTAgent32.exe, LoadLibrary() : Unable to find the resource 41728 from assembly C:\Windows\system32\nl-NL\ieframe.dll.mui: Error1814
+E, 9388, 15, 2013/06/25, 01:16:17.375, 50741730956, QTAgent32.exe, LoadLibrary() : Unable to find the resource 8131 from assembly C:\Windows\system32\nl-NL\ieframe.dll.mui: Error1814
+E, 9388, 15, 2013/06/25, 01:16:17.375, 50741731285, QTAgent32.exe, LoadLibrary() : Unable to find the resource 8131 from assembly C:\Windows\system32\nl-NL\ieframe.dll.mui: Error1814
+W, 9388, 15, 2013/06/25, 01:16:17.375, 50741731677, QTAgent32.exe, Value in en-US resource 'Sluiten' does not match the defaultvalue 'Close'
+E, 9388, 15, 2013/06/25, 01:16:17.375, 50741731987, QTAgent32.exe, LoadLibrary() : Unable to find the resource 8131 from assembly C:\Windows\system32\nl-NL\ieframe.dll.mui: Error1814
+W, 9388, 15, 2013/06/25, 01:16:17.375, 50741732382, QTAgent32.exe, Value in en-US resource 'Beveiligingswaarschuwing' does not match the defaultvalue 'Security Warning'
+E, 9388, 15, 2013/06/25, 01:16:17.375, 50741732857, QTAgent32.exe, LoadLibrary() : Unable to find the resource 803 from assembly C:\Windows\system32\nl-NL\user32.dll.mui: Error1814
+W, 9388, 15, 2013/06/25, 01:16:17.376, 50741733821, QTAgent32.exe, Value in en-US resource 'Windows-beveiliging' does not match the defaultvalue 'Windows Security'
+W, 9388, 15, 2013/06/25, 01:16:17.837, 50743081977, QTAgent32.exe, &lt;a class=success&gt;Playback - {2} [SUCCESS] SetValueAsEditBox "bas" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 9388, 15, 2013/06/25, 01:16:18.179, 50744082414, QTAgent32.exe, &lt;a class=success&gt;Playback - {3} [SUCCESS] SendKeys "{Tab}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 9388, 15, 2013/06/25, 01:16:19.025, 50746554435, QTAgent32.exe, &lt;a class=success&gt;Playback - {4} [SUCCESS] SetValueAsEditBox "bas@hotmail.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 9388, 15, 2013/06/25, 01:16:19.464, 50747838389, QTAgent32.exe, &lt;a class=success&gt;Playback - {5} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 9388, 15, 2013/06/25, 01:16:20.023, 50749472593, QTAgent32.exe, &lt;a class=success&gt;Playback - {6} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Delete Contact'"
+\0&lt;/a&gt;
+W, 9388, 15, 2013/06/25, 01:16:20.146, 50749832198, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 9388, 15, 2013/06/25, 01:16:20.146, 50749832603, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

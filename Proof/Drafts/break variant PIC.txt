@@ -1,0 +1,70 @@
+
+
+Invariant I: // note: same as simple variant
+{* 0≤i≤N ⋀ (found = (∃k: 0≤k<i : a[k]=x)) ⋀ sorted a N *}
+
+Statement S is a sequence S1;S2:
+S1: found := found ⋁ (a[i]=x);
+S2: i := i + 1;
+
+Guard g:
+{* i < N ⋀ ¬found ⋀ a[i]≤x *}
+
+
+Proof PIC:
+{* I ⋀ g *} S {* I *}
+
+
+PROOF PIC
+A1: found = (∃k: 0≤k<i : a[k]=x)    // from Invariant I
+A2: 0 ≤ i < N                       // from Guard g
+G : wp S I  // prove that the weakest precondition holds
+BEGIN ------------------------------------------
+
+1. { see calculate wp }
+    wp S I = 0≤i+1≤N ⋀ ((found ⋁ a[i]=x) = (∃k: 0≤k<i+1 : a[k]=x))
+
+    PROOF calculate wp
+    BEGIN --------------------------------------
+        wp (found := found ⋁ a[i]=x; i:=i+1) (0≤i≤N ⋀ (found = (∃k: 0≤k<i : a[k]=x)))
+    1. { wp of statements sequence }
+        wp (found := found ⋁ a[i]=x) (wp (i:=i+1) (0≤i≤N ⋀ (found = (∃k: 0≤k<i : a[k]=x)))
+    2. { wp of assignment }
+        wp (found := found ⋁ a[i]=x) (0≤i+1≤N ⋀ (found = (∃k: 0≤k<i+1 : a[k]=x)))
+    3. { wp of assignment }
+        0≤i+1≤N ⋀ ((found ⋁ a[i]=x) = (∃k: 0≤k<i+1 : a[k]=x))
+    END ----------------------------------------
+
+2. { see subproof equality }
+    (∃k: 0≤k<i : a[k]=x) ⋁ (a[i]=x) = (∃k: 0≤k<i+1 : a[k]=x)
+
+    PROOF equality
+    [some i]
+    [some x]
+    A1: (∃k: 0≤k<i : a[k]=x) ⋁ (a[i]=x)
+    G : (∃k: 0≤k<i : a[k]=x) ⋁ (a[i]=x) = (∃k: 0≤k<i+1 : a[k]=x)
+    BEGIN --------------------------------------
+        (∃k: 0≤k<i : a[k]=x) ⋁ (a[i]=x)
+    1. { introduce ∃-kwantor }
+        (∃k: 0≤k<i : a[k]=x) ⋁ (∃k: k=i : a[i]=x)
+    2. { combine domains }
+        (∃k: 0≤k<i+1 : a[k]=x)
+    3. { we have proven equality }
+        (∃k: 0≤k<i : a[k]=x) ⋁ (a[i]=x) = (∃k: 0≤k<i+1 : a[k]=x)
+    END ----------------------------------------  
+
+3. { reversed substitution of A1 in 2 }
+    ((found ⋁ a[i]=x) = (∃k: 0≤k<i+1 : a[k]=x))
+
+4. { rewrite A2 }
+    0≤i+1≤N
+
+5. { combine 3 and 4 }
+    0≤i+1≤N ⋀ ((found ⋁ a[i]=x) = (∃k: 0≤k<i+1 : a[k]=x))
+
+6. { we have proved wp by equality on 1 and 5 }
+    wp S I = 0≤i+1≤N ⋀ ((found ⋁ a[i]=x) = (∃k: 0≤k<i+1 : a[k]=x))
+
+END --------------------------------------------
+
+

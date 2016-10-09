@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="4a7c216b-3b4b-4bcc-a3a1-fdd4bf101d16" name="Bas@BAS-PC 2013-06-26 21:09:30" runUser="Bas-PC\Bas" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="2aa66af6-b3b9-40d6-82a8-b5cc062499d2">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment runDeploymentRoot="Bas_BAS-PC 2013-06-26 21_09_30">
+      <DeploymentItem filename="C:\Users\Bas\Desktop\Softwaretesting\edu.3725154.SoftwareTesting\Adresboek\Adresboek\bin\Debug\Adresboek.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+        <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+          <Browser name="Internet Explorer 7.0">
+            <Headers>
+              <Header name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
+              <Header name="Accept" value="*/*" />
+              <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+              <Header name="Accept-Encoding" value="GZIP" />
+            </Headers>
+          </Browser>
+        </WebTestRunConfiguration>
+      </TestTypeSpecific>
+      <AgentRule name="LocalMachineDefaultRole">
+        <DataCollectors>
+          <DataCollector uri="datacollector://microsoft/CodeCoverage/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.CodeCoverage.CoveragePlugIn, Microsoft.VisualStudio.QualityTools.Plugins.CodeCoverage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Code Coverage">
+            <Configuration>
+              <CodeCoverage xmlns="">
+                <Regular>
+                  <CodeCoverageItem binaryFile="C:\Users\Bas\Desktop\Softwaretesting\edu.3725154.SoftwareTesting\Adresboek\Adresboek\bin\Debug\Adresboek.exe" pdbFile="C:\Users\Bas\Desktop\Softwaretesting\edu.3725154.SoftwareTesting\Adresboek\Adresboek\bin\Debug\Adresboek.instr.pdb" instrumentInPlace="true" />
+                </Regular>
+              </CodeCoverage>
+            </Configuration>
+          </DataCollector>
+        </DataCollectors>
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-26T21:09:30.7552879+02:00" queuing="2013-06-26T21:09:31.6903414+02:00" start="2013-06-26T21:09:31.7243433+02:00" finish="2013-06-26T21:09:47.7602605+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <ResultFiles>
+      <ResultFile path="BAS-PC\data.coverage" />
+    </ResultFiles>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestAdressbook" storage="c:\users\bas\desktop\softwaretesting\edu.3725154.softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="01e9d56f-ff67-457b-95c6-4b556a70f386">
+      <Execution id="cedc1440-33e7-472e-b431-3423179a7b7b" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/edu.3725154.SoftwareTesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestAdressbook" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="01e9d56f-ff67-457b-95c6-4b556a70f386" executionId="cedc1440-33e7-472e-b431-3423179a7b7b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="cedc1440-33e7-472e-b431-3423179a7b7b" testId="01e9d56f-ff67-457b-95c6-4b556a70f386" testName="TestAdressbook" computerName="BAS-PC" duration="00:00:13.1424411" startTime="2013-06-26T21:09:32.3493791+02:00" endTime="2013-06-26T21:09:45.7131435+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cedc1440-33e7-472e-b431-3423179a7b7b">
+      <Output>
+        <DebugTrace>W, 9176, 15, 2013/06/26, 21:09:33.725, 134546519526, QTAgent32.exe, &lt;a class=success&gt;Playback - {1} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='View'"
+\0&lt;/a&gt;
+W, 9176, 15, 2013/06/26, 21:09:33.899, 134547029047, QTAgent32.exe, Value in en-US resource 'Maximaliseren' does not match the defaultvalue 'Maximize'
+W, 9176, 15, 2013/06/26, 21:09:33.899, 134547030090, QTAgent32.exe, Value in en-US resource 'Vorig formaat' does not match the defaultvalue 'Restore'
+W, 9176, 15, 2013/06/26, 21:09:33.912, 134547067520, QTAgent32.exe, Value in en-US resource 'Vorige' does not match the defaultvalue 'Back'
+W, 9176, 15, 2013/06/26, 21:09:33.912, 134547068111, QTAgent32.exe, Value in en-US resource 'Volgende' does not match the defaultvalue 'Forward'
+W, 9176, 15, 2013/06/26, 21:09:33.912, 134547068599, QTAgent32.exe, Value in en-US resource 'Vernieuwen (F5)' does not match the defaultvalue 'Refresh (F5)'
+W, 9176, 15, 2013/06/26, 21:09:33.913, 134547069091, QTAgent32.exe, Value in en-US resource 'Stoppen (Esc)' does not match the defaultvalue 'Stop (Esc)'
+W, 9176, 15, 2013/06/26, 21:09:33.913, 134547069988, QTAgent32.exe, Value in en-US resource 'Adresbalk met automatisch aanvullen weergeven' does not match the defaultvalue 'Show Address Bar Autocomplete'
+W, 9176, 15, 2013/06/26, 21:09:33.913, 134547070743, QTAgent32.exe, Value in en-US resource 'Adres en zoeken met %s' does not match the defaultvalue 'Address'
+W, 9176, 15, 2013/06/26, 21:09:33.913, 134547070897, QTAgent32.exe, Value in en-US resource 'Bestand selecteren voor uploaden' does not match the defaultvalue 'Choose file'
+W, 9176, 15, 2013/06/26, 21:09:33.913, 134547071358, QTAgent32.exe, Value in en-US resource 'Melding' does not match the defaultvalue 'Notification Bar'
+W, 9176, 15, 2013/06/26, 21:09:33.917, 134547083306, QTAgent32.exe, Value in en-US resource 'Microsoft SmartScreen-filter' does not match the defaultvalue 'Microsoft Phishing Filter'
+W, 9176, 15, 2013/06/26, 21:09:33.918, 134547083794, QTAgent32.exe, Value in en-US resource 'Automatisch aanvullen' does not match the defaultvalue 'AutoComplete'
+W, 9176, 15, 2013/06/26, 21:09:33.918, 134547084188, QTAgent32.exe, Value in en-US resource 'Wachtwoorden automatisch aanvullen' does not match the defaultvalue 'AutoComplete Passwords'
+E, 9176, 15, 2013/06/26, 21:09:33.918, 134547084926, QTAgent32.exe, LoadLibrary() : Unable to find the resource 37382 from assembly C:\Windows\system32\nl-NL\ieframe.dll.mui: Error1814
+E, 9176, 15, 2013/06/26, 21:09:33.918, 134547085774, QTAgent32.exe, LoadLibrary() : Unable to find the resource 41728 from assembly C:\Windows\system32\nl-NL\ieframe.dll.mui: Error1814
+E, 9176, 15, 2013/06/26, 21:09:33.918, 134547086111, QTAgent32.exe, LoadLibrary() : Unable to find the resource 8131 from assembly C:\Windows\system32\nl-NL\ieframe.dll.mui: Error1814
+E, 9176, 15, 2013/06/26, 21:09:33.919, 134547086428, QTAgent32.exe, LoadLibrary() : Unable to find the resource 8131 from assembly C:\Windows\system32\nl-NL\ieframe.dll.mui: Error1814
+W, 9176, 15, 2013/06/26, 21:09:33.919, 134547086808, QTAgent32.exe, Value in en-US resource 'Sluiten' does not match the defaultvalue 'Close'
+E, 9176, 15, 2013/06/26, 21:09:33.919, 134547087103, QTAgent32.exe, LoadLibrary() : Unable to find the resource 8131 from assembly C:\Windows\system32\nl-NL\ieframe.dll.mui: Error1814
+W, 9176, 15, 2013/06/26, 21:09:33.919, 134547087485, QTAgent32.exe, Value in en-US resource 'Beveiligingswaarschuwing' does not match the defaultvalue 'Security Warning'
+E, 9176, 15, 2013/06/26, 21:09:33.919, 134547087938, QTAgent32.exe, LoadLibrary() : Unable to find the resource 803 from assembly C:\Windows\system32\nl-NL\user32.dll.mui: Error1814
+W, 9176, 15, 2013/06/26, 21:09:33.919, 134547088850, QTAgent32.exe, Value in en-US resource 'Windows-beveiliging' does not match the defaultvalue 'Windows Security'
+W, 9176, 15, 2013/06/26, 21:09:34.325, 134548273188, QTAgent32.exe, &lt;a class=success&gt;Playback - {2} [SUCCESS] SetValueAsEditBox "Bas" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 9176, 15, 2013/06/26, 21:09:34.643, 134549205266, QTAgent32.exe, &lt;a class=success&gt;Playback - {3} [SUCCESS] SendKeys "{Tab}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 9176, 15, 2013/06/26, 21:09:35.335, 134551225676, QTAgent32.exe, &lt;a class=success&gt;Playback - {4} [SUCCESS] SetValueAsEditBox "bas@bas.nl" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 9176, 15, 2013/06/26, 21:09:35.725, 134552366529, QTAgent32.exe, &lt;a class=success&gt;Playback - {5} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 9176, 15, 2013/06/26, 21:09:36.249, 134553898418, QTAgent32.exe, &lt;a class=success&gt;Playback - {6} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Delete Contact'"
+\0&lt;/a&gt;
+W, 9176, 15, 2013/06/26, 21:09:36.945, 134555934450, QTAgent32.exe, &lt;a class=success&gt;Playback - {7} [SUCCESS] SetValueAsEditBox "bas" - "[MSAA, VisibleOnly]ControlType='Edit' &amp;&amp; Name='Adressbook Name: sample'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 9176, 15, 2013/06/26, 21:09:37.354, 134557128606, QTAgent32.exe, &lt;a class=success&gt;Playback - {8} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Search'"
+\0&lt;/a&gt;
+W, 9176, 15, 2013/06/26, 21:09:37.781, 134558376724, QTAgent32.exe, &lt;a class=success&gt;Playback - {9} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='clear'"
+\0&lt;/a&gt;
+W, 9176, 15, 2013/06/26, 21:09:38.495, 134560465835, QTAgent32.exe, &lt;a class=success&gt;Playback - {10} [SUCCESS] SetValueAsEditBox "bas" - "[MSAA, VisibleOnly]ControlType='Edit' &amp;&amp; Name='Adressbook Name: searchbook'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 9176, 15, 2013/06/26, 21:09:38.754, 134561221042, QTAgent32.exe, &lt;a class=success&gt;Playback - {11} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Search'"
+\0&lt;/a&gt;
+E, 9176, 15, 2013/06/26, 21:09:39.127, 134562310791, QTAgent32.exe, Exception: System.ArgumentException
+	Message: Value does not fall within the expected range.
+	Stack Trace:    at Accessibility.IAccessible.get_accRole(Object varChild)
+   at Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.AccWrapper.get_RoleInt()
+	BaseExceptionMessage: Value does not fall within the expected range.
+
+W, 9176, 15, 2013/06/26, 21:09:39.708, 134564011352, QTAgent32.exe, Playback - [WARNING] Internal warning: Incorrect flag set for InvokeProgrammaticAction\0
+W, 9176, 15, 2013/06/26, 21:09:39.834, 134564378160, QTAgent32.exe, &lt;a class=success&gt;Playback - {12} [SUCCESS] SetValueAsComboBox "sample2" - "[MSAA, VisibleOnly]ControlType='ComboBox' &amp;&amp; Name='Contacts:'"  &lt; SetValueAsComboBox, set by clicking on the item in the list box &gt;
+\0&lt;/a&gt;
+W, 9176, 15, 2013/06/26, 21:09:40.397, 134566023862, QTAgent32.exe, &lt;a class=success&gt;Playback - {13} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Copy all to:'"
+\0&lt;/a&gt;
+W, 9176, 15, 2013/06/26, 21:09:40.660, 134566792927, QTAgent32.exe, &lt;a class=success&gt;Playback - {14} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='clear'"
+\0&lt;/a&gt;
+W, 9176, 15, 2013/06/26, 21:09:41.162, 134568259680, QTAgent32.exe, &lt;a class=success&gt;Playback - {15} [SUCCESS] SetValueAsEditBox "bas" - "[MSAA, VisibleOnly]ControlType='Edit' &amp;&amp; Name='Adressbook Name: sample'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 9176, 15, 2013/06/26, 21:09:41.422, 134569020079, QTAgent32.exe, &lt;a class=success&gt;Playback - {16} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Search'"
+\0&lt;/a&gt;
+W, 9176, 15, 2013/06/26, 21:09:42.010, 134570739101, QTAgent32.exe, &lt;a class=success&gt;Playback - {17} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Remove all'"
+\0&lt;/a&gt;
+W, 9176, 15, 2013/06/26, 21:09:42.279, 134571525422, QTAgent32.exe, &lt;a class=success&gt;Playback - {18} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='clear'"
+\0&lt;/a&gt;
+W, 9176, 15, 2013/06/26, 21:09:42.574, 134572388555, QTAgent32.exe, &lt;a class=success&gt;Playback - {19} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Search'"
+\0&lt;/a&gt;
+W, 9176, 15, 2013/06/26, 21:09:44.263, 134577322521, QTAgent32.exe, Playback - [WARNING] Internal warning: Can't find anchor child after updating the collection
+\0
+W, 9176, 15, 2013/06/26, 21:09:44.460, 134577897722, QTAgent32.exe, Playback - [WARNING] Internal warning: Can't find anchor child after updating the collection
+\0
+W, 9176, 15, 2013/06/26, 21:09:44.620, 134578366524, QTAgent32.exe, Playback - [WARNING] Internal failure: EnsureVisible via Setting Focus, Scrolling failed
+\0
+W, 9176, 15, 2013/06/26, 21:09:44.916, 134579230094, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't get clickable point for ScreenUIElement since it was obscured by another UI element. See comparison tracing below
+\0
+E, 9176, 15, 2013/06/26, 21:09:45.202, 134580066545, QTAgent32.exe, &lt;a class=failure&gt;Playback - {20} [FAILED] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Remove all'"\0&lt;/a&gt;
+E, 9176, 15, 2013/06/26, 21:09:45.288, 134580319772, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPF8572.png
+\0
+E, 9176, 15, 2013/06/26, 21:09:45.574, 134581156189, QTAgent32.exe, AL: Playback Error: Microsoft.VisualStudio.TestTools.UITest.Extension.FailedToPerformActionOnBlockedControlException: Another control is blocking the control. Please make the blocked control visible and retry the action. Additional Details: 
+TechnologyName:  'MSAA'
+Name:  'Remove all'
+ControlType:  'Button'
+ ---&gt; System.Runtime.InteropServices.COMException: Exception from HRESULT: 0xF004F003
+   at Microsoft.VisualStudio.TestTools.UITest.Playback.Engine.IScreenElement.MouseButtonClick(Int32 x, Int32 y, Int32 nButton, Int32 fEnsureVisible, String bstrKeyModifiers)
+   at Microsoft.VisualStudio.TestTools.UITest.Playback.ScreenElement.MouseButtonClick(Int32 x, Int32 y, MouseButtons button, ModifierKeys modifierKeys, Int32 ensureVisible)
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Click(MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinates)
+   --- End of inner exception stack trace ---
+   at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapAndThrowComException(COMException innerException, IPlaybackContext context)
+   at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapAndThrowException(SystemException exception, IPlaybackContext context)
+   at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapAndThrowException(SystemException exception, String actionName, UITestControl uiControl, Point point)
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Click(MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinates)
+   at Microsoft.VisualStudio.TestTools.UITesting.Mouse.ClickImplementation(UITestControl control, MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinate)
+   at Microsoft.VisualStudio.TestTools.UITesting.Mouse.ClickImplementationWrapper(UITestControl control, MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinate)
+W, 9176, 15, 2013/06/26, 21:09:45.702, 134581528014, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 9176, 15, 2013/06/26, 21:09:45.702, 134581528258, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method AdresboekTest.RecordAndReplay.TestAdressbook threw exception: 
+Microsoft.VisualStudio.TestTools.UITest.Extension.FailedToPerformActionOnBlockedControlException: Another control is blocking the control. Please make the blocked control visible and retry the action. Additional Details: 
+TechnologyName:  'MSAA'
+Name:  'Remove all'
+ControlType:  'Button'
+ ---&gt; System.Runtime.InteropServices.COMException: Exception from HRESULT: 0xF004F003</Message>
+          <StackTrace>    at Microsoft.VisualStudio.TestTools.UITest.Playback.Engine.IScreenElement.MouseButtonClick(Int32 x, Int32 y, Int32 nButton, Int32 fEnsureVisible, String bstrKeyModifiers)
+   at Microsoft.VisualStudio.TestTools.UITest.Playback.ScreenElement.MouseButtonClick(Int32 x, Int32 y, MouseButtons button, ModifierKeys modifierKeys, Int32 ensureVisible)
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Click(MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinates)
+ --- End of inner exception stack trace ---
+    at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapAndThrowComException(COMException innerException, IPlaybackContext context)
+   at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapAndThrowException(SystemException exception, IPlaybackContext context)
+   at Microsoft.VisualStudio.TestTools.UITesting.Playback.MapAndThrowException(SystemException exception, String actionName, UITestControl uiControl, Point point)
+   at Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Click(MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinates)
+   at Microsoft.VisualStudio.TestTools.UITesting.Mouse.ClickImplementation(UITestControl control, MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinate)
+   at Microsoft.VisualStudio.TestTools.UITesting.Mouse.ClickImplementationWrapper(UITestControl control, MouseButtons button, ModifierKeys modifierKeys, Point relativeCoordinate)
+   at Microsoft.VisualStudio.TestTools.UITesting.Mouse.Click(UITestControl control, Point relativeCoordinate)
+   at AdresboekTest.UIMap.RemoveAll() in C:\Users\Bas\Desktop\Softwaretesting\edu.3725154.SoftwareTesting\Adresboek\AdresboekTest\UIMap.Designer.cs:line 765
+   at AdresboekTest.RecordAndReplay.TestAdressbook() in C:\Users\Bas\Desktop\Softwaretesting\edu.3725154.SoftwareTesting\Adresboek\AdresboekTest\RecordAndReplay.cs:line 97
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="BAS-PC\TestAdressbook.png" />
+      </ResultFiles>
+      <ExtensionResult>Exception has been thrown by the target of an invocation.</ExtensionResult>
+    </UnitTestResult>
+  </Results>
+</TestRun>

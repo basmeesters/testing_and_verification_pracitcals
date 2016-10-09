@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="af7d778a-451b-4453-988b-91e380b62798" name="Bas@BAS-PC 2013-06-28 12:54:55" runUser="Bas-PC\Bas" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="2aa66af6-b3b9-40d6-82a8-b5cc062499d2">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment runDeploymentRoot="Bas_BAS-PC 2013-06-28 12_54_55">
+      <DeploymentItem filename="C:\Users\Bas\Desktop\Softwaretesting\Adresboek\Adresboek\bin\Debug\Adresboek.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+        <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+          <Browser name="Internet Explorer 7.0">
+            <Headers>
+              <Header name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
+              <Header name="Accept" value="*/*" />
+              <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+              <Header name="Accept-Encoding" value="GZIP" />
+            </Headers>
+          </Browser>
+        </WebTestRunConfiguration>
+      </TestTypeSpecific>
+      <AgentRule name="LocalMachineDefaultRole">
+        <DataCollectors>
+          <DataCollector uri="datacollector://microsoft/CodeCoverage/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.CodeCoverage.CoveragePlugIn, Microsoft.VisualStudio.QualityTools.Plugins.CodeCoverage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Code Coverage">
+            <Configuration>
+              <CodeCoverage xmlns="">
+                <Regular>
+                  <CodeCoverageItem binaryFile="C:\Users\Bas\Desktop\Softwaretesting\Adresboek\Adresboek\bin\Debug\Adresboek.exe" pdbFile="C:\Users\Bas\Desktop\Softwaretesting\Adresboek\Adresboek\bin\Debug\Adresboek.instr.pdb" instrumentInPlace="true" />
+                </Regular>
+              </CodeCoverage>
+            </Configuration>
+          </DataCollector>
+        </DataCollectors>
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-28T12:54:55.7186279+02:00" queuing="2013-06-28T12:54:56.5576758+02:00" start="2013-06-28T12:54:56.6896834+02:00" finish="2013-06-28T12:55:18.8009481+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <ResultFiles>
+      <ResultFile path="BAS-PC\data.coverage" />
+    </ResultFiles>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestRemovingContactFromMultipleAddressbooks" storage="c:\users\bas\desktop\softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="d0f51090-57a5-cd0b-7a9e-5ea7b4b73661">
+      <Execution id="15ee4d0d-9c92-4eff-bd08-2304f751e9b3" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestRemovingContactFromMultipleAddressbooks" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="d0f51090-57a5-cd0b-7a9e-5ea7b4b73661" executionId="15ee4d0d-9c92-4eff-bd08-2304f751e9b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="15ee4d0d-9c92-4eff-bd08-2304f751e9b3" testId="d0f51090-57a5-cd0b-7a9e-5ea7b4b73661" testName="TestRemovingContactFromMultipleAddressbooks" computerName="BAS-PC" duration="00:00:17.9465289" startTime="2013-06-28T12:54:58.2847746+02:00" endTime="2013-06-28T12:55:16.8288353+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="15ee4d0d-9c92-4eff-bd08-2304f751e9b3">
+      <Output>
+        <DebugTrace>W, 5100, 15, 2013/06/28, 12:55:00.910, 9498312676, QTAgent32.exe, &lt;a class=success&gt;Playback - {1} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='View'"
+\0&lt;/a&gt;
+W, 5100, 15, 2013/06/28, 12:55:01.170, 9498641998, QTAgent32.exe, Value in en-US resource 'Maximaliseren' does not match the defaultvalue 'Maximize'
+W, 5100, 15, 2013/06/28, 12:55:01.171, 9498642713, QTAgent32.exe, Value in en-US resource 'Vorig formaat' does not match the defaultvalue 'Restore'
+E, 5100, 15, 2013/06/28, 12:55:01.199, 9498679101, QTAgent32.exe, LoadIEStrings() - Could not find ie resource assembly in nl-NL or nl-NL
+E, 5100, 15, 2013/06/28, 12:55:01.203, 9498683243, QTAgent32.exe, LoadLibrary() : Unable to find the resource 803 from assembly C:\Windows\system32\nl-NL\user32.dll.mui: Error1814
+W, 5100, 15, 2013/06/28, 12:55:01.209, 9498691486, QTAgent32.exe, Value in en-US resource 'Windows-beveiliging' does not match the defaultvalue 'Windows Security'
+W, 5100, 15, 2013/06/28, 12:55:02.253, 9500012307, QTAgent32.exe, &lt;a class=success&gt;Playback - {2} [SUCCESS] SetValueAsEditBox "test" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 5100, 15, 2013/06/28, 12:55:02.841, 9500757482, QTAgent32.exe, &lt;a class=success&gt;Playback - {3} [SUCCESS] SendKeys "{Tab}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 5100, 15, 2013/06/28, 12:55:04.208, 9502488766, QTAgent32.exe, &lt;a class=success&gt;Playback - {4} [SUCCESS] SetValueAsEditBox "test@gmail.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 5100, 15, 2013/06/28, 12:55:05.054, 9503560077, QTAgent32.exe, &lt;a class=success&gt;Playback - {5} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 5100, 15, 2013/06/28, 12:55:05.166, 9503700831, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+W, 5100, 15, 2013/06/28, 12:55:06.246, 9505068627, QTAgent32.exe, Playback - [WARNING] Internal warning:Search failure: [MSAA, VisibleOnly]ControlType='MenuBar' | [MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks' | Performed (2) search retries, UI element not found
+\0
+E, 5100, 15, 2013/06/28, 12:55:06.246, 9505069151, QTAgent32.exe, &lt;a class=failure&gt;Playback - {6} [FAILED] Function ElementFetcher::FindScreenElement failed to locate UI element (Searching: ;[MSAA, VisibleOnly]ControlType='MenuBar';[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks';[MSAA]ControlType='MenuItem' &amp;&amp; Name='View Adressbooks') (Het opgegeven object is niet gevonden.)
+\0&lt;/a&gt;
+E, 5100, 15, 2013/06/28, 12:55:06.383, 9505243244, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPF66A0.png
+\0
+W, 5100, 15, 2013/06/28, 12:55:06.384, 9505243579, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't find descendants that match QueryId
+\0
+W, 5100, 15, 2013/06/28, 12:55:06.384, 9505244520, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 1188 ms. Expected it to take maximum 500 ms.
+W, 5100, 15, 2013/06/28, 12:55:06.385, 9505244867, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+W, 5100, 15, 2013/06/28, 12:55:06.430, 9505302504, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+W, 5100, 15, 2013/06/28, 12:55:06.995, 9506017220, QTAgent32.exe, Playback - [WARNING] Internal warning: Target element "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks'" was not found, so all intermediate elements were ignored. An incorrect element that matches target element Id can be found as the result.  Verify that all intermediate elements in QueryId have valid and unique Ids
+\0
+W, 5100, 15, 2013/06/28, 12:55:08.533, 9507965098, QTAgent32.exe, Playback - [WARNING] Internal warning:Search failure: [MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks' | Performed (2) search retries, UI element not found
+\0
+E, 5100, 15, 2013/06/28, 12:55:08.533, 9507965508, QTAgent32.exe, &lt;a class=failure&gt;Playback - {7} [FAILED] Function ElementFetcher::FindScreenElement failed to locate UI element (Searching: ;[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks') (Het opgegeven object is niet gevonden.)
+\0&lt;/a&gt;
+E, 5100, 15, 2013/06/28, 12:55:08.678, 9508149278, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPF6F96.png
+\0
+W, 5100, 15, 2013/06/28, 12:55:08.678, 9508149629, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't find descendants that match QueryId
+\0
+W, 5100, 15, 2013/06/28, 12:55:08.679, 9508150059, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 2218 ms. Expected it to take maximum 500 ms.
+W, 5100, 15, 2013/06/28, 12:55:10.288, 9510188529, QTAgent32.exe, Playback - [WARNING] Internal warning: Target element "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks'" was not found, so all intermediate elements were ignored. An incorrect element that matches target element Id can be found as the result.  Verify that all intermediate elements in QueryId have valid and unique Ids
+\0
+W, 5100, 15, 2013/06/28, 12:55:11.731, 9512015578, QTAgent32.exe, Playback - [WARNING] Internal warning: 2 UI elements have the same ElementIds.  Use "Instance = 'n'" to avoid this warning for: [MSAA, VisibleOnly]ControlType='MenuBar'
+\0
+W, 5100, 15, 2013/06/28, 12:55:13.028, 9513657693, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 4321 ms. Expected it to take maximum 500 ms.
+W, 5100, 15, 2013/06/28, 12:55:13.274, 9513969442, QTAgent32.exe, &lt;a class=success&gt;Playback - {8} [SUCCESS] LeftButtonClick  &lt; Mouse cursor location (399, 140) &gt;
+\0&lt;/a&gt;
+W, 5100, 15, 2013/06/28, 12:55:13.444, 9514185553, QTAgent32.exe, &lt;a class=success&gt;Playback - {9} [SUCCESS] LeftButtonClick - "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks'"  &lt; Mouse cursor location (157, 140) &gt;
+\0&lt;/a&gt;
+W, 5100, 15, 2013/06/28, 12:55:14.800, 9515902052, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 1322 ms. Expected it to take maximum 500 ms.
+W, 5100, 15, 2013/06/28, 12:55:15.132, 9516323109, QTAgent32.exe, &lt;a class=success&gt;Playback - {10} [SUCCESS] MouseButtonClick - "[MSAA]ControlType='MenuItem' &amp;&amp; Name='View Adressbooks'"
+\0&lt;/a&gt;
+W, 5100, 15, 2013/06/28, 12:55:15.533, 9516830150, QTAgent32.exe, &lt;a class=success&gt;Playback - {11} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='View'"
+\0&lt;/a&gt;
+W, 5100, 15, 2013/06/28, 12:55:15.817, 9517190448, QTAgent32.exe, &lt;a class=success&gt;Playback - {12} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 5100, 15, 2013/06/28, 12:55:16.246, 9517733438, QTAgent32.exe, &lt;a class=success&gt;Playback - {13} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Delete Contact'"
+\0&lt;/a&gt;
+W, 5100, 15, 2013/06/28, 12:55:16.716, 9518328742, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 5100, 15, 2013/06/28, 12:55:16.716, 9518328986, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

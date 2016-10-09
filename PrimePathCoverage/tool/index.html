@@ -1,0 +1,304 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<script type="text/coffeescript" src="js/calculate-prime-paths.coffee"></script>
+	<script type="text/coffeescript" src="js/check-toured-prime-paths.coffee"></script>
+
+	<script type="text/javascript" src="js/lib/jquery-1.10.1.js"></script>
+	<script type="text/javascript" src="js/lib/underscore.js"></script>
+	<script type="text/javascript" src="js/lib/coffee-script.js"></script>
+
+	<style type="text/css">
+		body {
+			padding: 40px;
+		}
+		label {
+			font-weight: bold;
+			display: block;
+		}
+		label#allowDetoursLabel {
+			height: 31px;
+		}
+		textarea {
+			display: block;
+			font-size: 12px;
+			line-height: 14px;
+			font-family: courier;
+		}
+		textarea#logs {
+			height: 185px;
+		}
+		#result .name {
+			display: inline-block;
+			width: 70px;
+		}
+		#result .path {
+			font-weight: bold;
+		}
+		#result em {
+			color: gray;
+			font-weight: 200;
+			color: blue;
+		}
+		.clear {
+			clear: both;
+		}
+		.pull-left {
+			float: left;
+			margin-right: 20px;
+		}
+		.correct {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="pull-left">
+		<form id="form-calculate-prime-paths">
+			<div>
+				<label for="edges">Edges:</label>
+				<textarea name="edges" id="edges" rows="15" cols="15">
+b f1
+f1 g1
+g1 h
+h g2
+g2 f2
+f2 c
+c i
+i d
+c d
+b c
+f1 f2
+f2 f1
+g1 g2
+g2 g1
+				</textarea>
+				<input type="submit" name="submit" id="submit" class="btn" value="Calculate Prime Paths">
+			</div>
+		</form>
+	</div>
+	<div class="pull-left">
+		<form id="form-check-toured-prime-paths">
+			<div>
+				<label for="logs">Execution logs:</label>
+				<textarea name="logs" id="logs" rows="15" cols="15">
+BEGIN
+a
+b
+f1
+f2
+c
+i
+d
+END
+BEGIN
+a
+b
+f1
+g1
+g2
+f2
+c
+i
+d
+END
+BEGIN
+a
+b
+f1
+f2
+f1
+f2
+c
+i
+d
+END
+BEGIN
+a
+b
+f1
+g1
+g2
+g1
+g2
+f2
+c
+i
+d
+END
+BEGIN
+a
+b
+f1
+g1
+g2
+g1
+g2
+f2
+c
+i
+d
+END
+BEGIN
+a
+b
+f1
+g1
+h
+g2
+g1
+g2
+f2
+f1
+f2
+c
+d
+END
+BEGIN
+a
+b
+f1
+g1
+g2
+g1
+h
+g2
+f2
+f1
+f2
+c
+d
+END
+BEGIN
+a
+b
+f1
+g1
+g2
+f2
+f1
+f2
+c
+i
+d
+END
+BEGIN
+a
+b
+f1
+g1
+g2
+f2
+f1
+g1
+g2
+f2
+c
+i
+d
+END
+BEGIN
+a
+b
+f1
+f2
+f1
+g1
+g2
+f2
+c
+i
+d
+END
+BEGIN
+a
+b
+f1
+g1
+h
+g2
+f2
+f1
+f2
+c
+d
+END
+BEGIN
+a
+b
+f1
+g1
+h
+g2
+f2
+f1
+g1
+g2
+f2
+c
+d
+END
+BEGIN
+a
+b
+f1
+g1
+h
+g2
+f2
+f1
+g1
+h
+g2
+f2
+f1
+f2
+c
+d
+END
+BEGIN
+a
+b
+f1
+g1
+g2
+f2
+f1
+g1
+h
+g2
+f2
+c
+d
+END
+BEGIN
+a
+b
+f1
+f2
+f1
+g1
+h
+g2
+f2
+c
+d
+END
+
+				</textarea>
+				<label for="allowDetours" id="allowDetoursLabel"><input type="checkbox" name="allowDetours" id="allowDetours"> allow detours</label>
+				<input type="submit" name="submit2" id="submit2" class="btn" value="Check toured Prime Paths">
+			</div>
+		</form>
+	</div>
+	
+	<div class="pull-left" id="result"></div>
+	<div class="clear"></div>
+
+</body>
+</html>

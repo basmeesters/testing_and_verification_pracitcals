@@ -1,0 +1,131 @@
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : All contacts from the current adressboek are visible
+True : All contacts from the current adressboek are visible
+True : All contacts in adressbooks[current] also in Labels
+True : All contacts from the current adressboek are visible
+True : Deleted contact not in Label anymore
+False : All contacts from the current adressboek are visible
+True : Search contacts are all visible
+True : All contacts from the current adressboek are visible
+False : All contacts from the current adressboek are visible
+True : Search contacts are all visible
+True : Copy to adressbook
+True : All contacts from the current adressboek are visible
+False : All contacts from the current adressboek are visible
+True : Search contacts are all visible
+False : All contacts removed from current adressbook truly removed
+False : All contacts removed from current adressbook not visible
+False : All contacts from the current adressboek are visible
+True : All contacts from the current adressboek are visible
+True : All contacts from the current adressboek are visible
+True : Search contacts are all visible
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : Box is empty at start
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : All contacts from the current adressboek are visible
+True : All contacts removed from current adressbook truly removed
+True : All contacts removed from current adressbook not visible
+False : All contacts from the current adressboek are visible
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : All contacts from the current adressboek are visible
+True : Box is empty at start
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : All contacts from the current adressboek are visible
+True : All contacts from the current adressboek are visible
+True : All contacts in adressbooks[current] also in Labels
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : All contacts from the current adressboek are visible
+True : All contacts from the current adressboek are visible
+True : All contacts in adressbooks[current] also in Labels
+True : All contacts from the current adressboek are visible
+True : Deleted contact not in Label anymore
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : All contacts from the current adressboek are visible
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : All contacts from the current adressboek are visible
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : All contacts from the current adressboek are visible
+True : All contacts from the current adressboek are visible
+True : All contacts in adressbooks[current] also in Labels
+True : All contacts from the current adressboek are visible
+True : Deleted contact not in Label anymore
+False : All contacts from the current adressboek are visible
+True : Search contacts are all visible
+True : All contacts from the current adressboek are visible
+False : All contacts from the current adressboek are visible
+True : Search contacts are all visible
+True : Copy to adressbook
+True : All contacts from the current adressboek are visible
+False : All contacts from the current adressboek are visible
+True : Search contacts are all visible
+False : All contacts removed from current adressbook truly removed
+False : All contacts removed from current adressbook not visible
+False : All contacts from the current adressboek are visible
+True : All contacts from the current adressboek are visible
+True : All contacts from the current adressboek are visible
+True : Search contacts are all visible
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : Box is empty at start
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : All contacts from the current adressboek are visible
+True : All contacts removed from current adressbook truly removed
+True : All contacts removed from current adressbook not visible
+False : All contacts from the current adressboek are visible
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : All contacts from the current adressboek are visible
+True : Box is empty at start
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : All contacts from the current adressboek are visible
+True : All contacts from the current adressboek are visible
+True : All contacts in adressbooks[current] also in Labels
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : All contacts from the current adressboek are visible
+True : All contacts from the current adressboek are visible
+True : All contacts in adressbooks[current] also in Labels
+True : All contacts from the current adressboek are visible
+True : Deleted contact not in Label anymore
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : All contacts from the current adressboek are visible
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : All contacts from the current adressboek are visible
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : All contacts from the current adressboek have labels
+False : All contacts from the current adressboek have labels
+True : Search contacts are all visible
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+False : All contacts from the current adressboek have labels
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+False : All contacts from the current adressboek have labels
+True : All contacts from the current adressboek have labels
+False : All contacts from the current adressboek have labels
+True : Search contacts are all visible
+True : Box is empty at start
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+False : All contacts from the current adressboek have labels
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+False : All contacts from the current adressboek have labels
+True : All contacts from the current adressboek have labels
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : All contacts from the current adressboek have labels
+True : All contacts from the current adressboek have labels
+True : All contacts in adressbooks[current] also in Labels
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : All contacts from the current adressboek have labels
+True : All contacts from the current adressboek have labels
+True : All contacts in adressbooks[current] also in Labels
+True : All contacts from the current adressboek have labels
+True : Deleted contact not in Label anymore
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : All contacts from the current adressboek have labels
+True : All contacts from the current adressboek have labels
+True : All contacts in adressbooks[current] also in Labels
+True : Labels in Select adressbook have the same text as the names in the adressbooks list
+True : All contacts from the current adressboek have labels
+True : All contacts from the current adressboek have labels
+True : All contacts in adressbooks[current] also in Labels
+True : All contacts from the current adressboek have labels
+True : Deleted contact not in Label anymore

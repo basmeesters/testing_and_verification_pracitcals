@@ -1,0 +1,846 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="1dfc28b5-4d4e-476d-84b8-2473b275f258" name="Bas@BAS-PC 2013-06-26 21:32:11" runUser="Bas-PC\Bas" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="2aa66af6-b3b9-40d6-82a8-b5cc062499d2">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment runDeploymentRoot="Bas_BAS-PC 2013-06-26 21_32_11">
+      <DeploymentItem filename="C:\Users\Bas\Desktop\Softwaretesting\edu.3725154.SoftwareTesting\Adresboek\Adresboek\bin\Debug\Adresboek.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+        <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+          <Browser name="Internet Explorer 7.0">
+            <Headers>
+              <Header name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
+              <Header name="Accept" value="*/*" />
+              <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+              <Header name="Accept-Encoding" value="GZIP" />
+            </Headers>
+          </Browser>
+        </WebTestRunConfiguration>
+      </TestTypeSpecific>
+      <AgentRule name="LocalMachineDefaultRole">
+        <DataCollectors>
+          <DataCollector uri="datacollector://microsoft/CodeCoverage/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.CodeCoverage.CoveragePlugIn, Microsoft.VisualStudio.QualityTools.Plugins.CodeCoverage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Code Coverage">
+            <Configuration>
+              <CodeCoverage xmlns="">
+                <Regular>
+                  <CodeCoverageItem binaryFile="C:\Users\Bas\Desktop\Softwaretesting\edu.3725154.SoftwareTesting\Adresboek\Adresboek\bin\Debug\Adresboek.exe" pdbFile="C:\Users\Bas\Desktop\Softwaretesting\edu.3725154.SoftwareTesting\Adresboek\Adresboek\bin\Debug\Adresboek.instr.pdb" instrumentInPlace="true" />
+                </Regular>
+              </CodeCoverage>
+            </Configuration>
+          </DataCollector>
+        </DataCollectors>
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-26T21:32:11.7801341+02:00" queuing="2013-06-26T21:32:12.7101873+02:00" start="2013-06-26T21:32:12.7461893+02:00" finish="2013-06-26T21:33:56.8231422+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="6" executed="6" passed="6" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <ResultFiles>
+      <ResultFile path="BAS-PC\data.coverage" />
+    </ResultFiles>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestSwitchingViews" storage="c:\users\bas\desktop\softwaretesting\edu.3725154.softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="b0e3743f-f45f-f807-d44f-c69c7a0f26fc">
+      <Execution id="1df7ab2d-0e7c-4610-9af9-ae87ffd5c5eb" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/edu.3725154.SoftwareTesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestSwitchingViews" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestAddAdressbook" storage="c:\users\bas\desktop\softwaretesting\edu.3725154.softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="04cdc5c6-7caa-c214-3fde-ec3b17b314d1">
+      <Execution id="4bcae45e-d9cd-48fd-9a59-136ae68357d9" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/edu.3725154.SoftwareTesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestAddAdressbook" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestAdressbook" storage="c:\users\bas\desktop\softwaretesting\edu.3725154.softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="01e9d56f-ff67-457b-95c6-4b556a70f386">
+      <Execution id="5db0b5b4-48ba-4d69-bc82-91e91c6255b5" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/edu.3725154.SoftwareTesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestAdressbook" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestEmail" storage="c:\users\bas\desktop\softwaretesting\edu.3725154.softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="ecf14cdf-a816-c9c9-b486-338ae3a984be">
+      <Execution id="f5e8dc58-24e9-4b54-8a68-2ee70fec8366" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/edu.3725154.SoftwareTesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestEmail" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestRemove" storage="c:\users\bas\desktop\softwaretesting\edu.3725154.softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="19945944-a8d7-5865-9d24-bb159a9f92f7">
+      <Execution id="e1641168-dfe3-4547-9468-89e6df3fd22e" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/edu.3725154.SoftwareTesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestRemove" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="TestName" storage="c:\users\bas\desktop\softwaretesting\edu.3725154.softwaretesting\adresboek\adresboektest\bin\debug\adresboektest.dll" id="ff1d36de-df47-0a9f-9f67-ff714225cbd5">
+      <Execution id="e4574bd1-e034-4c06-9ca7-8de08b9ee12c" />
+      <TestMethod codeBase="C:/Users/Bas/Desktop/Softwaretesting/edu.3725154.SoftwareTesting/Adresboek/AdresboekTest/bin/Debug/AdresboekTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AdresboekTest.RecordAndReplay, AdresboekTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestName" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="01e9d56f-ff67-457b-95c6-4b556a70f386" executionId="5db0b5b4-48ba-4d69-bc82-91e91c6255b5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="04cdc5c6-7caa-c214-3fde-ec3b17b314d1" executionId="4bcae45e-d9cd-48fd-9a59-136ae68357d9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="19945944-a8d7-5865-9d24-bb159a9f92f7" executionId="e1641168-dfe3-4547-9468-89e6df3fd22e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0e3743f-f45f-f807-d44f-c69c7a0f26fc" executionId="1df7ab2d-0e7c-4610-9af9-ae87ffd5c5eb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ecf14cdf-a816-c9c9-b486-338ae3a984be" executionId="f5e8dc58-24e9-4b54-8a68-2ee70fec8366" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ff1d36de-df47-0a9f-9f67-ff714225cbd5" executionId="e4574bd1-e034-4c06-9ca7-8de08b9ee12c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5db0b5b4-48ba-4d69-bc82-91e91c6255b5" testId="01e9d56f-ff67-457b-95c6-4b556a70f386" testName="TestAdressbook" computerName="BAS-PC" duration="00:00:10.3246627" startTime="2013-06-26T21:32:13.3942264+02:00" endTime="2013-06-26T21:32:23.9398296+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5db0b5b4-48ba-4d69-bc82-91e91c6255b5">
+      <Output>
+        <DebugTrace>W, 7300, 15, 2013/06/26, 21:32:14.966, 138525491497, QTAgent32.exe, &lt;a class=success&gt;Playback - {1} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='View'"
+\0&lt;/a&gt;
+W, 7300, 15, 2013/06/26, 21:32:15.168, 138526082289, QTAgent32.exe, Value in en-US resource 'Maximaliseren' does not match the defaultvalue 'Maximize'
+W, 7300, 15, 2013/06/26, 21:32:15.168, 138526083895, QTAgent32.exe, Value in en-US resource 'Vorig formaat' does not match the defaultvalue 'Restore'
+W, 7300, 15, 2013/06/26, 21:32:15.190, 138526146545, QTAgent32.exe, Value in en-US resource 'Vorige' does not match the defaultvalue 'Back'
+W, 7300, 15, 2013/06/26, 21:32:15.190, 138526147479, QTAgent32.exe, Value in en-US resource 'Volgende' does not match the defaultvalue 'Forward'
+W, 7300, 15, 2013/06/26, 21:32:15.190, 138526148276, QTAgent32.exe, Value in en-US resource 'Vernieuwen (F5)' does not match the defaultvalue 'Refresh (F5)'
+W, 7300, 15, 2013/06/26, 21:32:15.191, 138526149029, QTAgent32.exe, Value in en-US resource 'Stoppen (Esc)' does not match the defaultvalue 'Stop (Esc)'
+W, 7300, 15, 2013/06/26, 21:32:15.191, 138526150430, QTAgent32.exe, Value in en-US resource 'Adresbalk met automatisch aanvullen weergeven' does not match the defaultvalue 'Show Address Bar Autocomplete'
+W, 7300, 15, 2013/06/26, 21:32:15.191, 138526151584, QTAgent32.exe, Value in en-US resource 'Adres en zoeken met %s' does not match the defaultvalue 'Address'
+W, 7300, 15, 2013/06/26, 21:32:15.192, 138526151844, QTAgent32.exe, Value in en-US resource 'Bestand selecteren voor uploaden' does not match the defaultvalue 'Choose file'
+W, 7300, 15, 2013/06/26, 21:32:15.192, 138526152556, QTAgent32.exe, Value in en-US resource 'Melding' does not match the defaultvalue 'Notification Bar'
+W, 7300, 15, 2013/06/26, 21:32:15.197, 138526169088, QTAgent32.exe, Value in en-US resource 'Microsoft SmartScreen-filter' does not match the defaultvalue 'Microsoft Phishing Filter'
+W, 7300, 15, 2013/06/26, 21:32:15.198, 138526169554, QTAgent32.exe, Value in en-US resource 'Automatisch aanvullen' does not match the defaultvalue 'AutoComplete'
+W, 7300, 15, 2013/06/26, 21:32:15.198, 138526169928, QTAgent32.exe, Value in en-US resource 'Wachtwoorden automatisch aanvullen' does not match the defaultvalue 'AutoComplete Passwords'
+E, 7300, 15, 2013/06/26, 21:32:15.198, 138526170616, QTAgent32.exe, LoadLibrary() : Unable to find the resource 37382 from assembly C:\Windows\system32\nl-NL\ieframe.dll.mui: Error1814
+E, 7300, 15, 2013/06/26, 21:32:15.198, 138526171443, QTAgent32.exe, LoadLibrary() : Unable to find the resource 41728 from assembly C:\Windows\system32\nl-NL\ieframe.dll.mui: Error1814
+E, 7300, 15, 2013/06/26, 21:32:15.198, 138526171777, QTAgent32.exe, LoadLibrary() : Unable to find the resource 8131 from assembly C:\Windows\system32\nl-NL\ieframe.dll.mui: Error1814
+E, 7300, 15, 2013/06/26, 21:32:15.199, 138526172103, QTAgent32.exe, LoadLibrary() : Unable to find the resource 8131 from assembly C:\Windows\system32\nl-NL\ieframe.dll.mui: Error1814
+W, 7300, 15, 2013/06/26, 21:32:15.199, 138526172476, QTAgent32.exe, Value in en-US resource 'Sluiten' does not match the defaultvalue 'Close'
+E, 7300, 15, 2013/06/26, 21:32:15.199, 138526172770, QTAgent32.exe, LoadLibrary() : Unable to find the resource 8131 from assembly C:\Windows\system32\nl-NL\ieframe.dll.mui: Error1814
+W, 7300, 15, 2013/06/26, 21:32:15.199, 138526173150, QTAgent32.exe, Value in en-US resource 'Beveiligingswaarschuwing' does not match the defaultvalue 'Security Warning'
+E, 7300, 15, 2013/06/26, 21:32:15.199, 138526173585, QTAgent32.exe, LoadLibrary() : Unable to find the resource 803 from assembly C:\Windows\system32\nl-NL\user32.dll.mui: Error1814
+W, 7300, 15, 2013/06/26, 21:32:15.199, 138526174476, QTAgent32.exe, Value in en-US resource 'Windows-beveiliging' does not match the defaultvalue 'Windows Security'
+W, 7300, 15, 2013/06/26, 21:32:15.598, 138527338941, QTAgent32.exe, &lt;a class=success&gt;Playback - {2} [SUCCESS] SetValueAsEditBox "Bas" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 15, 2013/06/26, 21:32:15.904, 138528234666, QTAgent32.exe, &lt;a class=success&gt;Playback - {3} [SUCCESS] SendKeys "{Tab}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 15, 2013/06/26, 21:32:16.586, 138530226688, QTAgent32.exe, &lt;a class=success&gt;Playback - {4} [SUCCESS] SetValueAsEditBox "bas@bas.nl" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 15, 2013/06/26, 21:32:16.966, 138531340138, QTAgent32.exe, &lt;a class=success&gt;Playback - {5} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 15, 2013/06/26, 21:32:17.452, 138532758944, QTAgent32.exe, &lt;a class=success&gt;Playback - {6} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Delete Contact'"
+\0&lt;/a&gt;
+W, 7300, 15, 2013/06/26, 21:32:18.112, 138534687798, QTAgent32.exe, &lt;a class=success&gt;Playback - {7} [SUCCESS] SetValueAsEditBox "bas" - "[MSAA, VisibleOnly]ControlType='Edit' &amp;&amp; Name='Adressbook Name: sample'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 15, 2013/06/26, 21:32:18.568, 138536021261, QTAgent32.exe, &lt;a class=success&gt;Playback - {8} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Search'"
+\0&lt;/a&gt;
+W, 7300, 15, 2013/06/26, 21:32:18.994, 138537266757, QTAgent32.exe, &lt;a class=success&gt;Playback - {9} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='clear'"
+\0&lt;/a&gt;
+W, 7300, 15, 2013/06/26, 21:32:19.692, 138539306844, QTAgent32.exe, &lt;a class=success&gt;Playback - {10} [SUCCESS] SetValueAsEditBox "bas" - "[MSAA, VisibleOnly]ControlType='Edit' &amp;&amp; Name='Adressbook Name: searchbook'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 15, 2013/06/26, 21:32:19.944, 138540043802, QTAgent32.exe, &lt;a class=success&gt;Playback - {11} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Search'"
+\0&lt;/a&gt;
+E, 7300, 15, 2013/06/26, 21:32:20.330, 138541172581, QTAgent32.exe, Exception: System.ArgumentException
+	Message: Value does not fall within the expected range.
+	Stack Trace:    at Accessibility.IAccessible.get_accRole(Object varChild)
+   at Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.AccWrapper.get_RoleInt()
+	BaseExceptionMessage: Value does not fall within the expected range.
+
+W, 7300, 15, 2013/06/26, 21:32:20.895, 138542822900, QTAgent32.exe, Playback - [WARNING] Internal warning: Incorrect flag set for InvokeProgrammaticAction\0
+W, 7300, 15, 2013/06/26, 21:32:21.020, 138543189208, QTAgent32.exe, &lt;a class=success&gt;Playback - {12} [SUCCESS] SetValueAsComboBox "sample2" - "[MSAA, VisibleOnly]ControlType='ComboBox' &amp;&amp; Name='Contacts:'"  &lt; SetValueAsComboBox, set by clicking on the item in the list box &gt;
+\0&lt;/a&gt;
+W, 7300, 15, 2013/06/26, 21:32:21.565, 138544782569, QTAgent32.exe, &lt;a class=success&gt;Playback - {13} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Copy all to:'"
+\0&lt;/a&gt;
+W, 7300, 15, 2013/06/26, 21:32:21.822, 138545533618, QTAgent32.exe, &lt;a class=success&gt;Playback - {14} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='clear'"
+\0&lt;/a&gt;
+W, 7300, 15, 2013/06/26, 21:32:22.307, 138546951193, QTAgent32.exe, &lt;a class=success&gt;Playback - {15} [SUCCESS] SetValueAsEditBox "bas" - "[MSAA, VisibleOnly]ControlType='Edit' &amp;&amp; Name='Adressbook Name: sample'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 15, 2013/06/26, 21:32:22.564, 138547702639, QTAgent32.exe, &lt;a class=success&gt;Playback - {16} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Search'"
+\0&lt;/a&gt;
+W, 7300, 15, 2013/06/26, 21:32:23.177, 138549494519, QTAgent32.exe, &lt;a class=success&gt;Playback - {17} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Remove all'"
+\0&lt;/a&gt;
+W, 7300, 15, 2013/06/26, 21:32:23.439, 138550260394, QTAgent32.exe, &lt;a class=success&gt;Playback - {18} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='clear'"
+\0&lt;/a&gt;
+W, 7300, 15, 2013/06/26, 21:32:23.694, 138551005760, QTAgent32.exe, &lt;a class=success&gt;Playback - {19} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Search'"
+\0&lt;/a&gt;
+W, 7300, 15, 2013/06/26, 21:32:23.926, 138551684401, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 7300, 15, 2013/06/26, 21:32:23.926, 138551684710, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4bcae45e-d9cd-48fd-9a59-136ae68357d9" testId="04cdc5c6-7caa-c214-3fde-ec3b17b314d1" testName="TestAddAdressbook" computerName="BAS-PC" duration="00:00:23.7174531" startTime="2013-06-26T21:32:23.9408296+02:00" endTime="2013-06-26T21:32:47.6621864+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4bcae45e-d9cd-48fd-9a59-136ae68357d9">
+      <Output>
+        <DebugTrace>W, 7300, 24, 2013/06/26, 21:32:24.536, 138553468655, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+W, 7300, 24, 2013/06/26, 21:32:25.593, 138556556191, QTAgent32.exe, Playback - [WARNING] Internal warning:Search failure: [MSAA, VisibleOnly]ControlType='MenuBar' | [MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks' | Performed (2) search retries, UI element not found
+\0
+E, 7300, 24, 2013/06/26, 21:32:25.593, 138556557006, QTAgent32.exe, &lt;a class=failure&gt;Playback - {1} [FAILED] Function ElementFetcher::FindScreenElement failed to locate UI element (Searching: ;[MSAA, VisibleOnly]ControlType='MenuBar';[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks';[MSAA]ControlType='MenuItem' &amp;&amp; Name='Add Adressbook') (Het opgegeven object is niet gevonden.)
+\0&lt;/a&gt;
+E, 7300, 24, 2013/06/26, 21:32:25.692, 138556846760, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPF4779.png
+\0
+W, 7300, 24, 2013/06/26, 21:32:25.692, 138556847181, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't find descendants that match QueryId
+\0
+W, 7300, 24, 2013/06/26, 21:32:25.693, 138556848308, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 1135 ms. Expected it to take maximum 500 ms.
+W, 7300, 24, 2013/06/26, 21:32:25.693, 138556848708, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+W, 7300, 24, 2013/06/26, 21:32:25.710, 138556899012, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+W, 7300, 24, 2013/06/26, 21:32:26.238, 138558442858, QTAgent32.exe, Playback - [WARNING] Internal warning: Target element "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks'" was not found, so all intermediate elements were ignored. An incorrect element that matches target element Id can be found as the result.  Verify that all intermediate elements in QueryId have valid and unique Ids
+\0
+W, 7300, 24, 2013/06/26, 21:32:27.770, 138562919493, QTAgent32.exe, Playback - [WARNING] Internal warning:Search failure: [MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks' | Performed (2) search retries, UI element not found
+\0
+E, 7300, 24, 2013/06/26, 21:32:27.771, 138562920277, QTAgent32.exe, &lt;a class=failure&gt;Playback - {2} [FAILED] Function ElementFetcher::FindScreenElement failed to locate UI element (Searching: ;[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks') (Het opgegeven object is niet gevonden.)
+\0&lt;/a&gt;
+E, 7300, 24, 2013/06/26, 21:32:27.874, 138563223502, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPF4FF3.png
+\0
+W, 7300, 24, 2013/06/26, 21:32:27.875, 138563223863, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't find descendants that match QueryId
+\0
+W, 7300, 24, 2013/06/26, 21:32:27.875, 138563224335, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 2153 ms. Expected it to take maximum 500 ms.
+W, 7300, 24, 2013/06/26, 21:32:29.429, 138567767016, QTAgent32.exe, Playback - [WARNING] Internal warning: Target element "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks'" was not found, so all intermediate elements were ignored. An incorrect element that matches target element Id can be found as the result.  Verify that all intermediate elements in QueryId have valid and unique Ids
+\0
+W, 7300, 24, 2013/06/26, 21:32:30.159, 138569901982, QTAgent32.exe, Playback - [WARNING] Internal warning: 2 UI elements have the same ElementIds.  Use "Instance = 'n'" to avoid this warning for: [MSAA, VisibleOnly]ControlType='MenuBar'
+\0
+W, 7300, 24, 2013/06/26, 21:32:30.402, 138570613034, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 2517 ms. Expected it to take maximum 500 ms.
+W, 7300, 24, 2013/06/26, 21:32:30.607, 138571210945, QTAgent32.exe, &lt;a class=success&gt;Playback - {3} [SUCCESS] LeftButtonClick  &lt; Mouse cursor location (383, 117) &gt;
+\0&lt;/a&gt;
+W, 7300, 24, 2013/06/26, 21:32:30.770, 138571687596, QTAgent32.exe, &lt;a class=success&gt;Playback - {4} [SUCCESS] LeftButtonClick - "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks'"  &lt; Mouse cursor location (132, 117) &gt;
+\0&lt;/a&gt;
+W, 7300, 24, 2013/06/26, 21:32:31.117, 138572701495, QTAgent32.exe, &lt;a class=success&gt;Playback - {5} [SUCCESS] MouseButtonClick - "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Add Adressbook'"
+\0&lt;/a&gt;
+W, 7300, 24, 2013/06/26, 21:32:32.333, 138576256526, QTAgent32.exe, &lt;a class=success&gt;Playback - {6} [SUCCESS] SetValueAsEditBox "eenveeeltelangeenaaaaaaaaaaaaaaaaam" - "[MSAA, VisibleOnly]ControlType='Edit' &amp;&amp; Name='Adressbook Name:'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 24, 2013/06/26, 21:32:32.753, 138577486144, QTAgent32.exe, &lt;a class=success&gt;Playback - {7} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Create Adressbook'"
+\0&lt;/a&gt;
+W, 7300, 24, 2013/06/26, 21:32:32.999, 138578204813, QTAgent32.exe, &lt;a class=success&gt;Playback - {8} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='OK'"
+\0&lt;/a&gt;
+W, 7300, 24, 2013/06/26, 21:32:33.100, 138578499533, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+W, 7300, 24, 2013/06/26, 21:32:34.152, 138581573191, QTAgent32.exe, Playback - [WARNING] Internal warning:Search failure: [MSAA, VisibleOnly]ControlType='MenuBar' | [MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks' | Performed (2) search retries, UI element not found
+\0
+E, 7300, 24, 2013/06/26, 21:32:34.152, 138581573986, QTAgent32.exe, &lt;a class=failure&gt;Playback - {9} [FAILED] Function ElementFetcher::FindScreenElement failed to locate UI element (Searching: ;[MSAA, VisibleOnly]ControlType='MenuBar';[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks';[MSAA]ControlType='MenuItem' &amp;&amp; Name='Add Adressbook') (Het opgegeven object is niet gevonden.)
+\0&lt;/a&gt;
+E, 7300, 24, 2013/06/26, 21:32:34.261, 138581894290, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPF68E0.png
+\0
+W, 7300, 24, 2013/06/26, 21:32:34.262, 138581894736, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't find descendants that match QueryId
+\0
+W, 7300, 24, 2013/06/26, 21:32:34.262, 138581895282, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 1141 ms. Expected it to take maximum 500 ms.
+W, 7300, 24, 2013/06/26, 21:32:34.262, 138581895655, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+W, 7300, 24, 2013/06/26, 21:32:34.278, 138581942940, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+W, 7300, 24, 2013/06/26, 21:32:34.803, 138583477321, QTAgent32.exe, Playback - [WARNING] Internal warning: Target element "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks'" was not found, so all intermediate elements were ignored. An incorrect element that matches target element Id can be found as the result.  Verify that all intermediate elements in QueryId have valid and unique Ids
+\0
+W, 7300, 24, 2013/06/26, 21:32:36.332, 138587947382, QTAgent32.exe, Playback - [WARNING] Internal warning:Search failure: [MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks' | Performed (2) search retries, UI element not found
+\0
+E, 7300, 24, 2013/06/26, 21:32:36.332, 138587948154, QTAgent32.exe, &lt;a class=failure&gt;Playback - {10} [FAILED] Function ElementFetcher::FindScreenElement failed to locate UI element (Searching: ;[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks') (Het opgegeven object is niet gevonden.)
+\0&lt;/a&gt;
+E, 7300, 24, 2013/06/26, 21:32:36.432, 138588239639, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPF7169.png
+\0
+W, 7300, 24, 2013/06/26, 21:32:36.432, 138588240033, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't find descendants that match QueryId
+\0
+W, 7300, 24, 2013/06/26, 21:32:36.432, 138588240572, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 2145 ms. Expected it to take maximum 500 ms.
+W, 7300, 24, 2013/06/26, 21:32:37.987, 138592783986, QTAgent32.exe, Playback - [WARNING] Internal warning: Target element "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks'" was not found, so all intermediate elements were ignored. An incorrect element that matches target element Id can be found as the result.  Verify that all intermediate elements in QueryId have valid and unique Ids
+\0
+W, 7300, 24, 2013/06/26, 21:32:38.619, 138594633279, QTAgent32.exe, Playback - [WARNING] Internal warning: 2 UI elements have the same ElementIds.  Use "Instance = 'n'" to avoid this warning for: [MSAA, VisibleOnly]ControlType='MenuBar'
+\0
+W, 7300, 24, 2013/06/26, 21:32:38.752, 138595021982, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 2309 ms. Expected it to take maximum 500 ms.
+W, 7300, 24, 2013/06/26, 21:32:38.928, 138595535235, QTAgent32.exe, &lt;a class=success&gt;Playback - {11} [SUCCESS] LeftButtonClick  &lt; Mouse cursor location (383, 117) &gt;
+\0&lt;/a&gt;
+W, 7300, 24, 2013/06/26, 21:32:39.075, 138595965238, QTAgent32.exe, &lt;a class=success&gt;Playback - {12} [SUCCESS] LeftButtonClick - "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks'"  &lt; Mouse cursor location (132, 117) &gt;
+\0&lt;/a&gt;
+W, 7300, 24, 2013/06/26, 21:32:39.357, 138596790175, QTAgent32.exe, &lt;a class=success&gt;Playback - {13} [SUCCESS] MouseButtonClick - "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Add Adressbook'"
+\0&lt;/a&gt;
+W, 7300, 24, 2013/06/26, 21:32:39.728, 138597873731, QTAgent32.exe, &lt;a class=success&gt;Playback - {14} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit' &amp;&amp; Name='Adressbook Name:'"
+\0&lt;/a&gt;
+E, 7300, 24, 2013/06/26, 21:32:39.730, 138597878962, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 24, 2013/06/26, 21:32:39.808, 138598107628, QTAgent32.exe, &lt;a class=success&gt;Playback - {15} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit' &amp;&amp; Name='Adressbook Name:'"
+\0&lt;/a&gt;
+E, 7300, 24, 2013/06/26, 21:32:39.808, 138598108391, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 24, 2013/06/26, 21:32:39.859, 138598257131, QTAgent32.exe, &lt;a class=success&gt;Playback - {16} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit' &amp;&amp; Name='Adressbook Name:'"
+\0&lt;/a&gt;
+W, 7300, 24, 2013/06/26, 21:32:40.111, 138598992563, QTAgent32.exe, &lt;a class=success&gt;Playback - {17} [SUCCESS] SetValueAsEditBox "Test" - "[MSAA, VisibleOnly]ControlType='Edit' &amp;&amp; Name='Adressbook Name:'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 24, 2013/06/26, 21:32:40.403, 138599847939, QTAgent32.exe, &lt;a class=success&gt;Playback - {18} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Create Adressbook'"
+\0&lt;/a&gt;
+W, 7300, 24, 2013/06/26, 21:32:40.503, 138600140152, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+W, 7300, 24, 2013/06/26, 21:32:41.552, 138603205005, QTAgent32.exe, Playback - [WARNING] Internal warning:Search failure: [MSAA, VisibleOnly]ControlType='MenuBar' | [MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks' | Performed (2) search retries, UI element not found
+\0
+E, 7300, 24, 2013/06/26, 21:32:41.552, 138603205826, QTAgent32.exe, &lt;a class=failure&gt;Playback - {19} [FAILED] Function ElementFetcher::FindScreenElement failed to locate UI element (Searching: ;[MSAA, VisibleOnly]ControlType='MenuBar';[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks';[MSAA]ControlType='MenuItem' &amp;&amp; Name='Add Adressbook') (Het opgegeven object is niet gevonden.)
+\0&lt;/a&gt;
+E, 7300, 24, 2013/06/26, 21:32:41.643, 138603472291, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPF85D4.png
+\0
+W, 7300, 24, 2013/06/26, 21:32:41.643, 138603472675, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't find descendants that match QueryId
+\0
+W, 7300, 24, 2013/06/26, 21:32:41.643, 138603473192, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 1120 ms. Expected it to take maximum 500 ms.
+W, 7300, 24, 2013/06/26, 21:32:41.644, 138603473555, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+W, 7300, 24, 2013/06/26, 21:32:41.661, 138603525055, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+W, 7300, 24, 2013/06/26, 21:32:42.187, 138605062798, QTAgent32.exe, Playback - [WARNING] Internal warning: Target element "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks'" was not found, so all intermediate elements were ignored. An incorrect element that matches target element Id can be found as the result.  Verify that all intermediate elements in QueryId have valid and unique Ids
+\0
+W, 7300, 24, 2013/06/26, 21:32:43.715, 138609529141, QTAgent32.exe, Playback - [WARNING] Internal warning:Search failure: [MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks' | Performed (2) search retries, UI element not found
+\0
+E, 7300, 24, 2013/06/26, 21:32:43.715, 138609529864, QTAgent32.exe, &lt;a class=failure&gt;Playback - {20} [FAILED] Function ElementFetcher::FindScreenElement failed to locate UI element (Searching: ;[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks') (Het opgegeven object is niet gevonden.)
+\0&lt;/a&gt;
+E, 7300, 24, 2013/06/26, 21:32:43.882, 138610016134, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPF8E3E.png
+\0
+W, 7300, 24, 2013/06/26, 21:32:43.882, 138610016516, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't find descendants that match QueryId
+\0
+W, 7300, 24, 2013/06/26, 21:32:43.882, 138610017025, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 2211 ms. Expected it to take maximum 500 ms.
+W, 7300, 24, 2013/06/26, 21:32:45.438, 138614561951, QTAgent32.exe, Playback - [WARNING] Internal warning: Target element "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks'" was not found, so all intermediate elements were ignored. An incorrect element that matches target element Id can be found as the result.  Verify that all intermediate elements in QueryId have valid and unique Ids
+\0
+W, 7300, 24, 2013/06/26, 21:32:46.288, 138617047068, QTAgent32.exe, Playback - [WARNING] Internal warning: 2 UI elements have the same ElementIds.  Use "Instance = 'n'" to avoid this warning for: [MSAA, VisibleOnly]ControlType='MenuBar'
+\0
+W, 7300, 24, 2013/06/26, 21:32:46.500, 138617666556, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 2606 ms. Expected it to take maximum 500 ms.
+W, 7300, 24, 2013/06/26, 21:32:46.649, 138618102944, QTAgent32.exe, &lt;a class=success&gt;Playback - {21} [SUCCESS] LeftButtonClick  &lt; Mouse cursor location (383, 117) &gt;
+\0&lt;/a&gt;
+W, 7300, 24, 2013/06/26, 21:32:46.786, 138618502843, QTAgent32.exe, &lt;a class=success&gt;Playback - {22} [SUCCESS] LeftButtonClick - "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks'"  &lt; Mouse cursor location (132, 117) &gt;
+\0&lt;/a&gt;
+W, 7300, 24, 2013/06/26, 21:32:47.170, 138619625548, QTAgent32.exe, &lt;a class=success&gt;Playback - {23} [SUCCESS] MouseButtonClick - "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Add Adressbook'"
+\0&lt;/a&gt;
+W, 7300, 24, 2013/06/26, 21:32:47.428, 138620379697, QTAgent32.exe, &lt;a class=success&gt;Playback - {24} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Create Adressbook'"
+\0&lt;/a&gt;
+W, 7300, 24, 2013/06/26, 21:32:47.661, 138621060100, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 7300, 24, 2013/06/26, 21:32:47.661, 138621060390, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e1641168-dfe3-4547-9468-89e6df3fd22e" testId="19945944-a8d7-5865-9d24-bb159a9f92f7" testName="TestRemove" computerName="BAS-PC" duration="00:00:01.5494902" startTime="2013-06-26T21:32:47.6621864+02:00" endTime="2013-06-26T21:32:49.2162753+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e1641168-dfe3-4547-9468-89e6df3fd22e">
+      <Output>
+        <DebugTrace>W, 7300, 20, 2013/06/26, 21:32:48.412, 138623256323, QTAgent32.exe, &lt;a class=success&gt;Playback - {1} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='View'"
+\0&lt;/a&gt;
+W, 7300, 20, 2013/06/26, 21:32:48.984, 138624928022, QTAgent32.exe, &lt;a class=success&gt;Playback - {2} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Remove all'"
+\0&lt;/a&gt;
+W, 7300, 20, 2013/06/26, 21:32:49.214, 138625599434, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 7300, 20, 2013/06/26, 21:32:49.214, 138625599766, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1df7ab2d-0e7c-4610-9af9-ae87ffd5c5eb" testId="b0e3743f-f45f-f807-d44f-c69c7a0f26fc" testName="TestSwitchingViews" computerName="BAS-PC" duration="00:00:14.5608782" startTime="2013-06-26T21:32:49.2162753+02:00" endTime="2013-06-26T21:33:03.7801083+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1df7ab2d-0e7c-4610-9af9-ae87ffd5c5eb">
+      <Output>
+        <DebugTrace>W, 7300, 30, 2013/06/26, 21:32:49.950, 138627751789, QTAgent32.exe, &lt;a class=success&gt;Playback - {1} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='View'"
+\0&lt;/a&gt;
+W, 7300, 30, 2013/06/26, 21:32:50.050, 138628045094, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+W, 7300, 30, 2013/06/26, 21:32:51.102, 138631118751, QTAgent32.exe, Playback - [WARNING] Internal warning:Search failure: [MSAA, VisibleOnly]ControlType='MenuBar' | [MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks' | Performed (2) search retries, UI element not found
+\0
+E, 7300, 30, 2013/06/26, 21:32:51.102, 138631119583, QTAgent32.exe, &lt;a class=failure&gt;Playback - {2} [FAILED] Function ElementFetcher::FindScreenElement failed to locate UI element (Searching: ;[MSAA, VisibleOnly]ControlType='MenuBar';[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks';[MSAA]ControlType='MenuItem' &amp;&amp; Name='Add Adressbook') (Het opgegeven object is niet gevonden.)
+\0&lt;/a&gt;
+E, 7300, 30, 2013/06/26, 21:32:51.189, 138631374756, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPFAB21.png
+\0
+W, 7300, 30, 2013/06/26, 21:32:51.189, 138631375118, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't find descendants that match QueryId
+\0
+W, 7300, 30, 2013/06/26, 21:32:51.190, 138631375623, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 1118 ms. Expected it to take maximum 500 ms.
+W, 7300, 30, 2013/06/26, 21:32:51.190, 138631375968, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+W, 7300, 30, 2013/06/26, 21:32:51.208, 138631428795, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+W, 7300, 30, 2013/06/26, 21:32:51.740, 138632985885, QTAgent32.exe, Playback - [WARNING] Internal warning: Target element "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks'" was not found, so all intermediate elements were ignored. An incorrect element that matches target element Id can be found as the result.  Verify that all intermediate elements in QueryId have valid and unique Ids
+\0
+W, 7300, 30, 2013/06/26, 21:32:53.269, 138637454424, QTAgent32.exe, Playback - [WARNING] Internal warning:Search failure: [MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks' | Performed (2) search retries, UI element not found
+\0
+E, 7300, 30, 2013/06/26, 21:32:53.269, 138637455157, QTAgent32.exe, &lt;a class=failure&gt;Playback - {3} [FAILED] Function ElementFetcher::FindScreenElement failed to locate UI element (Searching: ;[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks') (Het opgegeven object is niet gevonden.)
+\0&lt;/a&gt;
+E, 7300, 30, 2013/06/26, 21:32:53.367, 138637740642, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPFB39B.png
+\0
+W, 7300, 30, 2013/06/26, 21:32:53.367, 138637741005, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't find descendants that match QueryId
+\0
+W, 7300, 30, 2013/06/26, 21:32:53.367, 138637741519, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 2150 ms. Expected it to take maximum 500 ms.
+W, 7300, 30, 2013/06/26, 21:32:54.923, 138642290324, QTAgent32.exe, Playback - [WARNING] Internal warning: Target element "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks'" was not found, so all intermediate elements were ignored. An incorrect element that matches target element Id can be found as the result.  Verify that all intermediate elements in QueryId have valid and unique Ids
+\0
+W, 7300, 30, 2013/06/26, 21:32:55.749, 138644704082, QTAgent32.exe, Playback - [WARNING] Internal warning: 2 UI elements have the same ElementIds.  Use "Instance = 'n'" to avoid this warning for: [MSAA, VisibleOnly]ControlType='MenuBar'
+\0
+W, 7300, 30, 2013/06/26, 21:32:56.006, 138645454104, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 2627 ms. Expected it to take maximum 500 ms.
+W, 7300, 30, 2013/06/26, 21:32:56.156, 138645893533, QTAgent32.exe, &lt;a class=success&gt;Playback - {4} [SUCCESS] LeftButtonClick  &lt; Mouse cursor location (433, 167) &gt;
+\0&lt;/a&gt;
+W, 7300, 30, 2013/06/26, 21:32:56.306, 138646332289, QTAgent32.exe, &lt;a class=success&gt;Playback - {5} [SUCCESS] LeftButtonClick - "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks'"  &lt; Mouse cursor location (182, 167) &gt;
+\0&lt;/a&gt;
+W, 7300, 30, 2013/06/26, 21:32:56.844, 138647903996, QTAgent32.exe, &lt;a class=success&gt;Playback - {6} [SUCCESS] MouseButtonClick - "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Add Adressbook'"
+\0&lt;/a&gt;
+W, 7300, 30, 2013/06/26, 21:32:56.945, 138648199741, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+W, 7300, 30, 2013/06/26, 21:32:57.999, 138651280073, QTAgent32.exe, Playback - [WARNING] Internal warning:Search failure: [MSAA, VisibleOnly]ControlType='MenuBar' | [MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks' | Performed (2) search retries, UI element not found
+\0
+E, 7300, 30, 2013/06/26, 21:32:57.999, 138651280883, QTAgent32.exe, &lt;a class=failure&gt;Playback - {7} [FAILED] Function ElementFetcher::FindScreenElement failed to locate UI element (Searching: ;[MSAA, VisibleOnly]ControlType='MenuBar';[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks';[MSAA]ControlType='MenuItem' &amp;&amp; Name='View Adressbooks') (Het opgegeven object is niet gevonden.)
+\0&lt;/a&gt;
+E, 7300, 30, 2013/06/26, 21:32:58.105, 138651590104, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPFC613.png
+\0
+W, 7300, 30, 2013/06/26, 21:32:58.105, 138651590649, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't find descendants that match QueryId
+\0
+W, 7300, 30, 2013/06/26, 21:32:58.105, 138651591396, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 1138 ms. Expected it to take maximum 500 ms.
+W, 7300, 30, 2013/06/26, 21:32:58.105, 138651591954, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+W, 7300, 30, 2013/06/26, 21:32:58.135, 138651679507, QTAgent32.exe, FindScreenElementInSinglePass : Attempting to find control in one pass of search. Failures can occur.
+W, 7300, 30, 2013/06/26, 21:32:58.672, 138653247260, QTAgent32.exe, Playback - [WARNING] Internal warning: Target element "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks'" was not found, so all intermediate elements were ignored. An incorrect element that matches target element Id can be found as the result.  Verify that all intermediate elements in QueryId have valid and unique Ids
+\0
+W, 7300, 30, 2013/06/26, 21:33:00.201, 138657718233, QTAgent32.exe, Playback - [WARNING] Internal warning:Search failure: [MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks' | Performed (2) search retries, UI element not found
+\0
+E, 7300, 30, 2013/06/26, 21:33:00.201, 138657718994, QTAgent32.exe, &lt;a class=failure&gt;Playback - {8} [FAILED] Function ElementFetcher::FindScreenElement failed to locate UI element (Searching: ;[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks') (Het opgegeven object is niet gevonden.)
+\0&lt;/a&gt;
+E, 7300, 30, 2013/06/26, 21:33:00.282, 138657955561, QTAgent32.exe, Playback - [IMAGE] C:\Users\Bas\AppData\Local\Temp\UITestLogs\LastRun\RPFCEAB.png
+\0
+W, 7300, 30, 2013/06/26, 21:33:00.282, 138657955948, QTAgent32.exe, Playback - [WARNING] Internal warning: Couldn't find descendants that match QueryId
+\0
+W, 7300, 30, 2013/06/26, 21:33:00.283, 138657956552, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 2130 ms. Expected it to take maximum 500 ms.
+W, 7300, 30, 2013/06/26, 21:33:01.835, 138662494717, QTAgent32.exe, Playback - [WARNING] Internal warning: Target element "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks'" was not found, so all intermediate elements were ignored. An incorrect element that matches target element Id can be found as the result.  Verify that all intermediate elements in QueryId have valid and unique Ids
+\0
+W, 7300, 30, 2013/06/26, 21:33:02.458, 138664313498, QTAgent32.exe, Playback - [WARNING] Internal warning: 2 UI elements have the same ElementIds.  Use "Instance = 'n'" to avoid this warning for: [MSAA, VisibleOnly]ControlType='MenuBar'
+\0
+W, 7300, 30, 2013/06/26, 21:33:02.735, 138665123092, QTAgent32.exe, PERF WARNING: FindAllDescendents: took 2441 ms. Expected it to take maximum 500 ms.
+W, 7300, 30, 2013/06/26, 21:33:02.884, 138665558301, QTAgent32.exe, &lt;a class=success&gt;Playback - {9} [SUCCESS] LeftButtonClick  &lt; Mouse cursor location (433, 167) &gt;
+\0&lt;/a&gt;
+W, 7300, 30, 2013/06/26, 21:33:03.017, 138665947064, QTAgent32.exe, &lt;a class=success&gt;Playback - {10} [SUCCESS] LeftButtonClick - "[MSAA]ControlType='MenuItem' &amp;&amp; Name='Adressbooks'"  &lt; Mouse cursor location (182, 167) &gt;
+\0&lt;/a&gt;
+W, 7300, 30, 2013/06/26, 21:33:03.520, 138667416495, QTAgent32.exe, &lt;a class=success&gt;Playback - {11} [SUCCESS] MouseButtonClick - "[MSAA]ControlType='MenuItem' &amp;&amp; Name='View Adressbooks'"
+\0&lt;/a&gt;
+W, 7300, 30, 2013/06/26, 21:33:03.779, 138668174772, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 7300, 30, 2013/06/26, 21:33:03.779, 138668175062, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f5e8dc58-24e9-4b54-8a68-2ee70fec8366" testId="ecf14cdf-a816-c9c9-b486-338ae3a984be" testName="TestEmail" computerName="BAS-PC" duration="00:00:32.2830517" startTime="2013-06-26T21:33:03.7811084+02:00" endTime="2013-06-26T21:33:36.0689551+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f5e8dc58-24e9-4b54-8a68-2ee70fec8366">
+      <Output>
+        <DebugTrace>W, 7300, 19, 2013/06/26, 21:33:04.550, 138670427724, QTAgent32.exe, &lt;a class=success&gt;Playback - {1} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='View'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:05.108, 138672058716, QTAgent32.exe, &lt;a class=success&gt;Playback - {2} [SUCCESS] SetValueAsEditBox "bas" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:05.578, 138673434446, QTAgent32.exe, &lt;a class=success&gt;Playback - {3} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:05.821, 138674143201, QTAgent32.exe, &lt;a class=success&gt;Playback - {4} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='OK'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:06.159, 138675131456, QTAgent32.exe, &lt;a class=success&gt;Playback - {5} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:06.159, 138675131923, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:06.243, 138675377048, QTAgent32.exe, &lt;a class=success&gt;Playback - {6} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:06.243, 138675377761, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:06.289, 138675512585, QTAgent32.exe, &lt;a class=success&gt;Playback - {7} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:06.577, 138676352421, QTAgent32.exe, &lt;a class=success&gt;Playback - {8} [SUCCESS] SetValueAsEditBox "bas@@" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:06.837, 138677113501, QTAgent32.exe, &lt;a class=success&gt;Playback - {9} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:07.081, 138677826450, QTAgent32.exe, &lt;a class=success&gt;Playback - {10} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='OK'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:07.396, 138678747244, QTAgent32.exe, &lt;a class=success&gt;Playback - {11} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:07.396, 138678747717, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:07.482, 138678999155, QTAgent32.exe, &lt;a class=success&gt;Playback - {12} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:07.482, 138678999923, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:07.530, 138679139656, QTAgent32.exe, &lt;a class=success&gt;Playback - {13} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:07.907, 138680240643, QTAgent32.exe, &lt;a class=success&gt;Playback - {14} [SUCCESS] SetValueAsEditBox "bas@@blabla" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:08.170, 138681009899, QTAgent32.exe, &lt;a class=success&gt;Playback - {15} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:08.270, 138681302263, QTAgent32.exe, GetClassName for handle 1575056 failed
+W, 7300, 19, 2013/06/26, 21:33:08.411, 138681714336, QTAgent32.exe, &lt;a class=success&gt;Playback - {16} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='OK'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:08.715, 138682603197, QTAgent32.exe, &lt;a class=success&gt;Playback - {17} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:08.715, 138682603659, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:08.801, 138682854878, QTAgent32.exe, &lt;a class=success&gt;Playback - {18} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:08.801, 138682855646, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:08.854, 138683009676, QTAgent32.exe, &lt;a class=success&gt;Playback - {19} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:09.235, 138684124603, QTAgent32.exe, &lt;a class=success&gt;Playback - {20} [SUCCESS] SetValueAsEditBox "bas@bla./nl" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:09.490, 138684869026, QTAgent32.exe, &lt;a class=success&gt;Playback - {21} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:09.590, 138685160728, QTAgent32.exe, GetClassName for handle 7866440 failed
+W, 7300, 19, 2013/06/26, 21:33:09.732, 138685575818, QTAgent32.exe, &lt;a class=success&gt;Playback - {22} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='OK'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:10.050, 138686505442, QTAgent32.exe, &lt;a class=success&gt;Playback - {23} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:10.050, 138686506136, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:10.143, 138686777764, QTAgent32.exe, &lt;a class=success&gt;Playback - {24} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:10.143, 138686778410, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:10.185, 138686901115, QTAgent32.exe, &lt;a class=success&gt;Playback - {25} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:10.589, 138688080952, QTAgent32.exe, &lt;a class=success&gt;Playback - {26} [SUCCESS] SetValueAsEditBox "bas@bla...nl" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:10.858, 138688867049, QTAgent32.exe, &lt;a class=success&gt;Playback - {27} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:10.958, 138689159838, QTAgent32.exe, GetClassName for handle 1706128 failed
+W, 7300, 19, 2013/06/26, 21:33:11.099, 138689572421, QTAgent32.exe, &lt;a class=success&gt;Playback - {28} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='OK'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:11.410, 138690480991, QTAgent32.exe, &lt;a class=success&gt;Playback - {29} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:11.410, 138690481459, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:11.483, 138690694684, QTAgent32.exe, &lt;a class=success&gt;Playback - {30} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:11.483, 138690695441, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:11.527, 138690823704, QTAgent32.exe, &lt;a class=success&gt;Playback - {31} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:11.966, 138692105681, QTAgent32.exe, &lt;a class=success&gt;Playback - {32} [SUCCESS] SetValueAsEditBox "b..as@bla...nl" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:12.230, 138692878230, QTAgent32.exe, &lt;a class=success&gt;Playback - {33} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:12.330, 138693170471, QTAgent32.exe, GetClassName for handle 7997512 failed
+W, 7300, 19, 2013/06/26, 21:33:12.484, 138693620626, QTAgent32.exe, &lt;a class=success&gt;Playback - {34} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='OK'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:12.788, 138694509254, QTAgent32.exe, &lt;a class=success&gt;Playback - {35} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:12.788, 138694509712, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:12.859, 138694717254, QTAgent32.exe, &lt;a class=success&gt;Playback - {36} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:12.859, 138694718017, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:12.909, 138694862647, QTAgent32.exe, &lt;a class=success&gt;Playback - {37} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:13.310, 138696034460, QTAgent32.exe, &lt;a class=success&gt;Playback - {38} [SUCCESS] SetValueAsEditBox "b..as@bla.nl" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:13.569, 138696792486, QTAgent32.exe, &lt;a class=success&gt;Playback - {39} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:13.669, 138697084707, QTAgent32.exe, GetClassName for handle 1837200 failed
+W, 7300, 19, 2013/06/26, 21:33:13.810, 138697496962, QTAgent32.exe, &lt;a class=success&gt;Playback - {40} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='OK'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:14.126, 138698420402, QTAgent32.exe, &lt;a class=success&gt;Playback - {41} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:14.126, 138698420880, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:14.197, 138698628534, QTAgent32.exe, &lt;a class=success&gt;Playback - {42} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:14.197, 138698629301, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:14.248, 138698778008, QTAgent32.exe, &lt;a class=success&gt;Playback - {43} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:14.723, 138700164974, QTAgent32.exe, &lt;a class=success&gt;Playback - {44} [SUCCESS] SetValueAsEditBox "bas@hotmail.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:14.983, 138700925911, QTAgent32.exe, &lt;a class=success&gt;Playback - {45} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:15.290, 138701823047, QTAgent32.exe, &lt;a class=success&gt;Playback - {46} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:15.290, 138701823753, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:15.376, 138702074750, QTAgent32.exe, &lt;a class=success&gt;Playback - {47} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:15.376, 138702075285, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:15.416, 138702192207, QTAgent32.exe, &lt;a class=success&gt;Playback - {48} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:16.055, 138704058485, QTAgent32.exe, &lt;a class=success&gt;Playback - {49} [SUCCESS] SetValueAsEditBox "bas_meesters@hotmail.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:16.312, 138704810664, QTAgent32.exe, &lt;a class=success&gt;Playback - {50} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:16.622, 138705717146, QTAgent32.exe, &lt;a class=success&gt;Playback - {51} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:16.622, 138705717639, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:16.694, 138705927739, QTAgent32.exe, &lt;a class=success&gt;Playback - {52} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:16.694, 138705928527, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:16.748, 138706086573, QTAgent32.exe, &lt;a class=success&gt;Playback - {53} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:17.421, 138708052110, QTAgent32.exe, &lt;a class=success&gt;Playback - {54} [SUCCESS] SetValueAsEditBox "bas.meesters@hotmail.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:17.669, 138708777900, QTAgent32.exe, &lt;a class=success&gt;Playback - {55} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:17.965, 138709642706, QTAgent32.exe, &lt;a class=success&gt;Playback - {56} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:17.965, 138709643183, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:18.037, 138709853445, QTAgent32.exe, &lt;a class=success&gt;Playback - {57} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:18.037, 138709854143, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:18.083, 138709988689, QTAgent32.exe, &lt;a class=success&gt;Playback - {58} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:18.850, 138712231695, QTAgent32.exe, &lt;a class=success&gt;Playback - {59} [SUCCESS] SetValueAsEditBox "bas.meest"iets"ers@hotmail.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:19.110, 138712990258, QTAgent32.exe, &lt;a class=success&gt;Playback - {60} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:19.411, 138713867017, QTAgent32.exe, &lt;a class=success&gt;Playback - {61} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:19.411, 138713867487, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:19.483, 138714077426, QTAgent32.exe, &lt;a class=success&gt;Playback - {62} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:19.483, 138714077900, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:19.529, 138714212622, QTAgent32.exe, &lt;a class=success&gt;Playback - {63} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:20.329, 138716549493, QTAgent32.exe, &lt;a class=success&gt;Playback - {64} [SUCCESS] SetValueAsEditBox "bas"nogiets@.nl"iets@hotmail.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:20.585, 138717298781, QTAgent32.exe, &lt;a class=success&gt;Playback - {65} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:20.872, 138718138046, QTAgent32.exe, &lt;a class=success&gt;Playback - {66} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:20.872, 138718138797, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:20.960, 138718395101, QTAgent32.exe, &lt;a class=success&gt;Playback - {67} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:20.960, 138718395863, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:21.008, 138718536028, QTAgent32.exe, &lt;a class=success&gt;Playback - {68} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:21.300, 138719390690, QTAgent32.exe, &lt;a class=success&gt;Playback - {69} [SUCCESS] SetValueAsEditBox "@empty" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:21.555, 138720134222, QTAgent32.exe, &lt;a class=success&gt;Playback - {70} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:21.844, 138720979142, QTAgent32.exe, &lt;a class=success&gt;Playback - {71} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:21.844, 138720979611, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:21.917, 138721192906, QTAgent32.exe, &lt;a class=success&gt;Playback - {72} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:21.917, 138721193612, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:21.963, 138721327336, QTAgent32.exe, &lt;a class=success&gt;Playback - {73} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:22.381, 138722548384, QTAgent32.exe, &lt;a class=success&gt;Playback - {74} [SUCCESS] SetValueAsEditBox "bas""@bas.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:22.707, 138723503241, QTAgent32.exe, &lt;a class=success&gt;Playback - {75} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:23.014, 138724399181, QTAgent32.exe, &lt;a class=success&gt;Playback - {76} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:23.014, 138724399638, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:23.085, 138724606827, QTAgent32.exe, &lt;a class=success&gt;Playback - {77} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:23.085, 138724607294, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:23.135, 138724753725, QTAgent32.exe, &lt;a class=success&gt;Playback - {78} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:23.629, 138726198405, QTAgent32.exe, &lt;a class=success&gt;Playback - {79} [SUCCESS] SetValueAsEditBox ".iets@hotmail.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:23.885, 138726944313, QTAgent32.exe, &lt;a class=success&gt;Playback - {80} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:23.985, 138727237665, QTAgent32.exe, GetClassName for handle 8128584 failed
+W, 7300, 19, 2013/06/26, 21:33:24.126, 138727649708, QTAgent32.exe, &lt;a class=success&gt;Playback - {81} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='OK'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:24.432, 138728544396, QTAgent32.exe, &lt;a class=success&gt;Playback - {82} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:24.432, 138728544878, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:24.520, 138728801718, QTAgent32.exe, &lt;a class=success&gt;Playback - {83} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:24.520, 138728802462, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:24.570, 138728948580, QTAgent32.exe, &lt;a class=success&gt;Playback - {84} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:25.071, 138730411270, QTAgent32.exe, &lt;a class=success&gt;Playback - {85} [SUCCESS] SetValueAsEditBox "add.@hotmail.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:25.329, 138731166678, QTAgent32.exe, &lt;a class=success&gt;Playback - {86} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:25.429, 138731458619, QTAgent32.exe, GetClassName for handle 788856 failed
+W, 7300, 19, 2013/06/26, 21:33:25.570, 138731870851, QTAgent32.exe, &lt;a class=success&gt;Playback - {87} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='OK'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:25.902, 138732841327, QTAgent32.exe, &lt;a class=success&gt;Playback - {88} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:25.902, 138732841789, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:25.992, 138733104634, QTAgent32.exe, &lt;a class=success&gt;Playback - {89} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:25.992, 138733105337, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:26.045, 138733258447, QTAgent32.exe, &lt;a class=success&gt;Playback - {90} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:26.734, 138735273088, QTAgent32.exe, &lt;a class=success&gt;Playback - {91} [SUCCESS] SetValueAsEditBox "localpart@domain.com.com2" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:26.993, 138736030706, QTAgent32.exe, &lt;a class=success&gt;Playback - {92} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:27.288, 138736893099, QTAgent32.exe, &lt;a class=success&gt;Playback - {93} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:27.288, 138736893862, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:27.381, 138737164959, QTAgent32.exe, &lt;a class=success&gt;Playback - {94} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:27.381, 138737165703, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:27.430, 138737309085, QTAgent32.exe, &lt;a class=success&gt;Playback - {95} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:28.201, 138739563771, QTAgent32.exe, &lt;a class=success&gt;Playback - {96} [SUCCESS] SetValueAsEditBox "loc\"..@[]&lt;&gt;=--0;\"@domain.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:28.451, 138740292741, QTAgent32.exe, &lt;a class=success&gt;Playback - {97} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:28.551, 138740584741, QTAgent32.exe, GetClassName for handle 854394 failed
+W, 7300, 19, 2013/06/26, 21:33:28.680, 138740962056, QTAgent32.exe, &lt;a class=success&gt;Playback - {98} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='OK'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:28.998, 138741891706, QTAgent32.exe, &lt;a class=success&gt;Playback - {99} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:28.998, 138741892420, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:29.087, 138742152027, QTAgent32.exe, &lt;a class=success&gt;Playback - {100} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:29.087, 138742152824, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:29.132, 138742285121, QTAgent32.exe, &lt;a class=success&gt;Playback - {101} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:29.748, 138744085911, QTAgent32.exe, &lt;a class=success&gt;Playback - {102} [SUCCESS] SetValueAsEditBox "localpart@dom--ain-.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:30.011, 138744852845, QTAgent32.exe, &lt;a class=success&gt;Playback - {103} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:30.305, 138745712001, QTAgent32.exe, &lt;a class=success&gt;Playback - {104} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:30.305, 138745712447, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:30.376, 138745920111, QTAgent32.exe, &lt;a class=success&gt;Playback - {105} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:30.376, 138745920857, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:30.424, 138746061179, QTAgent32.exe, &lt;a class=success&gt;Playback - {106} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:30.934, 138747552996, QTAgent32.exe, &lt;a class=success&gt;Playback - {107} [SUCCESS] SetValueAsEditBox "bas""empty@bas.nl" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:31.176, 138748257665, QTAgent32.exe, &lt;a class=success&gt;Playback - {108} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:31.490, 138749176413, QTAgent32.exe, &lt;a class=success&gt;Playback - {109} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:31.490, 138749177141, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:31.574, 138749421634, QTAgent32.exe, &lt;a class=success&gt;Playback - {110} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:31.574, 138749422090, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:31.605, 138749512657, QTAgent32.exe, &lt;a class=success&gt;Playback - {111} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:32.240, 138751370641, QTAgent32.exe, &lt;a class=success&gt;Playback - {112} [SUCCESS] SetValueAsEditBox ""bladiebla"a@hotmail.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:32.490, 138752099603, QTAgent32.exe, &lt;a class=success&gt;Playback - {113} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:32.794, 138752988322, QTAgent32.exe, &lt;a class=success&gt;Playback - {114} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:32.794, 138752988804, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:32.866, 138753198834, QTAgent32.exe, &lt;a class=success&gt;Playback - {115} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 19, 2013/06/26, 21:33:32.866, 138753199558, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 19, 2013/06/26, 21:33:32.920, 138753357525, QTAgent32.exe, &lt;a class=success&gt;Playback - {116} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:33.588, 138755308441, QTAgent32.exe, &lt;a class=success&gt;Playback - {117} [SUCCESS] SetValueAsEditBox ""bladiebla"a@hotmail.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:33.841, 138756048905, QTAgent32.exe, &lt;a class=success&gt;Playback - {118} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 19, 2013/06/26, 21:33:36.066, 138762553313, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 7300, 19, 2013/06/26, 21:33:36.066, 138762553779, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e4574bd1-e034-4c06-9ca7-8de08b9ee12c" testId="ff1d36de-df47-0a9f-9f67-ff714225cbd5" testName="TestName" computerName="BAS-PC" duration="00:00:19.2515839" startTime="2013-06-26T21:33:36.0739554+02:00" endTime="2013-06-26T21:33:55.3310569+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e4574bd1-e034-4c06-9ca7-8de08b9ee12c">
+      <Output>
+        <DebugTrace>W, 7300, 32, 2013/06/26, 21:33:36.800, 138764698763, QTAgent32.exe, &lt;a class=success&gt;Playback - {1} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='View'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:37.216, 138765912740, QTAgent32.exe, &lt;a class=success&gt;Playback - {2} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:37.458, 138766619096, QTAgent32.exe, &lt;a class=success&gt;Playback - {3} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='OK'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:37.971, 138768118475, QTAgent32.exe, &lt;a class=success&gt;Playback - {4} [SUCCESS] SetValueAsEditBox "Bas" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:38.226, 138768864326, QTAgent32.exe, &lt;a class=success&gt;Playback - {5} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:38.465, 138769562915, QTAgent32.exe, &lt;a class=success&gt;Playback - {6} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='OK'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:39.149, 138771561602, QTAgent32.exe, &lt;a class=success&gt;Playback - {7} [SUCCESS] SetValueAsEditBox "Bas@bas.nl" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:39.457, 138772462109, QTAgent32.exe, &lt;a class=success&gt;Playback - {8} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:39.763, 138773356828, QTAgent32.exe, &lt;a class=success&gt;Playback - {9} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:39.763, 138773357261, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:39.835, 138773568075, QTAgent32.exe, &lt;a class=success&gt;Playback - {10} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:39.835, 138773568842, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:39.879, 138773697454, QTAgent32.exe, &lt;a class=success&gt;Playback - {11} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:40.588, 138775769497, QTAgent32.exe, &lt;a class=success&gt;Playback - {12} [SUCCESS] SetValueAsEditBox "bladiebladiebla@hotmail.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:40.832, 138776482081, QTAgent32.exe, &lt;a class=success&gt;Playback - {13} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:41.276, 138777780421, QTAgent32.exe, &lt;a class=success&gt;Playback - {14} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:41.276, 138777781181, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:41.363, 138778034631, QTAgent32.exe, &lt;a class=success&gt;Playback - {15} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:41.363, 138778035398, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:41.414, 138778184478, QTAgent32.exe, &lt;a class=success&gt;Playback - {16} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:41.644, 138778857456, QTAgent32.exe, &lt;a class=success&gt;Playback - {17} [SUCCESS] SetValueAsEditBox "123" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:41.894, 138779586699, QTAgent32.exe, &lt;a class=success&gt;Playback - {18} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:41.994, 138779878895, QTAgent32.exe, GetClassName for handle 1968574 failed
+W, 7300, 32, 2013/06/26, 21:33:42.136, 138780293854, QTAgent32.exe, &lt;a class=success&gt;Playback - {19} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='OK'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:42.451, 138781214491, QTAgent32.exe, &lt;a class=success&gt;Playback - {20} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:42.451, 138781214914, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:42.522, 138781422461, QTAgent32.exe, &lt;a class=success&gt;Playback - {21} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:42.522, 138781423162, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:42.570, 138781562959, QTAgent32.exe, &lt;a class=success&gt;Playback - {22} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:42.762, 138782125521, QTAgent32.exe, &lt;a class=success&gt;Playback - {23} [SUCCESS] SetValueAsEditBox ".." - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:43.023, 138782886967, QTAgent32.exe, &lt;a class=success&gt;Playback - {24} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:43.123, 138783179215, QTAgent32.exe, GetClassName for handle 985466 failed
+W, 7300, 32, 2013/06/26, 21:33:43.264, 138783591338, QTAgent32.exe, &lt;a class=success&gt;Playback - {25} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='OK'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:43.574, 138784497534, QTAgent32.exe, &lt;a class=success&gt;Playback - {26} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:43.574, 138784497995, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:43.667, 138784769817, QTAgent32.exe, &lt;a class=success&gt;Playback - {27} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:43.667, 138784770615, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:43.721, 138784927950, QTAgent32.exe, &lt;a class=success&gt;Playback - {28} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:43.913, 138785489903, QTAgent32.exe, &lt;a class=success&gt;Playback - {29} [SUCCESS] SetValueAsEditBox "." - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:44.168, 138786233978, QTAgent32.exe, &lt;a class=success&gt;Playback - {30} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:44.469, 138787113562, QTAgent32.exe, &lt;a class=success&gt;Playback - {31} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:44.469, 138787114028, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:44.540, 138787321384, QTAgent32.exe, &lt;a class=success&gt;Playback - {32} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:44.540, 138787322096, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:44.585, 138787453201, QTAgent32.exe, &lt;a class=success&gt;Playback - {33} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:44.803, 138788090794, QTAgent32.exe, &lt;a class=success&gt;Playback - {34} [SUCCESS] SetValueAsEditBox "bas" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:45.101, 138788962612, QTAgent32.exe, &lt;a class=success&gt;Playback - {35} [SUCCESS] SendKeys "{Tab}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:45.400, 138789835352, QTAgent32.exe, &lt;a class=success&gt;Playback - {36} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:45.400, 138789835790, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:45.486, 138790087170, QTAgent32.exe, &lt;a class=success&gt;Playback - {37} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:45.486, 138790087962, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:45.535, 138790230581, QTAgent32.exe, &lt;a class=success&gt;Playback - {38} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:45.993, 138791567890, QTAgent32.exe, &lt;a class=success&gt;Playback - {39} [SUCCESS] SetValueAsEditBox "bas@hotmail.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:46.252, 138792325931, QTAgent32.exe, &lt;a class=success&gt;Playback - {40} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:46.569, 138793252517, QTAgent32.exe, &lt;a class=success&gt;Playback - {41} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:46.569, 138793252996, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:46.641, 138793464227, QTAgent32.exe, &lt;a class=success&gt;Playback - {42} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:46.641, 138793464954, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:46.687, 138793598511, QTAgent32.exe, &lt;a class=success&gt;Playback - {43} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:47.173, 138795017693, QTAgent32.exe, &lt;a class=success&gt;Playback - {44} [SUCCESS] SetValueAsEditBox "bas2@hotmail.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:47.432, 138795775279, QTAgent32.exe, &lt;a class=success&gt;Playback - {45} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:47.747, 138796696688, QTAgent32.exe, &lt;a class=success&gt;Playback - {46} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:47.747, 138796697398, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:47.833, 138796947554, QTAgent32.exe, &lt;a class=success&gt;Playback - {47} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:47.833, 138796948251, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:47.882, 138797091467, QTAgent32.exe, &lt;a class=success&gt;Playback - {48} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:48.363, 138798496016, QTAgent32.exe, &lt;a class=success&gt;Playback - {49} [SUCCESS] SetValueAsEditBox "bas3@hotmail.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:48.599, 138799186673, QTAgent32.exe, &lt;a class=success&gt;Playback - {50} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:48.908, 138800089831, QTAgent32.exe, &lt;a class=success&gt;Playback - {51} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:48.908, 138800090265, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:48.978, 138800294610, QTAgent32.exe, &lt;a class=success&gt;Playback - {52} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:48.978, 138800295080, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:49.009, 138800385316, QTAgent32.exe, &lt;a class=success&gt;Playback - {53} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:49.483, 138801772253, QTAgent32.exe, &lt;a class=success&gt;Playback - {54} [SUCCESS] SetValueAsEditBox "bas4@hotmail.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:49.744, 138802533800, QTAgent32.exe, &lt;a class=success&gt;Playback - {55} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:52.031, 138809219008, QTAgent32.exe, &lt;a class=success&gt;Playback - {56} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly,Window]ControlType='Window' &amp;&amp; ClassName=&gt;'WindowsForms10.EDIT' &amp;&amp; Instance='2'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:52.335, 138810108041, QTAgent32.exe, &lt;a class=success&gt;Playback - {57} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:52.335, 138810108507, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:52.427, 138810377159, QTAgent32.exe, &lt;a class=success&gt;Playback - {58} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:52.427, 138810377935, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:52.480, 138810531236, QTAgent32.exe, &lt;a class=success&gt;Playback - {59} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:52.724, 138811246368, QTAgent32.exe, &lt;a class=success&gt;Playback - {60} [SUCCESS] SetValueAsEditBox "bas" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:53.018, 138812103916, QTAgent32.exe, &lt;a class=success&gt;Playback - {61} [SUCCESS] SendKeys "{Tab}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:53.320, 138812987229, QTAgent32.exe, &lt;a class=success&gt;Playback - {62} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:53.320, 138812987676, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:53.406, 138813238760, QTAgent32.exe, &lt;a class=success&gt;Playback - {63} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:53.406, 138813239476, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 7300, 32, 2013/06/26, 21:33:53.455, 138813382499, QTAgent32.exe, &lt;a class=success&gt;Playback - {64} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:53.947, 138814819363, QTAgent32.exe, &lt;a class=success&gt;Playback - {65} [SUCCESS] SetValueAsEditBox "bas@bladiebla.com" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:54.216, 138815606564, QTAgent32.exe, &lt;a class=success&gt;Playback - {66} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:54.862, 138817492010, QTAgent32.exe, &lt;a class=success&gt;Playback - {67} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='Add Contact'"
+\0&lt;/a&gt;
+E, 7300, 32, 2013/06/26, 21:33:54.962, 138817784325, QTAgent32.exe, GetClassName for handle 1051000 failed
+W, 7300, 32, 2013/06/26, 21:33:55.102, 138818193492, QTAgent32.exe, &lt;a class=success&gt;Playback - {68} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='OK'"
+\0&lt;/a&gt;
+W, 7300, 32, 2013/06/26, 21:33:55.330, 138818859338, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 7300, 32, 2013/06/26, 21:33:55.330, 138818859610, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
